@@ -19,7 +19,8 @@
   .toolbar {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    align-items: center;
+    gap: 8px;
     margin-bottom: 16px;
     max-width: 760px;
     margin-left: auto;
@@ -39,9 +40,24 @@
     transition: opacity .15s;
   }
   .btn:hover { opacity: .82; }
-  .btn-link   { background: #2563eb; color: #fff; }
-  .btn-print  { background: #16a34a; color: #fff; }
-  .btn-upload { background: #7c3aed; color: #fff; cursor: pointer; }
+  .btn-print { background: #16a34a; color: #fff; }
+  .btn-size  {
+    background: #e5e7eb;
+    color: #374151;
+    padding: 7px 13px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    min-width: 34px;
+    justify-content: center;
+  }
+  .btn-size:hover { background: #d1d5db; }
+  .size-label {
+    font-size: 12px;
+    color: #888;
+    font-family: Arial, sans-serif;
+    padding: 0 2px;
+  }
 
   /* ── Status bar ── */
   #status {
@@ -61,29 +77,22 @@
     overflow-x: auto;
   }
 
-  /* ── Main table – matches screenshot exactly ── */
+  /* ── Main table ── */
   table.affitti {
     border-collapse: collapse;
     width: 100%;
     background: #fff;
-    border: 2.5px solid #c00;   /* red outer border like screenshot */
+    border: 2.5px solid #c00;
     font-size: 13px;
   }
-  table.affitti td, table.affitti th {
+  table.affitti td {
     border: 1px solid #555;
     padding: 3px 6px;
     white-space: nowrap;
   }
 
-  /* column widths */
-  .col-a { width: 42%; }
-  .col-b, .col-c, .col-d, .col-e { width: 8%; text-align: right; }
-  .col-f { width: 17%; text-align: right; }
-  .col-g { width: 17%; text-align: right; }
-
   /* Row 1 – header info */
   .row-header-info td {
-    font-size: 12px;
     font-weight: bold;
     text-align: center;
     background: #fff;
@@ -94,12 +103,11 @@
   .row-col-labels td {
     font-weight: bold;
     text-align: center;
-    font-size: 13px;
     line-height: 1.25;
     background: #fff;
     padding: 5px 4px;
   }
-  .row-col-labels .cell-address {
+  .cell-address {
     white-space: pre-line;
     text-align: center;
     font-style: italic;
@@ -107,28 +115,19 @@
   }
 
   /* Data rows */
-  .row-data td {
-    font-weight: bold;
-  }
-  .row-data td.cell-name {
-    text-align: left;
-  }
-  .row-data td.cell-num {
-    text-align: right;
-  }
-  .row-data td.cell-canone {
-    text-align: right;
-  }
+  .row-data td { font-weight: bold; }
+  .cell-name   { text-align: left; }
+  .cell-num    { text-align: right; }
+  .cell-canone { text-align: right; }
 
-  /* Separator row (VIA MALAGA) */
+  /* Separator (VIA MALAGA) */
   .row-sep td {
     font-weight: normal;
-    font-size: 13px;
     padding: 3px 6px;
     background: #fff;
   }
 
-  /* Footer row (CASCATA) */
+  /* Footer (CASCATA) */
   .row-footer td {
     font-size: 10px;
     text-align: center;
@@ -138,42 +137,6 @@
     color: #666;
     font-weight: normal;
   }
-
-  /* Empty row placeholder */
-  .row-empty td { height: 18px; }
-
-  /* ── Modal ── */
-  .modal-overlay {
-    display: none;
-    position: fixed; inset: 0;
-    background: rgba(0,0,0,.45);
-    z-index: 100;
-    align-items: center;
-    justify-content: center;
-  }
-  .modal-overlay.open { display: flex; }
-  .modal {
-    background: #fff;
-    border-radius: 12px;
-    padding: 28px 28px 24px;
-    width: min(480px, 92vw);
-    box-shadow: 0 20px 60px rgba(0,0,0,.25);
-  }
-  .modal h2 { font-size: 16px; margin-bottom: 16px; color: #1e293b; }
-  .modal label { font-size: 12px; color: #555; display: block; margin-bottom: 6px; }
-  .modal input[type=text] {
-    width: 100%;
-    padding: 9px 12px;
-    border: 1.5px solid #cbd5e1;
-    border-radius: 7px;
-    font-size: 13px;
-    outline: none;
-    transition: border-color .15s;
-  }
-  .modal input[type=text]:focus { border-color: #2563eb; }
-  .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
-  .btn-cancel { background: #e5e7eb; color: #374151; }
-  .btn-save   { background: #2563eb; color: #fff; }
 
   /* ── Loading spinner ── */
   #loading {
@@ -196,25 +159,10 @@
   }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ── Empty state ── */
-  #empty-state {
-    max-width: 760px;
-    margin: 40px auto;
-    text-align: center;
-    background: #fff;
-    border: 2px dashed #cbd5e1;
-    border-radius: 12px;
-    padding: 40px 20px;
-    color: #64748b;
-    font-size: 14px;
-  }
-  #empty-state .icon { font-size: 40px; margin-bottom: 12px; }
-  #empty-state strong { color: #1e293b; display: block; margin-bottom: 6px; font-size: 15px; }
-
   /* ── Print styles ── */
   @media print {
     body { background: #fff; padding: 0; }
-    .toolbar, #status, #empty-state, .modal-overlay, #loading { display: none !important; }
+    .toolbar, #status, #loading { display: none !important; }
     .table-wrap { max-width: none; overflow: visible; }
     table.affitti { border: 2.5px solid #c00; }
     @page { margin: 1cm; }
@@ -225,16 +173,10 @@
 
 <!-- Toolbar -->
 <div class="toolbar">
-  <label class="btn btn-upload" title="Carica file Excel direttamente">
-    📂 Carica File
-    <input type="file" id="file-input" accept=".xlsx,.xls" style="display:none" onchange="loadFromFile(this)">
-  </label>
-  <button class="btn btn-print" onclick="window.print()">
-    🖨️ Stampa
-  </button>
-  <button class="btn btn-link" onclick="openModal()">
-    🔗 Imposta Link
-  </button>
+  <button class="btn btn-size" onclick="changeSize(-1)" title="Riduci carattere">−</button>
+  <span class="size-label" id="size-label">13px</span>
+  <button class="btn btn-size" onclick="changeSize(+1)" title="Aumenta carattere">+</button>
+  <button class="btn btn-print" onclick="window.print()">🖨️ Stampa</button>
 </div>
 
 <!-- Status -->
@@ -243,54 +185,40 @@
 <!-- Loading -->
 <div id="loading"><span class="spinner"></span>Caricamento Excel…</div>
 
-<!-- Empty state -->
-<div id="empty-state">
-  <div class="icon">📄</div>
-  <strong>Nessun file caricato</strong>
-  Usa <b>📂 Carica File</b> per aprire l'Excel direttamente,<br>
-  oppure <b>🔗 Imposta Link</b> per collegare un file Dropbox (richiede internet).
-</div>
-
 <!-- Table container -->
 <div class="table-wrap">
   <table class="affitti" id="tbl" style="display:none"></table>
 </div>
 
-<!-- Modal -->
-<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
-  <div class="modal">
-    <h2>🔗 Link file Excel (Dropbox)</h2>
-    <label>Incolla il link di condivisione Dropbox del file AFFITTI.xlsx:</label>
-    <input type="text" id="link-input" placeholder="https://www.dropbox.com/scl/fi/…">
-    <div class="modal-actions">
-      <button class="btn btn-cancel" onclick="closeModal()">Annulla</button>
-      <button class="btn btn-save"   onclick="saveAndLoad()">Salva e Carica</button>
-    </div>
-  </div>
-</div>
-
 <script>
-const STORAGE_KEY = 'affitti_dropbox_link';
+// ═══════════════════════════════════════════════
+//  ▼▼▼  MODIFICA QUI IL LINK DROPBOX  ▼▼▼
+const DROPBOX_LINK = 'https://www.dropbox.com/scl/fi/q3ewoodokhsrd8g11l915/AFFITTI.xlsx?rlkey=47altne9kdaw9y5h8bm57lun5&st=qjbkqviq&dl=0';
+//  ▲▲▲  MODIFICA QUI IL LINK DROPBOX  ▲▲▲
+// ═══════════════════════════════════════════════
 
-// ── Righe e colonne nascoste in Excel (1-based per righe, 0-based per colonne) ──
-const HIDDEN_ROWS = new Set([6, 10, 21, 28, 29]);   // hidden=True in openpyxl
-const HIDDEN_COLS = new Set([6]);                     // G (0-based: A=0…G=6)
-// Numero visibile di colonne (A-F = 6)
-const VISIBLE_COLS = [0,1,2,3,4,5]; // A,B,C,D,E,F
+const HIDDEN_ROWS  = new Set([6, 10, 21, 28, 29]);
+const VISIBLE_COLS = [0,1,2,3,4,5]; // A–F (G è nascosta)
 
-// ── Modal ──
-function openModal() {
-  document.getElementById('link-input').value = localStorage.getItem(STORAGE_KEY) || '';
-  document.getElementById('modal').classList.add('open');
-  setTimeout(() => document.getElementById('link-input').focus(), 80);
+// ── Dimensione carattere ──
+let fontSize = 13;
+const MIN_SIZE = 9, MAX_SIZE = 22;
+
+function changeSize(delta) {
+  fontSize = Math.min(MAX_SIZE, Math.max(MIN_SIZE, fontSize + delta));
+  document.getElementById('tbl').style.fontSize = fontSize + 'px';
+  document.getElementById('size-label').textContent = fontSize + 'px';
 }
-function closeModal() { document.getElementById('modal').classList.remove('open'); }
-function saveAndLoad() {
-  const raw = document.getElementById('link-input').value.trim();
-  if (!raw) { alert('Inserisci un link valido.'); return; }
-  localStorage.setItem(STORAGE_KEY, raw);
-  closeModal();
-  loadFromUrl(raw);
+
+// ── Converti link Dropbox → CDN diretto ──
+function toDirectLink(url) {
+  let u = url.trim();
+  if (u.includes('dropbox.com')) {
+    u = u.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
+    if (u.includes('dl=0'))       u = u.replace('dl=0', 'dl=1');
+    else if (!u.includes('dl=1')) u += (u.includes('?') ? '&' : '?') + 'dl=1';
+  }
+  return u;
 }
 
 function isXlsx(ab) {
@@ -298,92 +226,39 @@ function isXlsx(ab) {
   return b[0] === 0x50 && b[1] === 0x4B;
 }
 
-// ── Carica da file locale ──
-function loadFromFile(input) {
-  const file = input.files[0];
-  if (!file) return;
-  uiLoading();
-  const reader = new FileReader();
-  reader.onload = e => {
-    try {
-      parseAndRender(e.target.result);
-      setStatus('✅ File caricato: ' + file.name, 'ok');
-    } catch(err) { uiError('❌ ' + err.message); }
-  };
-  reader.readAsArrayBuffer(file);
-  input.value = '';
-}
-
-// ── Converti link Dropbox → download diretto ──
-// IMPORTANTE: NON rimuovere st=, rlkey= o e= — sono necessari per l'accesso
-function toDirectLink(url) {
-  let u = url.trim();
-  if (u.includes('dropbox.com')) {
-    u = u.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
-    if (u.includes('dl=0')) {
-      u = u.replace('dl=0', 'dl=1');
-    } else if (!u.includes('dl=1')) {
-      u += (u.includes('?') ? '&' : '?') + 'dl=1';
-    }
-  }
-  return u;
-}
-
-// ── Carica da URL Dropbox (fetch diretto – funziona da HTTPS/GitHub Pages) ──
+// ── Carica da URL ──
 async function loadFromUrl(rawUrl) {
-  uiLoading();
+  document.getElementById('status').textContent = '';
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('tbl').style.display = 'none';
   const url = toDirectLink(rawUrl);
   try {
     const resp = await fetch(url);
-    if (!resp.ok) throw new Error('HTTP ' + resp.status + ' — Controlla che il link sia pubblico');
+    if (!resp.ok) throw new Error('HTTP ' + resp.status + ' — controlla che il link sia pubblico');
     const ab = await resp.arrayBuffer();
-    if (!isXlsx(ab)) throw new Error('Risposta non valida — verifica che il link Dropbox sia pubblico.');
-    parseAndRender(ab);
-    setStatus('✅ File aggiornato.', 'ok');
+    if (!isXlsx(ab)) throw new Error('Risposta non valida — verifica il link Dropbox.');
+    const wb = XLSX.read(ab, { type: 'array', cellDates: true });
+    if (!wb.Sheets['AFFITTI']) throw new Error('Foglio "AFFITTI" non trovato.');
+    renderSheet(wb.Sheets['AFFITTI']);
+    setStatus('✅ Aggiornato.', 'ok');
   } catch(e) {
-    uiError('❌ ' + e.message);
+    document.getElementById('loading').style.display = 'none';
+    setStatus('❌ ' + e.message, 'error');
   }
-}
-
-// ── Auto-refresh ogni 5 minuti ──
-setInterval(() => {
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved && document.getElementById('tbl').style.display !== 'none') loadFromUrl(saved);
-}, 5 * 60 * 1000);
-
-function parseAndRender(ab) {
-  const wb = XLSX.read(ab, { type: 'array', cellDates: true });
-  if (!wb.Sheets['AFFITTI']) throw new Error('Foglio "AFFITTI" non trovato.');
-  renderSheet(wb.Sheets['AFFITTI']);
 }
 
 function setStatus(msg, cls) {
   const el = document.getElementById('status');
   el.textContent = msg; el.className = cls;
 }
-function uiLoading() {
-  setStatus('', '');
-  document.getElementById('empty-state').style.display = 'none';
-  document.getElementById('loading').style.display = 'block';
-  document.getElementById('tbl').style.display = 'none';
-}
-function uiError(msg) {
-  document.getElementById('loading').style.display = 'none';
-  document.getElementById('empty-state').style.display = 'block';
-  setStatus(msg, 'error');
-}
 
-// ── Render foglio AFFITTI (area di stampa A1:G32, col G nascosta, righe nascoste skip) ──
+// ── Render ──
 function renderSheet(ws) {
-  const MIN_ROW = 1, MAX_ROW = 32;
-
-  // Conta colonne visibili: A-F (6 col, G nascosta)
-  const numVisCols = VISIBLE_COLS.length; // 6
-
+  const numVisCols = VISIBLE_COLS.length;
   const tbl = document.getElementById('tbl');
   tbl.innerHTML = '';
+  tbl.style.fontSize = fontSize + 'px';
 
-  // colgroup
   const colgroup = document.createElement('colgroup');
   ['42%','8%','9%','9%','7%','17%'].forEach(w => {
     const col = document.createElement('col');
@@ -392,70 +267,56 @@ function renderSheet(ws) {
   });
   tbl.appendChild(colgroup);
 
-  for (let excelRow = MIN_ROW; excelRow <= MAX_ROW; excelRow++) {
-    // Salta righe nascoste
+  for (let excelRow = 1; excelRow <= 32; excelRow++) {
     if (HIDDEN_ROWS.has(excelRow)) continue;
-
     const tr = document.createElement('tr');
-
     if      (excelRow === 1)  tr.className = 'row-header-info';
     else if (excelRow === 2)  tr.className = 'row-col-labels';
     else if (excelRow === 25) tr.className = 'row-sep';
     else if (excelRow === 32) tr.className = 'row-footer';
     else                       tr.className = 'row-data';
 
-    // Gestione celle mergiate (con G nascosta il colspan va aggiustato)
-    // F1:G1 → G nascosta → F1 normale (colspan 1)
-    // A25:G25 → G nascosta → A25 colspan 6 (A-F)
     const mergeSkip = new Set();
-
-    VISIBLE_COLS.forEach((ci, visIdx) => {
+    VISIBLE_COLS.forEach(ci => {
       if (mergeSkip.has(ci)) return;
-
-      const addr = XLSX.utils.encode_cell({ r: excelRow - 1, c: ci });
-      const cell = ws[addr];
+      const cell = ws[XLSX.utils.encode_cell({ r: excelRow-1, c: ci })];
       const td = document.createElement('td');
       let val = '';
 
-      // Merged A25:G25 → A25 colspan=6 (tutte le colonne visibili)
       if (excelRow === 25 && ci === 0) {
         td.colSpan = numVisCols;
         VISIBLE_COLS.slice(1).forEach(x => mergeSkip.add(x));
       }
 
-      // Formatta valore
       if (cell) {
         const v = cell.v;
         if (cell.t === 'd' || v instanceof Date) {
           const d = v instanceof Date ? v : new Date(v);
-          val = `${d.getDate()}/${d.getMonth()+1}/${String(d.getFullYear()).slice(-2)} ${String(d.getHours()).padStart(2,'0')}.${String(d.getMinutes()).padStart(2,'0')}`;
+          val = d.getDate()+'/'+(d.getMonth()+1)+'/'+String(d.getFullYear()).slice(-2)+
+                ' '+String(d.getHours()).padStart(2,'0')+'.'+String(d.getMinutes()).padStart(2,'0');
         } else if (typeof v === 'number' && ci === 5 && excelRow >= 3 && excelRow !== 25 && excelRow !== 32) {
           val = '€ ' + v.toLocaleString('it-IT');
         } else if (typeof v === 'number') {
           val = String(v);
         } else {
-          val = (v == null) ? '' : String(v).trim();
+          val = v == null ? '' : String(v).trim();
         }
       }
 
-      // Classi
       if (excelRow >= 3 && excelRow !== 25 && excelRow !== 32) {
-        if (ci === 0) td.className = 'cell-name';
-        else if (ci >= 1 && ci <= 4) td.className = 'cell-num';
+        if      (ci === 0) td.className = 'cell-name';
+        else if (ci <= 4)  td.className = 'cell-num';
         else if (ci === 5) td.className = 'cell-canone';
       }
 
-      // Multiline VIA TUCIDIDE
       if (excelRow === 2 && ci === 0) {
         td.className = 'cell-address';
         td.innerHTML = val.replace(/\n/g, '<br>');
       } else {
         td.textContent = val;
       }
-
       tr.appendChild(td);
     });
-
     tbl.appendChild(tr);
   }
 
@@ -463,12 +324,11 @@ function renderSheet(ws) {
   tbl.style.display = 'table';
 }
 
-// ── Avvio ──
-window.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved) loadFromUrl(saved);
-});
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+// ── Avvio + auto-refresh ogni 5 min ──
+window.addEventListener('DOMContentLoaded', () => loadFromUrl(DROPBOX_LINK));
+setInterval(() => {
+  if (document.getElementById('tbl').style.display !== 'none') loadFromUrl(DROPBOX_LINK);
+}, 5 * 60 * 1000);
 </script>
 </body>
 </html>
