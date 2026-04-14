@@ -7,159 +7,51 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; background: #f0f0f0; min-height: 100vh; padding: 20px; }
 
-  body {
-    font-family: Arial, sans-serif;
-    background: #f0f0f0;
-    min-height: 100vh;
-    padding: 20px;
-  }
-
-  /* ── Toolbar ── */
   .toolbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 16px;
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex; justify-content: flex-end; align-items: center;
+    gap: 8px; margin-bottom: 16px;
+    max-width: 760px; margin-left: auto; margin-right: auto;
   }
   .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 16px;
-    border: none;
-    border-radius: 6px;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: opacity .15s;
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 7px 16px; border: none; border-radius: 6px;
+    font-family: Arial, sans-serif; font-size: 18px; font-weight: bold;
+    cursor: pointer; transition: opacity .15s;
   }
   .btn:hover { opacity: .82; }
   .btn-print { background: #16a34a; color: #fff; }
-  .btn-size  {
-    background: #e5e7eb;
-    color: #374151;
-    padding: 7px 13px;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1;
-    min-width: 34px;
-    justify-content: center;
-  }
+  .btn-size  { background: #e5e7eb; color: #374151; padding: 7px 13px; font-size: 16px; min-width: 34px; justify-content: center; }
   .btn-size:hover { background: #d1d5db; }
-  .size-label {
-    font-size: 12px;
-    color: #888;
-    font-family: Arial, sans-serif;
-    padding: 0 2px;
-  }
+  .size-label { font-size: 12px; color: #888; font-family: Arial, sans-serif; padding: 0 2px; }
 
-  /* ── Status bar ── */
-  #status {
-    max-width: 760px;
-    margin: 0 auto 12px;
-    font-size: 12px;
-    color: #555;
-    min-height: 18px;
-  }
+  #status { max-width: 760px; margin: 0 auto 12px; font-size: 12px; color: #555; min-height: 18px; }
   #status.error { color: #c00; }
   #status.ok    { color: #16a34a; }
 
-  /* ── Table wrapper ── */
-  .table-wrap {
-    max-width: 760px;
-    margin: 0 auto;
-    overflow-x: auto;
-  }
+  .table-wrap { max-width: 760px; margin: 0 auto; overflow-x: auto; }
 
-  /* ── Main table ── */
   table.affitti {
-    border-collapse: collapse;
-    width: 100%;
-    background: #fff;
-    border: 2.5px solid #c00;
-    font-size: 13px;
+    border-collapse: collapse; width: 100%;
+    background: #fff; border: 2.5px solid #c00; font-size: 18px;
   }
-  table.affitti td {
-    border: 1px solid #555;
-    padding: 3px 6px;
-    white-space: nowrap;
-  }
+  table.affitti td { border: 1px solid #555; padding: 3px 6px; white-space: nowrap; }
 
-  /* Row 1 – header info */
-  .row-header-info td {
-    font-weight: bold;
-    text-align: center;
-    background: #fff;
-    padding: 4px 6px;
-  }
+  .row-header-info td { font-weight: bold; text-align: center; padding: 4px 6px; }
+  .row-col-labels td  { font-weight: bold; text-align: center; line-height: 1.25; padding: 5px 4px; }
+  .cell-address { white-space: pre-line !important; text-align: center; font-style: italic; font-weight: normal; }
+  .row-data td  { font-weight: bold; }
+  .cell-name    { text-align: left; }
+  .cell-num     { text-align: right; }
+  .cell-canone  { text-align: right; }
+  .row-sep td   { font-weight: normal; padding: 3px 6px; }
+  .row-footer td { font-size: 10px; text-align: center; padding: 1px 4px; height: 8px; line-height: 1; color: #666; font-weight: normal; }
 
-  /* Row 2 – column labels */
-  .row-col-labels td {
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.25;
-    background: #fff;
-    padding: 5px 4px;
-  }
-  .cell-address {
-    white-space: pre-line;
-    text-align: center;
-    font-style: italic;
-    font-weight: normal;
-  }
-
-  /* Data rows */
-  .row-data td { font-weight: bold; }
-  .cell-name   { text-align: left; }
-  .cell-num    { text-align: right; }
-  .cell-canone { text-align: right; }
-
-  /* Separator (VIA MALAGA) */
-  .row-sep td {
-    font-weight: normal;
-    padding: 3px 6px;
-    background: #fff;
-  }
-
-  /* Footer (CASCATA) */
-  .row-footer td {
-    font-size: 10px;
-    text-align: center;
-    padding: 1px 4px;
-    height: 8px;
-    line-height: 1;
-    color: #666;
-    font-weight: normal;
-  }
-
-  /* ── Loading spinner ── */
-  #loading {
-    display: none;
-    max-width: 760px;
-    margin: 30px auto;
-    text-align: center;
-    color: #555;
-    font-size: 14px;
-  }
-  .spinner {
-    display: inline-block;
-    width: 22px; height: 22px;
-    border: 3px solid #ccc;
-    border-top-color: #2563eb;
-    border-radius: 50%;
-    animation: spin .7s linear infinite;
-    vertical-align: middle;
-    margin-right: 8px;
-  }
+  #loading { display: none; max-width: 760px; margin: 30px auto; text-align: center; color: #555; font-size: 14px; }
+  .spinner { display: inline-block; width: 22px; height: 22px; border: 3px solid #ccc; border-top-color: #2563eb; border-radius: 50%; animation: spin .7s linear infinite; vertical-align: middle; margin-right: 8px; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ── Print styles ── */
   @media print {
     body { background: #fff; padding: 0; }
     .toolbar, #status, #loading { display: none !important; }
@@ -171,21 +63,15 @@
 </head>
 <body>
 
-<!-- Toolbar -->
 <div class="toolbar">
-  <button class="btn btn-size" onclick="changeSize(-1)" title="Riduci carattere">−</button>
-  <span class="size-label" id="size-label">13px</span>
-  <button class="btn btn-size" onclick="changeSize(+1)" title="Aumenta carattere">+</button>
+  <button class="btn btn-size" onclick="changeSize(-1)">−</button>
+  <span class="size-label" id="size-label">18px</span>
+  <button class="btn btn-size" onclick="changeSize(+1)">+</button>
   <button class="btn btn-print" onclick="window.print()">🖨️ Stampa</button>
 </div>
 
-<!-- Status -->
 <div id="status"></div>
-
-<!-- Loading -->
 <div id="loading"><span class="spinner"></span>Caricamento Excel…</div>
-
-<!-- Table container -->
 <div class="table-wrap">
   <table class="affitti" id="tbl" style="display:none"></table>
 </div>
@@ -197,20 +83,13 @@ const DROPBOX_LINK = 'https://www.dropbox.com/scl/fi/q3ewoodokhsrd8g11l915/AFFIT
 //  ▲▲▲  MODIFICA QUI IL LINK DROPBOX  ▲▲▲
 // ═══════════════════════════════════════════════
 
-const HIDDEN_ROWS  = new Set([6, 10, 21, 28, 29]);
-const VISIBLE_COLS = [0,1,2,3,4,5]; // A–F (G è nascosta)
-
-// ── Dimensione carattere ──
-let fontSize = 13;
-const MIN_SIZE = 9, MAX_SIZE = 22;
-
+let fontSize = 18;
 function changeSize(delta) {
-  fontSize = Math.min(MAX_SIZE, Math.max(MIN_SIZE, fontSize + delta));
+  fontSize = Math.min(22, Math.max(9, fontSize + delta));
   document.getElementById('tbl').style.fontSize = fontSize + 'px';
   document.getElementById('size-label').textContent = fontSize + 'px';
 }
 
-// ── Converti link Dropbox → CDN diretto ──
 function toDirectLink(url) {
   let u = url.trim();
   if (u.includes('dropbox.com')) {
@@ -226,20 +105,18 @@ function isXlsx(ab) {
   return b[0] === 0x50 && b[1] === 0x4B;
 }
 
-// ── Carica da URL ──
 async function loadFromUrl(rawUrl) {
   document.getElementById('status').textContent = '';
   document.getElementById('loading').style.display = 'block';
   document.getElementById('tbl').style.display = 'none';
-  const url = toDirectLink(rawUrl);
   try {
-    const resp = await fetch(url);
-    if (!resp.ok) throw new Error('HTTP ' + resp.status + ' — controlla che il link sia pubblico');
+    const resp = await fetch(toDirectLink(rawUrl));
+    if (!resp.ok) throw new Error('HTTP ' + resp.status + ' — link non pubblico?');
     const ab = await resp.arrayBuffer();
-    if (!isXlsx(ab)) throw new Error('Risposta non valida — verifica il link Dropbox.');
+    if (!isXlsx(ab)) throw new Error('Risposta non valida — verifica il link.');
     const wb = XLSX.read(ab, { type: 'array', cellDates: true });
     if (!wb.Sheets['AFFITTI']) throw new Error('Foglio "AFFITTI" non trovato.');
-    renderSheet(wb.Sheets['AFFITTI']);
+    renderSheet(wb, 'AFFITTI');
     setStatus('✅ Aggiornato.', 'ok');
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
@@ -252,49 +129,135 @@ function setStatus(msg, cls) {
   el.textContent = msg; el.className = cls;
 }
 
-// ── Render ──
-function renderSheet(ws) {
-  const numVisCols = VISIBLE_COLS.length;
+// ── Legge area di stampa da wb.Workbook.Names ──
+function getPrintArea(wb, sheetName) {
+  try {
+    const names = wb.Workbook && wb.Workbook.Names || [];
+    for (const n of names) {
+      if (n.Name === '_xlnm.Print_Area') {
+        // Ref tipo: "'AFFITTI'!$A$1:$G$32" oppure "AFFITTI!$A$1:$G$32"
+        const ref = n.Ref.replace(/'/g, '');
+        const m = ref.match(/!\$([A-Z]+)\$(\d+):\$([A-Z]+)\$(\d+)/);
+        if (m) {
+          const colIdx = s => s.split('').reduce((a, c) => a * 26 + c.charCodeAt(0) - 64, 0) - 1;
+          return { minRow: +m[2], maxRow: +m[4], minCol: colIdx(m[1]), maxCol: colIdx(m[3]) };
+        }
+      }
+    }
+  } catch(e) {}
+  return null;
+}
+
+function renderSheet(wb, sheetName) {
+  const ws = wb.Sheets[sheetName];
+
+  // 1. Area di stampa (da file) con fallback all'intervallo dati
+  const pa = getPrintArea(wb, sheetName);
+  let minRow, maxRow, minCol, maxCol;
+  if (pa) {
+    minRow = pa.minRow; maxRow = pa.maxRow;
+    minCol = pa.minCol; maxCol = pa.maxCol;
+  } else {
+    const range = XLSX.utils.decode_range(ws['!ref']);
+    minRow = range.s.r + 1; maxRow = range.e.r + 1;
+    minCol = range.s.c;     maxCol = range.e.c;
+  }
+
+  // 2. Colonne nascoste da ws['!cols']
+  const colsMeta = ws['!cols'] || [];
+  const hiddenCols = new Set();
+  for (let c = minCol; c <= maxCol; c++) {
+    if (colsMeta[c] && colsMeta[c].hidden) hiddenCols.add(c);
+  }
+
+  // 3. Righe nascoste da ws['!rows']
+  const rowsMeta = ws['!rows'] || [];
+  const hiddenRows = new Set();
+  for (let r = minRow; r <= maxRow; r++) {
+    const m = rowsMeta[r - 1];
+    if (m && m.hidden) hiddenRows.add(r);
+  }
+
+  // 4. Colonne visibili
+  const visCols = [];
+  for (let c = minCol; c <= maxCol; c++) {
+    if (!hiddenCols.has(c)) visCols.push(c);
+  }
+  const numVisCols = visCols.length;
+  const lastVisCol = visCols[visCols.length - 1];
+
+  // 5. Celle unite: mappa top-left → {cs, rs}, skip set
+  const mergeMap  = {};
+  const skipSet   = new Set();
+  for (const m of (ws['!merges'] || [])) {
+    // colspan: colonne visibili nell'intervallo
+    let cs = 0;
+    for (let c = m.s.c; c <= m.e.c; c++) if (!hiddenCols.has(c) && c >= minCol && c <= maxCol) cs++;
+    // rowspan: righe visibili nell'intervallo
+    let rs = 0;
+    for (let r = m.s.r; r <= m.e.r; r++) if (!hiddenRows.has(r + 1)) rs++;
+    if (cs > 0 && rs > 0) mergeMap[m.s.r + ',' + m.s.c] = { cs, rs };
+    for (let r = m.s.r; r <= m.e.r; r++)
+      for (let c = m.s.c; c <= m.e.c; c++)
+        if (!(r === m.s.r && c === m.s.c)) skipSet.add(r + ',' + c);
+  }
+
+  // ── Build table ──
   const tbl = document.getElementById('tbl');
   tbl.innerHTML = '';
   tbl.style.fontSize = fontSize + 'px';
 
-  const colgroup = document.createElement('colgroup');
-  ['42%','8%','9%','9%','7%','17%'].forEach(w => {
+  const cg = document.createElement('colgroup');
+  visCols.forEach((_, i) => {
     const col = document.createElement('col');
-    col.style.width = w;
-    colgroup.appendChild(col);
+    if (i === 0) col.style.width = '42%';
+    cg.appendChild(col);
   });
-  tbl.appendChild(colgroup);
+  tbl.appendChild(cg);
 
-  for (let excelRow = 1; excelRow <= 32; excelRow++) {
-    if (HIDDEN_ROWS.has(excelRow)) continue;
+  for (let excelRow = minRow; excelRow <= maxRow; excelRow++) {
+    if (hiddenRows.has(excelRow)) continue;
+    const ri = excelRow - 1;
+
     const tr = document.createElement('tr');
-    if      (excelRow === 1)  tr.className = 'row-header-info';
-    else if (excelRow === 2)  tr.className = 'row-col-labels';
-    else if (excelRow === 25) tr.className = 'row-sep';
-    else if (excelRow === 32) tr.className = 'row-footer';
-    else                       tr.className = 'row-data';
 
-    const mergeSkip = new Set();
-    VISIBLE_COLS.forEach(ci => {
-      if (mergeSkip.has(ci)) return;
-      const cell = ws[XLSX.utils.encode_cell({ r: excelRow-1, c: ci })];
+    // Determina classe riga
+    if (excelRow === minRow) {
+      tr.className = 'row-header-info';
+    } else if (excelRow === minRow + 1) {
+      tr.className = 'row-col-labels';
+    } else if (excelRow === maxRow) {
+      tr.className = 'row-footer';
+    } else {
+      // Separatore = riga con solo testo nella col A e nessun numero nelle altre
+      const hasNums = visCols.slice(1).some(c => {
+        const cell = ws[XLSX.utils.encode_cell({ r: ri, c })];
+        return cell && typeof cell.v === 'number';
+      });
+      const cellA = ws[XLSX.utils.encode_cell({ r: ri, c: visCols[0] })];
+      tr.className = (!hasNums && cellA && typeof cellA.v === 'string') ? 'row-sep' : 'row-data';
+    }
+
+    for (const ci of visCols) {
+      if (skipSet.has(ri + ',' + ci)) continue;
+      const cell = ws[XLSX.utils.encode_cell({ r: ri, c: ci })];
       const td = document.createElement('td');
-      let val = '';
 
-      if (excelRow === 25 && ci === 0) {
-        td.colSpan = numVisCols;
-        VISIBLE_COLS.slice(1).forEach(x => mergeSkip.add(x));
+      const mk = mergeMap[ri + ',' + ci];
+      if (mk) {
+        if (mk.cs > 1) td.colSpan = mk.cs;
+        if (mk.rs > 1) td.rowSpan = mk.rs;
       }
 
+      // Formatta valore
+      let val = '';
       if (cell) {
         const v = cell.v;
         if (cell.t === 'd' || v instanceof Date) {
           const d = v instanceof Date ? v : new Date(v);
-          val = d.getDate()+'/'+(d.getMonth()+1)+'/'+String(d.getFullYear()).slice(-2)+
-                ' '+String(d.getHours()).padStart(2,'0')+'.'+String(d.getMinutes()).padStart(2,'0');
-        } else if (typeof v === 'number' && ci === 5 && excelRow >= 3 && excelRow !== 25 && excelRow !== 32) {
+          val = d.getDate() + '/' + (d.getMonth()+1) + '/' + String(d.getFullYear()).slice(-2) +
+                ' ' + String(d.getHours()).padStart(2,'0') + '.' + String(d.getMinutes()).padStart(2,'0');
+        } else if (typeof v === 'number' && ci === lastVisCol && tr.className === 'row-data') {
           val = '€ ' + v.toLocaleString('it-IT');
         } else if (typeof v === 'number') {
           val = String(v);
@@ -303,20 +266,21 @@ function renderSheet(ws) {
         }
       }
 
-      if (excelRow >= 3 && excelRow !== 25 && excelRow !== 32) {
-        if      (ci === 0) td.className = 'cell-name';
-        else if (ci <= 4)  td.className = 'cell-num';
-        else if (ci === 5) td.className = 'cell-canone';
+      // Classi CSS celle
+      if (tr.className === 'row-data') {
+        if      (ci === visCols[0])  td.className = 'cell-name';
+        else if (ci !== lastVisCol)  td.className = 'cell-num';
+        else                          td.className = 'cell-canone';
       }
 
-      if (excelRow === 2 && ci === 0) {
+      if (excelRow === minRow + 1 && ci === visCols[0]) {
         td.className = 'cell-address';
         td.innerHTML = val.replace(/\n/g, '<br>');
       } else {
         td.textContent = val;
       }
       tr.appendChild(td);
-    });
+    }
     tbl.appendChild(tr);
   }
 
@@ -324,7 +288,6 @@ function renderSheet(ws) {
   tbl.style.display = 'table';
 }
 
-// ── Avvio + auto-refresh ogni 5 min ──
 window.addEventListener('DOMContentLoaded', () => loadFromUrl(DROPBOX_LINK));
 setInterval(() => {
   if (document.getElementById('tbl').style.display !== 'none') loadFromUrl(DROPBOX_LINK);
