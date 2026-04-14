@@ -270,8 +270,13 @@
 </div>
 
 <script>
-// ── Storage key ──
 const STORAGE_KEY = 'affitti_dropbox_link';
+
+// ── Righe e colonne nascoste in Excel (1-based per righe, 0-based per colonne) ──
+const HIDDEN_ROWS = new Set([6, 10, 21, 28, 29]);   // hidden=True in openpyxl
+const HIDDEN_COLS = new Set([6]);                     // G (0-based: A=0…G=6)
+// Numero visibile di colonne (A-F = 6)
+const VISIBLE_COLS = [0,1,2,3,4,5]; // A,B,C,D,E,F
 
 // ── Modal ──
 function openModal() {
@@ -279,204 +284,195 @@ function openModal() {
   document.getElementById('modal').classList.add('open');
   setTimeout(() => document.getElementById('link-input').focus(), 80);
 }
-function closeModal() {
-  document.getElementById('modal').classList.remove('open');
-}
+function closeModal() { document.getElementById('modal').classList.remove('open'); }
 function saveAndLoad() {
   const raw = document.getElementById('link-input').value.trim();
   if (!raw) { alert('Inserisci un link valido.'); return; }
   localStorage.setItem(STORAGE_KEY, raw);
   closeModal();
-  loadFromUrl(toDirectUrl(raw));
+  loadFromUrl(raw);
 }
 
-// ── CORS proxies da provare in sequenza ──
-const PROXIES = [
-  url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
-  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
-  url => url   // diretto (funziona se servito da server HTTP)
-];
-
-// ── Convert Dropbox share link → direct download ──
+// ── Converti link Dropbox in URL diretto scaricabile ──
+// Trasforma www.dropbox.com → dl.dropboxusercontent.com (CDN diretto, no redirect OAuth)
 function toDirectUrl(url) {
-  if (url.includes('dropbox.com')) {
-    url = url.replace(/[?&]dl=0/, '').replace(/[?&]dl=1/, '');
-    url += (url.includes('?') ? '&' : '?') + 'dl=1';
-  }
+  if (!url.includes('dropbox')) return url;
+  // Rimuovi parametri inutili (e=, st=, dl=)
+  url = url.replace(/[?&](e|st|dl)=[^&]*/g, '').replace(/\?$|&$/, '');
+  // Converti dominio
+  url = url.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
+  // Aggiungi dl=1
+  url += (url.includes('?') ? '&' : '?') + 'dl=1';
   return url;
 }
 
-// ── Load from file input ──
+// ── Proxy chain ──
+const PROXIES = [
+  u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+  u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+  u => `https://thingproxy.freeboard.io/fetch/${u}`,
+  u => u
+];
+
+function isXlsx(ab) {
+  // XLSX/ZIP magic bytes: PK (50 4B)
+  const b = new Uint8Array(ab, 0, 4);
+  return b[0] === 0x50 && b[1] === 0x4B;
+}
+
+// ── Carica da file locale ──
 function loadFromFile(input) {
   const file = input.files[0];
   if (!file) return;
-  setStatus('', '');
-  document.getElementById('empty-state').style.display = 'none';
-  document.getElementById('loading').style.display = 'block';
-  document.getElementById('tbl').style.display = 'none';
-
+  uiLoading();
   const reader = new FileReader();
   reader.onload = e => {
     try {
-      const wb = XLSX.read(new Uint8Array(e.target.result), { type: 'array', cellDates: true });
-      if (!wb.Sheets['AFFITTI']) throw new Error('Foglio "AFFITTI" non trovato.');
-      renderSheet(wb.Sheets['AFFITTI']);
+      parseAndRender(e.target.result);
       setStatus('✅ File caricato: ' + file.name, 'ok');
-    } catch(err) {
-      document.getElementById('loading').style.display = 'none';
-      document.getElementById('empty-state').style.display = 'block';
-      setStatus('❌ Errore: ' + err.message, 'error');
-    }
+    } catch(err) { uiError('❌ ' + err.message); }
   };
   reader.readAsArrayBuffer(file);
-  input.value = '';   // reset so same file can be reloaded
+  input.value = '';
 }
 
-// ── Load & parse from URL (try proxies in sequence) ──
-async function loadFromUrl(url) {
-  setStatus('', '');
-  document.getElementById('empty-state').style.display = 'none';
-  document.getElementById('loading').style.display = 'block';
-  document.getElementById('tbl').style.display = 'none';
+// ── Carica da URL con proxy chain ──
+async function loadFromUrl(rawUrl) {
+  uiLoading();
+  const directUrl = toDirectUrl(rawUrl);
 
-  let lastErr = null;
   for (const makeProxy of PROXIES) {
-    const proxyUrl = makeProxy(url);
+    const proxyUrl = makeProxy(directUrl);
     try {
-      const resp = await fetch(proxyUrl);
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const resp = await fetch(proxyUrl, { signal: AbortSignal.timeout(12000) });
+      if (!resp.ok) continue;
       const ab = await resp.arrayBuffer();
-      const wb = XLSX.read(ab, { type: 'array', cellDates: true });
-      if (!wb.Sheets['AFFITTI']) throw new Error('Foglio "AFFITTI" non trovato.');
-      renderSheet(wb.Sheets['AFFITTI']);
-      setStatus('✅ File caricato dal link Dropbox.', 'ok');
+      if (!isXlsx(ab)) continue;   // skip HTML error pages
+      parseAndRender(ab);
+      setStatus('✅ File caricato da Dropbox.', 'ok');
       return;
-    } catch(e) {
-      lastErr = e;
-    }
+    } catch(_) {}
   }
-  // All proxies failed
-  document.getElementById('loading').style.display = 'none';
-  document.getElementById('empty-state').style.display = 'block';
-  setStatus('❌ Impossibile caricare via link (CORS). Usa il pulsante 📂 Carica File per caricare il file direttamente.', 'error');
+  uiError('❌ Impossibile caricare il file via link. Verifica che il link sia pubblico, oppure usa 📂 Carica File.');
+}
+
+function parseAndRender(ab) {
+  const wb = XLSX.read(ab, { type: 'array', cellDates: true });
+  if (!wb.Sheets['AFFITTI']) throw new Error('Foglio "AFFITTI" non trovato.');
+  renderSheet(wb.Sheets['AFFITTI']);
 }
 
 function setStatus(msg, cls) {
   const el = document.getElementById('status');
-  el.textContent = msg;
-  el.className = cls;
+  el.textContent = msg; el.className = cls;
+}
+function uiLoading() {
+  setStatus('', '');
+  document.getElementById('empty-state').style.display = 'none';
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('tbl').style.display = 'none';
+}
+function uiError(msg) {
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('empty-state').style.display = 'block';
+  setStatus(msg, 'error');
 }
 
-// ── Render the AFFITTI sheet ──
+// ── Render foglio AFFITTI (area di stampa A1:G32, col G nascosta, righe nascoste skip) ──
 function renderSheet(ws) {
-  // Print area A1:G32  → rows 1-32, cols A(0)–G(6)
   const MIN_ROW = 1, MAX_ROW = 32;
-  const MIN_COL = 0, MAX_COL = 6; // A=0 … G=6
 
-  // Read all cells into matrix
-  const matrix = [];
-  for (let r = MIN_ROW; r <= MAX_ROW; r++) {
-    const row = [];
-    for (let c = MIN_COL; c <= MAX_COL; c++) {
-      const addr = XLSX.utils.encode_cell({ r: r-1, c: c });
-      const cell = ws[addr];
-      row.push(cell ? cell : null);
-    }
-    matrix.push(row);
-  }
+  // Conta colonne visibili: A-F (6 col, G nascosta)
+  const numVisCols = VISIBLE_COLS.length; // 6
 
-  // Build table HTML
   const tbl = document.getElementById('tbl');
   tbl.innerHTML = '';
 
-  // Merged cells map: F1:G1 (row0 col5-6) and A25:G25 (row24 col0-6)
-  const mergedSkip = new Set(); // "row,col" to skip
+  // colgroup
+  const colgroup = document.createElement('colgroup');
+  ['42%','8%','9%','9%','7%','17%'].forEach(w => {
+    const col = document.createElement('col');
+    col.style.width = w;
+    colgroup.appendChild(col);
+  });
+  tbl.appendChild(colgroup);
 
-  matrix.forEach((row, ri) => {
-    const excelRow = ri + 1;
+  for (let excelRow = MIN_ROW; excelRow <= MAX_ROW; excelRow++) {
+    // Salta righe nascoste
+    if (HIDDEN_ROWS.has(excelRow)) continue;
+
     const tr = document.createElement('tr');
 
-    if (excelRow === 1) tr.className = 'row-header-info';
-    else if (excelRow === 2) tr.className = 'row-col-labels';
+    if      (excelRow === 1)  tr.className = 'row-header-info';
+    else if (excelRow === 2)  tr.className = 'row-col-labels';
     else if (excelRow === 25) tr.className = 'row-sep';
     else if (excelRow === 32) tr.className = 'row-footer';
-    else tr.className = 'row-data';
+    else                       tr.className = 'row-data';
 
-    row.forEach((cell, ci) => {
-      if (mergedSkip.has(`${ri},${ci}`)) return;
+    // Gestione celle mergiate (con G nascosta il colspan va aggiustato)
+    // F1:G1 → G nascosta → F1 normale (colspan 1)
+    // A25:G25 → G nascosta → A25 colspan 6 (A-F)
+    const mergeSkip = new Set();
 
+    VISIBLE_COLS.forEach((ci, visIdx) => {
+      if (mergeSkip.has(ci)) return;
+
+      const addr = XLSX.utils.encode_cell({ r: excelRow - 1, c: ci });
+      const cell = ws[addr];
       const td = document.createElement('td');
-      let colspan = 1, val = '';
+      let val = '';
 
-      // Merged: F1:G1 → ri=0, ci=5 → span 2
-      if (ri === 0 && ci === 5) { colspan = 2; mergedSkip.add('0,6'); }
-      // Merged: A25:G25 → ri=24, ci=0 → span 7
-      if (ri === 24 && ci === 0) { colspan = 7; for(let x=1;x<7;x++) mergedSkip.add(`24,${x}`); }
+      // Merged A25:G25 → A25 colspan=6 (tutte le colonne visibili)
+      if (excelRow === 25 && ci === 0) {
+        td.colSpan = numVisCols;
+        VISIBLE_COLS.slice(1).forEach(x => mergeSkip.add(x));
+      }
 
-      if (colspan > 1) td.colSpan = colspan;
-
-      // Format value
+      // Formatta valore
       if (cell) {
         const v = cell.v;
-        const t = cell.t;
-        if (t === 'd' || (v instanceof Date)) {
-          // Date: format as dd/M/yy HH.mm
+        if (cell.t === 'd' || v instanceof Date) {
           const d = v instanceof Date ? v : new Date(v);
           val = `${d.getDate()}/${d.getMonth()+1}/${String(d.getFullYear()).slice(-2)} ${String(d.getHours()).padStart(2,'0')}.${String(d.getMinutes()).padStart(2,'0')}`;
         } else if (typeof v === 'number' && ci === 5 && excelRow >= 3 && excelRow !== 25 && excelRow !== 32) {
-          // CANONE column
-          val = '€ ' + v.toLocaleString('it-IT', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+          val = '€ ' + v.toLocaleString('it-IT');
         } else if (typeof v === 'number') {
-          val = v;
+          val = String(v);
         } else {
-          val = (v === null || v === undefined) ? '' : String(v).trim();
+          val = (v == null) ? '' : String(v).trim();
         }
       }
 
-      // Cell classes
+      // Classi
       if (excelRow >= 3 && excelRow !== 25 && excelRow !== 32) {
         if (ci === 0) td.className = 'cell-name';
         else if (ci >= 1 && ci <= 4) td.className = 'cell-num';
         else if (ci === 5) td.className = 'cell-canone';
       }
 
-      // VIA TUCIDIDE multiline
+      // Multiline VIA TUCIDIDE
       if (excelRow === 2 && ci === 0) {
         td.className = 'cell-address';
         td.innerHTML = val.replace(/\n/g, '<br>');
-        tr.appendChild(td);
-        return;
+      } else {
+        td.textContent = val;
       }
 
-      td.textContent = val;
       tr.appendChild(td);
     });
 
     tbl.appendChild(tr);
-  });
-
-  // Add col widths
-  const colgroup = document.createElement('colgroup');
-  ['42%','8%','9%','9%','7%','15%','12%'].forEach(w => {
-    const col = document.createElement('col');
-    col.style.width = w;
-    colgroup.appendChild(col);
-  });
-  tbl.prepend(colgroup);
+  }
 
   document.getElementById('loading').style.display = 'none';
   tbl.style.display = 'table';
 }
 
-// ── Auto-load on startup ──
+// ── Avvio ──
 window.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved) {
-    loadFromUrl(toDirectUrl(saved));
-  }
+  if (saved) loadFromUrl(saved);
 });
-
-// ── ESC to close modal ──
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
