@@ -221,21 +221,24 @@ function renderSheet(wb, sheetName) {
 
     const tr = document.createElement('tr');
 
-    // Determina classe riga
+    // Determina classe riga in base al contenuto (non alla posizione)
+    const hasNums = visCols.slice(1).some(cc => {
+      const cell = ws[XLSX.utils.encode_cell({ r: ri, c: cc })];
+      return cell && typeof cell.v === 'number';
+    });
+    const cellA = ws[XLSX.utils.encode_cell({ r: ri, c: visCols[0] })];
+    const cellAVal = cellA ? cellA.v : null;
+
     if (excelRow === minRow) {
-      tr.className = 'row-header-info';
+      tr.className = 'row-header-info';           // prima riga: intestazione
     } else if (excelRow === minRow + 1) {
-      tr.className = 'row-col-labels';
-    } else if (excelRow === maxRow) {
-      tr.className = 'row-footer';
+      tr.className = 'row-col-labels';             // seconda riga: etichette colonne
+    } else if (hasNums) {
+      tr.className = 'row-data';                   // ha numeri → riga dati
+    } else if (cellAVal && typeof cellAVal === 'string' && cellAVal.trim() !== '') {
+      tr.className = 'row-sep';                    // solo testo → separatore (VIA MALAGA ecc.)
     } else {
-      // Separatore = riga con solo testo nella col A e nessun numero nelle altre
-      const hasNums = visCols.slice(1).some(c => {
-        const cell = ws[XLSX.utils.encode_cell({ r: ri, c })];
-        return cell && typeof cell.v === 'number';
-      });
-      const cellA = ws[XLSX.utils.encode_cell({ r: ri, c: visCols[0] })];
-      tr.className = (!hasNums && cellA && typeof cellA.v === 'string') ? 'row-sep' : 'row-data';
+      tr.className = 'row-footer';                 // riga vuota/CASCATA → footer
     }
 
     for (const ci of visCols) {
