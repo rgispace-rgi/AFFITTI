@@ -114,7 +114,7 @@ async function loadFromUrl(rawUrl) {
     if (!resp.ok) throw new Error('HTTP ' + resp.status + ' — link non pubblico?');
     const ab = await resp.arrayBuffer();
     if (!isXlsx(ab)) throw new Error('Risposta non valida — verifica il link.');
-    const wb = XLSX.read(ab, { type: 'array', cellDates: true });
+    const wb = XLSX.read(ab, { type: 'array', cellDates: true, cellStyles: true });
     if (!wb.Sheets['AFFITTI']) throw new Error('Foglio "AFFITTI" non trovato.');
     renderSheet(wb, 'AFFITTI');
     setStatus('✅ Aggiornato.', 'ok');
@@ -163,19 +163,19 @@ function renderSheet(wb, sheetName) {
     minCol = range.s.c;     maxCol = range.e.c;
   }
 
-  // 2. Colonne nascoste da ws['!cols']
+  // 2. Colonne nascoste — lette direttamente da ws['!cols'] (SheetJS con cellStyles:true)
   const colsMeta = ws['!cols'] || [];
   const hiddenCols = new Set();
   for (let c = minCol; c <= maxCol; c++) {
-    if (colsMeta[c] && colsMeta[c].hidden) hiddenCols.add(c);
+    if (colsMeta[c] && colsMeta[c].hidden === true) hiddenCols.add(c);
   }
 
-  // 3. Righe nascoste da ws['!rows']
+  // 3. Righe nascoste — lette direttamente da ws['!rows'] (SheetJS con cellStyles:true)
   const rowsMeta = ws['!rows'] || [];
   const hiddenRows = new Set();
   for (let r = minRow; r <= maxRow; r++) {
     const m = rowsMeta[r - 1];
-    if (m && m.hidden) hiddenRows.add(r);
+    if (m && m.hidden === true) hiddenRows.add(r);
   }
 
   // 4. Colonne visibili
