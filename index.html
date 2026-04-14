@@ -293,29 +293,7 @@ function saveAndLoad() {
   loadFromUrl(raw);
 }
 
-// ── Converti link Dropbox in URL diretto scaricabile ──
-// Trasforma www.dropbox.com → dl.dropboxusercontent.com (CDN diretto, no redirect OAuth)
-function toDirectUrl(url) {
-  if (!url.includes('dropbox')) return url;
-  // Rimuovi parametri inutili (e=, st=, dl=)
-  url = url.replace(/[?&](e|st|dl)=[^&]*/g, '').replace(/\?$|&$/, '');
-  // Converti dominio
-  url = url.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
-  // Aggiungi dl=1
-  url += (url.includes('?') ? '&' : '?') + 'dl=1';
-  return url;
-}
-
-// ── Proxy chain ──
-const PROXIES = [
-  u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
-  u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
-  u => `https://thingproxy.freeboard.io/fetch/${u}`,
-  u => u
-];
-
 function isXlsx(ab) {
-  // XLSX/ZIP magic bytes: PK (50 4B)
   const b = new Uint8Array(ab, 0, 4);
   return b[0] === 0x50 && b[1] === 0x4B;
 }
@@ -336,25 +314,42 @@ function loadFromFile(input) {
   input.value = '';
 }
 
-// ── Carica da URL con proxy chain ──
+// ── Converti link Dropbox → download diretto ──
+// IMPORTANTE: NON rimuovere st=, rlkey= o e= — sono necessari per l'accesso
+function toDirectLink(url) {
+  let u = url.trim();
+  if (u.includes('dropbox.com')) {
+    u = u.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
+    if (u.includes('dl=0')) {
+      u = u.replace('dl=0', 'dl=1');
+    } else if (!u.includes('dl=1')) {
+      u += (u.includes('?') ? '&' : '?') + 'dl=1';
+    }
+  }
+  return u;
+}
+
+// ── Carica da URL Dropbox (fetch diretto – funziona da HTTPS/GitHub Pages) ──
 async function loadFromUrl(rawUrl) {
   uiLoading();
-  const directUrl = toDirectUrl(rawUrl);
-
-  for (const makeProxy of PROXIES) {
-    const proxyUrl = makeProxy(directUrl);
-    try {
-      const resp = await fetch(proxyUrl, { signal: AbortSignal.timeout(12000) });
-      if (!resp.ok) continue;
-      const ab = await resp.arrayBuffer();
-      if (!isXlsx(ab)) continue;   // skip HTML error pages
-      parseAndRender(ab);
-      setStatus('✅ File caricato da Dropbox.', 'ok');
-      return;
-    } catch(_) {}
+  const url = toDirectLink(rawUrl);
+  try {
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error('HTTP ' + resp.status + ' — Controlla che il link sia pubblico');
+    const ab = await resp.arrayBuffer();
+    if (!isXlsx(ab)) throw new Error('Risposta non valida — verifica che il link Dropbox sia pubblico.');
+    parseAndRender(ab);
+    setStatus('✅ File aggiornato.', 'ok');
+  } catch(e) {
+    uiError('❌ ' + e.message);
   }
-  uiError('❌ Impossibile caricare il file via link. Verifica che il link sia pubblico, oppure usa 📂 Carica File.');
 }
+
+// ── Auto-refresh ogni 5 minuti ──
+setInterval(() => {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved && document.getElementById('tbl').style.display !== 'none') loadFromUrl(saved);
+}, 5 * 60 * 1000);
 
 function parseAndRender(ab) {
   const wb = XLSX.read(ab, { type: 'array', cellDates: true });
