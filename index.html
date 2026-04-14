@@ -53,11 +53,22 @@
   @keyframes spin { to { transform: rotate(360deg); } }
 
   @media print {
+    a[href]::after { content: none !important; }
     body { background: #fff; padding: 0; }
     .toolbar, #status, #loading { display: none !important; }
     .table-wrap { max-width: none; overflow: visible; }
     table.affitti { border: 2.5px solid #c00; }
-    @page { margin: 1cm; }
+    @page {
+      size: A4;
+      margin: 1cm;
+      /* nasconde header e footer del browser (URL, data, titolo, numerazione pagina) */
+      @top-left   { content: none; }
+      @top-center { content: none; }
+      @top-right  { content: none; }
+      @bottom-left   { content: none; }
+      @bottom-center { content: none; }
+      @bottom-right  { content: none; }
+    }
   }
 </style>
 </head>
