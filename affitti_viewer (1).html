@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Affitti – Lofta Milano</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  /* ── Toolbar ── */
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 16px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity .15s;
+  }
+  .btn:hover { opacity: .82; }
+  .btn-link   { background: #2563eb; color: #fff; }
+  .btn-print  { background: #16a34a; color: #fff; }
+  .btn-upload { background: #7c3aed; color: #fff; cursor: pointer; }
+
+  /* ── Status bar ── */
+  #status {
+    max-width: 760px;
+    margin: 0 auto 12px;
+    font-size: 12px;
+    color: #555;
+    min-height: 18px;
+  }
+  #status.error { color: #c00; }
+  #status.ok    { color: #16a34a; }
+
+  /* ── Table wrapper ── */
+  .table-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  /* ── Main table – matches screenshot exactly ── */
+  table.affitti {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+    border: 2.5px solid #c00;   /* red outer border like screenshot */
+    font-size: 13px;
+  }
+  table.affitti td, table.affitti th {
+    border: 1px solid #555;
+    padding: 3px 6px;
+    white-space: nowrap;
+  }
+
+  /* column widths */
+  .col-a { width: 42%; }
+  .col-b, .col-c, .col-d, .col-e { width: 8%; text-align: right; }
+  .col-f { width: 17%; text-align: right; }
+  .col-g { width: 17%; text-align: right; }
+
+  /* Row 1 – header info */
+  .row-header-info td {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+    padding: 4px 6px;
+  }
+
+  /* Row 2 – column labels */
+  .row-col-labels td {
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.25;
+    background: #fff;
+    padding: 5px 4px;
+  }
+  .row-col-labels .cell-address {
+    white-space: pre-line;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  /* Data rows */
+  .row-data td {
+    font-weight: bold;
+  }
+  .row-data td.cell-name {
+    text-align: left;
+  }
+  .row-data td.cell-num {
+    text-align: right;
+  }
+  .row-data td.cell-canone {
+    text-align: right;
+  }
+
+  /* Separator row (VIA MALAGA) */
+  .row-sep td {
+    font-weight: normal;
+    font-size: 13px;
+    padding: 3px 6px;
+    background: #fff;
+  }
+
+  /* Footer row (CASCATA) */
+  .row-footer td {
+    font-size: 10px;
+    text-align: center;
+    padding: 1px 4px;
+    height: 8px;
+    line-height: 1;
+    color: #666;
+    font-weight: normal;
+  }
+
+  /* Empty row placeholder */
+  .row-empty td { height: 18px; }
+
+  /* ── Modal ── */
+  .modal-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.45);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: #fff;
+    border-radius: 12px;
+    padding: 28px 28px 24px;
+    width: min(480px, 92vw);
+    box-shadow: 0 20px 60px rgba(0,0,0,.25);
+  }
+  .modal h2 { font-size: 16px; margin-bottom: 16px; color: #1e293b; }
+  .modal label { font-size: 12px; color: #555; display: block; margin-bottom: 6px; }
+  .modal input[type=text] {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color .15s;
+  }
+  .modal input[type=text]:focus { border-color: #2563eb; }
+  .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+  .btn-cancel { background: #e5e7eb; color: #374151; }
+  .btn-save   { background: #2563eb; color: #fff; }
+
+  /* ── Loading spinner ── */
+  #loading {
+    display: none;
+    max-width: 760px;
+    margin: 30px auto;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+  }
+  .spinner {
+    display: inline-block;
+    width: 22px; height: 22px;
+    border: 3px solid #ccc;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Empty state ── */
+  #empty-state {
+    max-width: 760px;
+    margin: 40px auto;
+    text-align: center;
+    background: #fff;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 40px 20px;
+    color: #64748b;
+    font-size: 14px;
+  }
+  #empty-state .icon { font-size: 40px; margin-bottom: 12px; }
+  #empty-state strong { color: #1e293b; display: block; margin-bottom: 6px; font-size: 15px; }
+
+  /* ── Print styles ── */
+  @media print {
+    body { background: #fff; padding: 0; }
+    .toolbar, #status, #empty-state, .modal-overlay, #loading { display: none !important; }
+    .table-wrap { max-width: none; overflow: visible; }
+    table.affitti { border: 2.5px solid #c00; }
+    @page { margin: 1cm; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Toolbar -->
+<div class="toolbar">
+  <label class="btn btn-upload" title="Carica file Excel direttamente">
+    📂 Carica File
+    <input type="file" id="file-input" accept=".xlsx,.xls" style="display:none" onchange="loadFromFile(this)">
+  </label>
+  <button class="btn btn-print" onclick="window.print()">
+    🖨️ Stampa
+  </button>
+  <button class="btn btn-link" onclick="openModal()">
+    🔗 Imposta Link
+  </button>
+</div>
+
+<!-- Status -->
+<div id="status"></div>
+
+<!-- Loading -->
+<div id="loading"><span class="spinner"></span>Caricamento Excel…</div>
+
+<!-- Empty state -->
+<div id="empty-state">
+  <div class="icon">📄</div>
+  <strong>Nessun file caricato</strong>
+  Usa <b>📂 Carica File</b> per aprire l'Excel direttamente,<br>
+  oppure <b>🔗 Imposta Link</b> per collegare un file Dropbox (richiede internet).
+</div>
+
+<!-- Table container -->
+<div class="table-wrap">
+  <table class="affitti" id="tbl" style="display:none"></table>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <h2>🔗 Link file Excel (Dropbox)</h2>
+    <label>Incolla il link di condivisione Dropbox del file AFFITTI.xlsx:</label>
+    <input type="text" id="link-input" placeholder="https://www.dropbox.com/scl/fi/…">
+    <div class="modal-actions">
+      <button class="btn btn-cancel" onclick="closeModal()">Annulla</button>
+      <button class="btn btn-save"   onclick="saveAndLoad()">Salva e Carica</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Storage key ──
+const STORAGE_KEY = 'affitti_dropbox_link';
+
+// ── Modal ──
+function openModal() {
+  document.getElementById('link-input').value = localStorage.getItem(STORAGE_KEY) || '';
+  document.getElementById('modal').classList.add('open');
+  setTimeout(() => document.getElementById('link-input').focus(), 80);
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+}
+function saveAndLoad() {
+  const raw = document.getElementById('link-input').value.trim();
+  if (!raw) { alert('Inserisci un link valido.'); return; }
+  localStorage.setItem(STORAGE_KEY, raw);
+  closeModal();
+  loadFromUrl(toDirectUrl(raw));
+}
+
+// ── CORS proxies da provare in sequenza ──
+const PROXIES = [
+  url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+  url => url   // diretto (funziona se servito da server HTTP)
+];
+
+// ── Convert Dropbox share link → direct download ──
+function toDirectUrl(url) {
+  if (url.includes('dropbox.com')) {
+    url = url.replace(/[?&]dl=0/, '').replace(/[?&]dl=1/, '');
+    url += (url.includes('?') ? '&' : '?') + 'dl=1';
+  }
+  return url;
+}
+
+// ── Load from file input ──
+function loadFromFile(input) {
+  const file = input.files[0];
+  if (!file) return;
+  setStatus('', '');
+  document.getElementById('empty-state').style.display = 'none';
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('tbl').style.display = 'none';
+
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const wb = XLSX.read(new Uint8Array(e.target.result), { type: 'array', cellDates: true });
+      if (!wb.Sheets['AFFITTI']) throw new Error('Foglio "AFFITTI" non trovato.');
+      renderSheet(wb.Sheets['AFFITTI']);
+      setStatus('✅ File caricato: ' + file.name, 'ok');
+    } catch(err) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('empty-state').style.display = 'block';
+      setStatus('❌ Errore: ' + err.message, 'error');
+    }
+  };
+  reader.readAsArrayBuffer(file);
+  input.value = '';   // reset so same file can be reloaded
+}
+
+// ── Load & parse from URL (try proxies in sequence) ──
+async function loadFromUrl(url) {
+  setStatus('', '');
+  document.getElementById('empty-state').style.display = 'none';
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('tbl').style.display = 'none';
+
+  let lastErr = null;
+  for (const makeProxy of PROXIES) {
+    const proxyUrl = makeProxy(url);
+    try {
+      const resp = await fetch(proxyUrl);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const ab = await resp.arrayBuffer();
+      const wb = XLSX.read(ab, { type: 'array', cellDates: true });
+      if (!wb.Sheets['AFFITTI']) throw new Error('Foglio "AFFITTI" non trovato.');
+      renderSheet(wb.Sheets['AFFITTI']);
+      setStatus('✅ File caricato dal link Dropbox.', 'ok');
+      return;
+    } catch(e) {
+      lastErr = e;
+    }
+  }
+  // All proxies failed
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('empty-state').style.display = 'block';
+  setStatus('❌ Impossibile caricare via link (CORS). Usa il pulsante 📂 Carica File per caricare il file direttamente.', 'error');
+}
+
+function setStatus(msg, cls) {
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  el.className = cls;
+}
+
+// ── Render the AFFITTI sheet ──
+function renderSheet(ws) {
+  // Print area A1:G32  → rows 1-32, cols A(0)–G(6)
+  const MIN_ROW = 1, MAX_ROW = 32;
+  const MIN_COL = 0, MAX_COL = 6; // A=0 … G=6
+
+  // Read all cells into matrix
+  const matrix = [];
+  for (let r = MIN_ROW; r <= MAX_ROW; r++) {
+    const row = [];
+    for (let c = MIN_COL; c <= MAX_COL; c++) {
+      const addr = XLSX.utils.encode_cell({ r: r-1, c: c });
+      const cell = ws[addr];
+      row.push(cell ? cell : null);
+    }
+    matrix.push(row);
+  }
+
+  // Build table HTML
+  const tbl = document.getElementById('tbl');
+  tbl.innerHTML = '';
+
+  // Merged cells map: F1:G1 (row0 col5-6) and A25:G25 (row24 col0-6)
+  const mergedSkip = new Set(); // "row,col" to skip
+
+  matrix.forEach((row, ri) => {
+    const excelRow = ri + 1;
+    const tr = document.createElement('tr');
+
+    if (excelRow === 1) tr.className = 'row-header-info';
+    else if (excelRow === 2) tr.className = 'row-col-labels';
+    else if (excelRow === 25) tr.className = 'row-sep';
+    else if (excelRow === 32) tr.className = 'row-footer';
+    else tr.className = 'row-data';
+
+    row.forEach((cell, ci) => {
+      if (mergedSkip.has(`${ri},${ci}`)) return;
+
+      const td = document.createElement('td');
+      let colspan = 1, val = '';
+
+      // Merged: F1:G1 → ri=0, ci=5 → span 2
+      if (ri === 0 && ci === 5) { colspan = 2; mergedSkip.add('0,6'); }
+      // Merged: A25:G25 → ri=24, ci=0 → span 7
+      if (ri === 24 && ci === 0) { colspan = 7; for(let x=1;x<7;x++) mergedSkip.add(`24,${x}`); }
+
+      if (colspan > 1) td.colSpan = colspan;
+
+      // Format value
+      if (cell) {
+        const v = cell.v;
+        const t = cell.t;
+        if (t === 'd' || (v instanceof Date)) {
+          // Date: format as dd/M/yy HH.mm
+          const d = v instanceof Date ? v : new Date(v);
+          val = `${d.getDate()}/${d.getMonth()+1}/${String(d.getFullYear()).slice(-2)} ${String(d.getHours()).padStart(2,'0')}.${String(d.getMinutes()).padStart(2,'0')}`;
+        } else if (typeof v === 'number' && ci === 5 && excelRow >= 3 && excelRow !== 25 && excelRow !== 32) {
+          // CANONE column
+          val = '€ ' + v.toLocaleString('it-IT', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+        } else if (typeof v === 'number') {
+          val = v;
+        } else {
+          val = (v === null || v === undefined) ? '' : String(v).trim();
+        }
+      }
+
+      // Cell classes
+      if (excelRow >= 3 && excelRow !== 25 && excelRow !== 32) {
+        if (ci === 0) td.className = 'cell-name';
+        else if (ci >= 1 && ci <= 4) td.className = 'cell-num';
+        else if (ci === 5) td.className = 'cell-canone';
+      }
+
+      // VIA TUCIDIDE multiline
+      if (excelRow === 2 && ci === 0) {
+        td.className = 'cell-address';
+        td.innerHTML = val.replace(/\n/g, '<br>');
+        tr.appendChild(td);
+        return;
+      }
+
+      td.textContent = val;
+      tr.appendChild(td);
+    });
+
+    tbl.appendChild(tr);
+  });
+
+  // Add col widths
+  const colgroup = document.createElement('colgroup');
+  ['42%','8%','9%','9%','7%','15%','12%'].forEach(w => {
+    const col = document.createElement('col');
+    col.style.width = w;
+    colgroup.appendChild(col);
+  });
+  tbl.prepend(colgroup);
+
+  document.getElementById('loading').style.display = 'none';
+  tbl.style.display = 'table';
+}
+
+// ── Auto-load on startup ──
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved) {
+    loadFromUrl(toDirectUrl(saved));
+  }
+});
+
+// ── ESC to close modal ──
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
+</body>
+</html>
