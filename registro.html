@@ -226,7 +226,7 @@ function eventoPassa(e) {
   if (filtro === 'canone' && !(e.campi && 'canone' in e.campi)) return false;
   if (filtro === 'mq' && !(e.campi && MQ.some(c => c in e.campi))) return false;
   const q = norm(document.getElementById('q').value);
-  if (q && !norm(e.nome + ' ' + e.sezione + ' ' + e.key).includes(q)) return false;
+  if (q && !norm(e.nome + ' ' + e.sezione + ' ' + e.key + ' ' + (e.gruppo || '')).includes(q)) return false;
   return true;
 }
 function versionePassa(v) {
@@ -236,7 +236,10 @@ function versionePassa(v) {
 const filtriAttivi = () => filtro !== 'tutti' || document.getElementById('q').value.trim() !== '';
 
 // ---------- descrizione eventi ----------
-function link(e) { return `<span class="unit-link" data-unit="${esc(e.key)}">${esc(e.nome)}</span> <span class="sez">${esc(e.sezione)}</span>`; }
+function link(e) {
+  return `<span class="unit-link" data-unit="${esc(e.key)}">${esc(e.nome)}</span> <span class="sez">${esc(e.sezione)}` +
+    (e.gruppo ? ` · riga «${esc(e.gruppo)}»` : '') + `</span>`;
+}
 function dettagli(e) { return `${mq(e.tot)} · ${euro(e.canone)}`; }
 function liEvento(e) {
   if (e.tipo === 'aggiunta') return `<li class="aggiunta"><span class="tag">+ inserita</span>${link(e)} — ${dettagli(e)}</li>`;

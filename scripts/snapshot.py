@@ -128,7 +128,58 @@ def leggi_tabella(xlsx_bytes):
 # ---------------------------------------------------------------- unita
 # errori di battitura visti nelle schede: stessa unita'
 ALIAS = {"stocaggio": "stoccaggio", "montacarich": "montacarichi", "motacarichi": "montacarichi",
-         "essecatura": "essiccatura"}
+         "essecatura": "essiccatura", "merge": "mergellina", "mergell": "mergellina"}
+
+# nomi con "/" che sono UN solo loft (unita' unite), non un gruppo (chiave senza spazi)
+UNITE = {"stampaggio4/5"}
+NUM = re.compile(r"^\d+(?:\.\d+)?[a-z]?$", re.I)
+
+
+def espandi(nome):
+    """Un nome con piu' numeri e' un gruppo di unita' uguali (stessi mq e canone):
+      "mergellina beach p1 17 21 22" -> ... 17, ... 21, ... 22   (spazio = elenco)
+      "palazzina 203/208"            -> 203, 204, ..., 208       (a/b con b > a = intervallo)
+      "super condor 2 / 5 / 6"       -> 2, 5, 6                  (3+ numeri o b < a = elenco)
+      "shed p1 16/18c"               -> 16c, 17c, 18c            (lettera finale vale per tutti)
+    Il trattino ("stampaggio 4 - 5") e i nomi in UNITE restano una sola unita'.
+    Restituisce la lista dei nomi delle singole unita'."""
+    pulito = re.sub(r"\s+", " ", re.sub(r"[^\w\s/.\-]", " ", nome)).strip()
+    if chiave(nome) in UNITE:
+        return [pulito]
+    tok = re.sub(r"\s*/\s*", " / ", pulito).split()
+    i = next((j for j, t in enumerate(tok) if NUM.match(t)), None)
+    if i is None or i == 0:
+        return [pulito]
+    base, resto = " ".join(tok[:i]), tok[i:]
+    if any(t != "/" and not NUM.match(t) for t in resto):
+        return [pulito]                       # es. trattino: unita' unite
+    catene, prima = [], True                  # numeri legati da "/" formano una catena
+    for t in resto:
+        if t == "/":
+            prima = False
+            continue
+        if prima or not catene:
+            catene.append([t])
+        else:
+            catene[-1].append(t)
+        prima = True
+    numeri = [n for c in catene for n in c]
+    if len(numeri) < 2:
+        return [pulito]
+    suff = re.sub(r"^[\d.]+", "", numeri[-1])
+    if suff and not any(re.sub(r"^[\d.]+", "", n) for n in numeri[:-1]):
+        numeri = [n + suff for n in numeri[:-1]] + [numeri[-1]]
+        catene = [[n + suff if not re.sub(r"^[\d.]+", "", n) else n for n in c] for c in catene]
+    out = []
+    for c in catene:
+        if len(c) == 2 and c[0].isdigit() == c[1].isdigit():
+            a, b = (int(re.match(r"\d+", n).group()) for n in c)
+            sa = re.sub(r"^\d+", "", c[0])
+            if 0 < b - a <= 20 and "." not in c[0] + c[1]:
+                out += ["%d%s" % (n, sa) for n in range(a, b + 1)]
+                continue
+        out += c
+    return ["%s %s" % (base, n) for n in dict.fromkeys(out)]
 
 
 def chiave(nome):
@@ -136,8 +187,24 @@ def chiave(nome):
     senza spazi (super condor 9 = supercondor 9), refusi noti corretti."""
     k = nome.lower()
     k = re.sub(r"[^\w\s/.\-]", " ", k)          # via emoji e simboli
+    k = re.sub(r"(\d)\s*-\s*(\d)", r"\1/\2", k)  # "4 - 5" = "4/5" (unita' unite)
     k = " ".join(ALIAS.get(p, p) for p in k.split())
     return re.sub(r"\s+", "", k)
+
+
+def aggiungi_unita(unita, viste, nome, sezione, dati, riga):
+    """Aggiunge la riga della scheda come una o piu' unita' (gruppi scomposti)."""
+    nomi = espandi(nome)
+    for n in nomi:
+        k = chiave(n)
+        viste[k] = viste.get(k, 0) + 1
+        if viste[k] > 1:
+            k = "%s #%d" % (k, viste[k])
+        u = {"key": k, "nome": n if len(nomi) > 1 else re.sub(r"\s+", " ", nome).strip(),
+             "sezione": sezione, **dati, "riga": riga}
+        if len(nomi) > 1:
+            u["gruppo"] = re.sub(r"\s+", " ", nome).strip()
+        unita.append(u)
 
 
 def canon_sezione(testo):
@@ -178,12 +245,7 @@ def estrai_unita(griglia):
         dati = dict(zip(CAMPI, (valori + [None] * len(CAMPI))[:len(CAMPI)]))
         if dati["tot"] is None and any(dati[c] is not None for c in ("pt", "sopp", "cort")):
             dati["tot"] = sum(dati[c] or 0 for c in ("pt", "sopp", "cort"))
-        k = chiave(nome)
-        viste[k] = viste.get(k, 0) + 1
-        if viste[k] > 1:
-            k = "%s #%d" % (k, viste[k])
-        unita.append({"key": k, "nome": re.sub(r"\s+", " ", nome).strip(), "sezione": sezione,
-                      **dati, "riga": i})
+        aggiungi_unita(unita, viste, nome, sezione, dati, i)
     return unita
 
 
@@ -196,7 +258,8 @@ def confronta(prima, dopo):
             eventi.append({"tipo": "aggiunta", **u})
             continue
         old = p[u["key"]]
-        campi = {c: [old.get(c), u.get(c)] for c in CAMPI + ["nome", "sezione"] if old.get(c) != u.get(c)}
+        # il nome non si confronta: stessa chiave = stessa unita' anche se scritta diversa
+        campi = {c: [old.get(c), u.get(c)] for c in CAMPI + ["sezione"] if old.get(c) != u.get(c)}
         if campi:
             eventi.append({"tipo": "modificata", **u, "campi": campi})
     for u in prima:

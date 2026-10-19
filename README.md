@@ -40,7 +40,14 @@ Una nuova versione nasce solo se cambia il contenuto: la cella `=ADESSO()` dell'
 - Riga 1 = intestazione, riga 2 = etichette; la prima riga della cella A2 è la via iniziale.
 - Riga senza numeri con la prima parola MAIUSCOLA (es. `VIA MALAGA`) = nuova via.
 - Ogni altra riga con un nome = unità (anche senza mq/canone). L'unità è riconosciuta dal nome
-  (minuscolo, senza emoji/spazi doppi): se si rinomina, risulta tolta + inserita.
+  (minuscolo, senza emoji/spazi, refusi noti in `ALIAS`): se si rinomina, risulta tolta + inserita.
+- Una riga con più numeri è un **gruppo di unità uguali** (stessi mq e canone), scomposto in
+  unità singole: se un numero sparisce, quell'unità è stata tolta (affittata).
+  - spazio = elenco: `mergellina beach p1 17 21 22` → 17, 21, 22
+  - `a/b` con b > a = intervallo: `palazzina 203/208` → 203…208
+  - 3+ numeri o b < a = elenco: `super condor 2 / 5 / 6` → 2, 5, 6
+  - lettera finale vale per tutti: `shed p1 16/18c` → 16c, 17c, 18c
+  - trattino e nomi in `UNITE` = un solo loft: `stampaggio 4 - 5` = `stampaggio 4/5`
 - Conta solo l'**area di stampa** del foglio: una riga aggiunta fuori area non viene vista
   (né dalla pagina né dal registro).
 

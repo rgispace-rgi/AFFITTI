@@ -109,12 +109,7 @@ def converti(tr):
                 dati[c] = v
         if dati["tot"] is None and any(dati[c] is not None for c in ("pt", "sopp", "cort")):
             dati["tot"] = sum(dati[c] or 0 for c in ("pt", "sopp", "cort"))
-        k = S.chiave(r["name"])
-        viste[k] = viste.get(k, 0) + 1
-        if viste[k] > 1:
-            k = "%s #%d" % (k, viste[k])
-        unita.append({"key": k, "nome": re.sub(r"\s+", " ", r["name"]).strip(), "sezione": sezione,
-                      **dati, "riga": i})
+        S.aggiungi_unita(unita, viste, r["name"], sezione, dati, i)
     return {"griglia": griglia, "unioni": unioni}, unita
 
 
@@ -171,6 +166,21 @@ def main():
                          "fonte": "foto", "file": tr["file"], "foto": foto_rel,
                          **S.totali(unita), "eventi": eventi})
         prec = {"imp": imp, "unita": unita}
+
+    # versioni prese dall'Excel: ricalcola unita' ed eventi con le regole attuali
+    for v in live:
+        vpath = os.path.join(S.DATA, "versioni", v["id"] + ".json")
+        snap = S.leggi_json(vpath, None)
+        if snap is None:
+            continue
+        tabella = {"griglia": snap["griglia"], "unioni": snap.get("unioni", [])}
+        unita = S.estrai_unita(tabella["griglia"])
+        snap["unita"] = unita
+        S.scrivi_json(vpath, snap, compatto=True)
+        v.update({"impronta": S.impronta(tabella, unita), **S.totali(unita),
+                  "eventi": S.confronta(prec["unita"], unita) if prec else
+                  [{"tipo": "iniziale", **u} for u in unita]})
+        prec = {"imp": v["impronta"], "unita": unita}
 
     indice = {"versioni": versioni + live}
     S.scrivi_json(indice_path, indice)
