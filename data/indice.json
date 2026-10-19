@@ -1,0 +1,7730 @@
+{
+ "versioni": [
+  {
+   "id": "20240916-101300",
+   "rilevato": "2024-09-16T10:13:00Z",
+   "excel": "2024-09-16T12:13",
+   "impronta": "72b17d89241c0161",
+   "fonte": "foto",
+   "file": "Scheda affitti 16.09.24.JPG",
+   "foto": "foto/20240916-101300.jpg",
+   "n_unita": 16,
+   "mq_tot": 920,
+   "canone_tot": 14680,
+   "eventi": [
+    {
+     "tipo": "iniziale",
+     "key": "mansardabeach",
+     "nome": "mansarda beach",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 22,
+     "canone": 600,
+     "riga": 2
+    },
+    {
+     "tipo": "iniziale",
+     "key": "shedp16c",
+     "nome": "shed p1 6c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 14,
+     "sopp": 11,
+     "cort": 4,
+     "tot": 29,
+     "canone": 720,
+     "riga": 3
+    },
+    {
+     "tipo": "iniziale",
+     "key": "miniextra3",
+     "nome": "miniextra 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 0,
+     "cort": 20,
+     "tot": 55,
+     "canone": 750,
+     "riga": 4
+    },
+    {
+     "tipo": "iniziale",
+     "key": "minicondor9",
+     "nome": "minicondor 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 0,
+     "cort": 24,
+     "tot": 55,
+     "canone": 750,
+     "riga": 5
+    },
+    {
+     "tipo": "iniziale",
+     "key": "shedp11c",
+     "nome": "shed p1 1C",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 33,
+     "canone": 800,
+     "riga": 6
+    },
+    {
+     "tipo": "iniziale",
+     "key": "mergellinabeachp115/16",
+     "nome": "mergellina beach p1 15/16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 7
+    },
+    {
+     "tipo": "iniziale",
+     "key": "mergellinabeachp114",
+     "nome": "mergellina beach p1 14",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 20,
+     "tot": 62,
+     "canone": 900,
+     "riga": 8
+    },
+    {
+     "tipo": "iniziale",
+     "key": "lungamarcia17",
+     "nome": "lungamarcia 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 26,
+     "sopp": 20,
+     "cort": 5,
+     "tot": 51,
+     "canone": 900,
+     "riga": 9
+    },
+    {
+     "tipo": "iniziale",
+     "key": "mergellina52",
+     "nome": "mergellina 52",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 25,
+     "tot": 67,
+     "canone": 920,
+     "riga": 10
+    },
+    {
+     "tipo": "iniziale",
+     "key": "decorazione11",
+     "nome": "decorazione 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 18,
+     "cort": 5,
+     "tot": 58,
+     "canone": 930,
+     "riga": 11
+    },
+    {
+     "tipo": "iniziale",
+     "key": "scaletta20/25",
+     "nome": "scaletta 20/25",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 70,
+     "canone": 1000,
+     "riga": 12
+    },
+    {
+     "tipo": "iniziale",
+     "key": "stoccaggio50",
+     "nome": "stoccaggio 50",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 65,
+     "sopp": 60,
+     "cort": 40,
+     "tot": 165,
+     "canone": 1900,
+     "riga": 13
+    },
+    {
+     "tipo": "iniziale",
+     "key": "unità23",
+     "nome": "unità 23",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 25,
+     "canone": 750,
+     "riga": 15
+    },
+    {
+     "tipo": "iniziale",
+     "key": "unità58",
+     "nome": "unità 58",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 10,
+     "cort": 0,
+     "tot": 35,
+     "canone": 760,
+     "riga": 16
+    },
+    {
+     "tipo": "iniziale",
+     "key": "unità89",
+     "nome": "unità 89",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 900,
+     "riga": 17
+    },
+    {
+     "tipo": "iniziale",
+     "key": "sinergit4",
+     "nome": "sinergit 4",
+     "sezione": "VIA MALAGA",
+     "pt": 33,
+     "sopp": 25,
+     "cort": 48,
+     "tot": 106,
+     "canone": 1250,
+     "riga": 18
+    }
+   ]
+  },
+  {
+   "id": "20240927-095000",
+   "rilevato": "2024-09-27T09:50:00Z",
+   "excel": "2024-09-27T11:50",
+   "impronta": "c8ba5928b2554203",
+   "fonte": "foto",
+   "file": "Scheda affitti 27.09.24.JPG",
+   "foto": "foto/20240927-095000.jpg",
+   "n_unita": 14,
+   "mq_tot": 825,
+   "canone_tot": 13150,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt22c",
+     "nome": "shed pt 22c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 16,
+     "sopp": 14,
+     "cort": 5,
+     "tot": 35,
+     "canone": 800,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "squat15",
+     "nome": "squat 15",
+     "sezione": "VIA MALAGA",
+     "pt": 23,
+     "sopp": 0,
+     "cort": 15,
+     "tot": 38,
+     "canone": 750,
+     "riga": 14
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "sinergit10",
+     "nome": "sinergit 10",
+     "sezione": "VIA MALAGA",
+     "pt": 33,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 63,
+     "canone": 1200,
+     "riga": 16
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp11c",
+     "nome": "shed p1 1C",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 33,
+     "canone": 800,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "lungamarcia17",
+     "nome": "lungamarcia 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 26,
+     "sopp": 20,
+     "cort": 5,
+     "tot": 51,
+     "canone": 900,
+     "riga": 9
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina52",
+     "nome": "mergellina 52",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 25,
+     "tot": 67,
+     "canone": 920,
+     "riga": 10
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità58",
+     "nome": "unità 58",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 10,
+     "cort": 0,
+     "tot": 35,
+     "canone": 760,
+     "riga": 16
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità89",
+     "nome": "unità 89",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 900,
+     "riga": 17
+    }
+   ]
+  },
+  {
+   "id": "20241001-130500",
+   "rilevato": "2024-10-01T13:05:00Z",
+   "excel": "2024-10-01T15:05",
+   "impronta": "cf7fa61377e42300",
+   "fonte": "foto",
+   "file": "Scheda affitti 01.10.24.JPG",
+   "foto": "foto/20241001-130500.jpg",
+   "n_unita": 17,
+   "mq_tot": 979,
+   "canone_tot": 15970,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeach7/12",
+     "nome": "mergellina beach 7/12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 22,
+     "canone": 700,
+     "riga": 3
+    },
+    {
+     "tipo": "modificata",
+     "key": "mergellinabeachp114",
+     "nome": "mergellina beach p1 14",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 22,
+     "tot": 64,
+     "canone": 900,
+     "riga": 9,
+     "campi": {
+      "cort": [
+       20,
+       22
+      ],
+      "tot": [
+       62,
+       64
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp19c",
+     "nome": "shed p1 9c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 36,
+     "sopp": 25,
+     "cort": 3,
+     "tot": 64,
+     "canone": 1100,
+     "riga": 12
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "squat2",
+     "nome": "squat 2",
+     "sezione": "VIA MALAGA",
+     "pt": 41,
+     "sopp": 0,
+     "cort": 25,
+     "tot": 66,
+     "canone": 1020,
+     "riga": 17
+    }
+   ]
+  },
+  {
+   "id": "20241004-144400",
+   "rilevato": "2024-10-04T14:44:00Z",
+   "excel": "2024-10-04T16:44",
+   "impronta": "f20d55c38b3794fa",
+   "fonte": "foto",
+   "file": "Scheda affitti 04.10.24.JPG",
+   "foto": "foto/20241004-144400.jpg",
+   "n_unita": 14,
+   "mq_tot": 858,
+   "canone_tot": 13720,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "mergellinabeach7/12",
+     "nome": "mergellina beach 7/12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2,
+     "campi": {
+      "pt": [
+       22,
+       25
+      ],
+      "tot": [
+       22,
+       42
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeachp115/22",
+     "nome": "mergellina beach p1 15/22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mansardabeach",
+     "nome": "mansarda beach",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 22,
+     "canone": 600,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "minicondor9",
+     "nome": "minicondor 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 0,
+     "cort": 24,
+     "tot": 55,
+     "canone": 750,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeachp115/16",
+     "nome": "mergellina beach p1 15/16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 8
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeachp114",
+     "nome": "mergellina beach p1 14",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 22,
+     "tot": 64,
+     "canone": 900,
+     "riga": 9
+    }
+   ]
+  },
+  {
+   "id": "20241014-084800",
+   "rilevato": "2024-10-14T08:48:00Z",
+   "excel": "2024-10-14T10:48",
+   "impronta": "5284015ae7f724f5",
+   "fonte": "foto",
+   "file": "Scheda affitti 14.10.24.JPG",
+   "foto": "foto/20241014-084800.jpg",
+   "n_unita": 12,
+   "mq_tot": 740,
+   "canone_tot": 11580,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeach13",
+     "nome": "mergellina beach 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 35,
+     "tot": 60,
+     "canone": 780,
+     "riga": 4
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeachp118/22",
+     "nome": "mergellina beach p1 18/22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "attico6",
+     "nome": "attico 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 41,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 56,
+     "canone": 1000,
+     "riga": 7
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "scaletta20",
+     "nome": "scaletta 20",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 70,
+     "canone": 1000,
+     "riga": 8
+    },
+    {
+     "tipo": "modificata",
+     "key": "unità23",
+     "nome": "unità 23",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 25,
+     "canone": 700,
+     "riga": 11,
+     "campi": {
+      "canone": [
+       750,
+       700
+      ]
+     }
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp16c",
+     "nome": "shed p1 6c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 14,
+     "sopp": 11,
+     "cort": 4,
+     "tot": 29,
+     "canone": 720,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedpt22c",
+     "nome": "shed pt 22c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 16,
+     "sopp": 14,
+     "cort": 5,
+     "tot": 35,
+     "canone": 800,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeachp115/22",
+     "nome": "mergellina beach p1 15/22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "scaletta20/25",
+     "nome": "scaletta 20/25",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 70,
+     "canone": 1000,
+     "riga": 8
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp19c",
+     "nome": "shed p1 9c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 36,
+     "sopp": 25,
+     "cort": 3,
+     "tot": 64,
+     "canone": 1100,
+     "riga": 9
+    },
+    {
+     "tipo": "rimossa",
+     "key": "sinergit4",
+     "nome": "sinergit 4",
+     "sezione": "VIA MALAGA",
+     "pt": 33,
+     "sopp": 25,
+     "cort": 48,
+     "tot": 106,
+     "canone": 1250,
+     "riga": 15
+    }
+   ]
+  },
+  {
+   "id": "20241021-100200",
+   "rilevato": "2024-10-21T10:02:00Z",
+   "excel": "2024-10-21T12:02",
+   "impronta": "bff276fb78031159",
+   "fonte": "foto",
+   "file": "Scheda affitti 21.10.24.JPG",
+   "foto": "foto/20241021-100200.jpg",
+   "n_unita": 15,
+   "mq_tot": 914,
+   "canone_tot": 14300,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeach9101112",
+     "nome": "mergellina beach 9 10 11 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt6c",
+     "nome": "shed pt 6 c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 11,
+     "cort": 4,
+     "tot": 29,
+     "canone": 750,
+     "riga": 3
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeachp119/22",
+     "nome": "mergellina beach p1 19/22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "attico5",
+     "nome": "attico 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 30,
+     "sopp": 26,
+     "cort": 0,
+     "tot": 56,
+     "canone": 950,
+     "riga": 7
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "montacarichi9",
+     "nome": "montacarich 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 33,
+     "cort": 0,
+     "tot": 70,
+     "canone": 1000,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "montaggiopt3",
+     "nome": "montaggio pt 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 46,
+     "sopp": 32,
+     "cort": 7,
+     "tot": 85,
+     "canone": 1100,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unità9",
+     "nome": "unità 9",
+     "sezione": "VIA MALAGA",
+     "pt": 20,
+     "sopp": 13,
+     "cort": 15,
+     "tot": 48,
+     "canone": 850,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeach7/12",
+     "nome": "mergellina beach 7/12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeachp118/22",
+     "nome": "mergellina beach p1 18/22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "decorazione11",
+     "nome": "decorazione 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 18,
+     "cort": 5,
+     "tot": 58,
+     "canone": 930,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "attico6",
+     "nome": "attico 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 41,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 56,
+     "canone": 1000,
+     "riga": 7
+    }
+   ]
+  },
+  {
+   "id": "20241023-102500",
+   "rilevato": "2024-10-23T10:25:00Z",
+   "excel": "2024-10-23T12:25",
+   "impronta": "39b171f93e1e459f",
+   "fonte": "foto",
+   "file": "Scheda affitti 23.10.24.JPG",
+   "foto": "foto/20241023-102500.jpg",
+   "n_unita": 15,
+   "mq_tot": 914,
+   "canone_tot": 14300,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeach101112",
+     "nome": "mergellina beach 10 11 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeachp11720/22",
+     "nome": "mergellina beach p1 17 20/22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeach9101112",
+     "nome": "mergellina beach 9 10 11 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeachp119/22",
+     "nome": "mergellina beach p1 19/22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 6
+    }
+   ]
+  },
+  {
+   "id": "20241024-070100",
+   "rilevato": "2024-10-24T07:01:00Z",
+   "excel": "2024-10-24T09:01",
+   "impronta": "c0cb9548737b49eb",
+   "fonte": "foto",
+   "file": "Scheda affitti 24.10.24.JPG",
+   "foto": "foto/20241024-070100.jpg",
+   "n_unita": 14,
+   "mq_tot": 859,
+   "canone_tot": 13550,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergebeachp117202122",
+     "nome": "merge beach p1 17 20 21 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "miniextra3",
+     "nome": "miniextra 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 0,
+     "cort": 20,
+     "tot": 55,
+     "canone": 750,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeachp11720/22",
+     "nome": "mergellina beach p1 17 20/22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 6
+    }
+   ]
+  },
+  {
+   "id": "20241025-101900",
+   "rilevato": "2024-10-25T10:19:00Z",
+   "excel": "2024-10-25T12:19",
+   "impronta": "5998188ec5415af9",
+   "fonte": "foto",
+   "file": "Scheda affitti 25.10.24.JPG",
+   "foto": "foto/20241025-101900.jpg",
+   "n_unita": 14,
+   "mq_tot": 859,
+   "canone_tot": 13550,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeach1112",
+     "nome": "mergellina beach 11 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellbeachp117202122",
+     "nome": "mergell beach p1 17 20 21 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeach101112",
+     "nome": "mergellina beach 10 11 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergebeachp117202122",
+     "nome": "merge beach p1 17 20 21 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    }
+   ]
+  },
+  {
+   "id": "20241031-093800",
+   "rilevato": "2024-10-31T09:38:00Z",
+   "excel": "2024-10-31T10:38",
+   "impronta": "6ad8d7cd33ae37b3",
+   "fonte": "foto",
+   "file": "Scheda affitti 31.10.24.JPG",
+   "foto": "foto/20241031-093800.jpg",
+   "n_unita": 14,
+   "mq_tot": 860,
+   "canone_tot": 13550,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "mergellinabeach13",
+     "nome": "mergellina beach 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 36,
+     "tot": 61,
+     "canone": 780,
+     "riga": 4,
+     "campi": {
+      "cort": [
+       35,
+       36
+      ],
+      "tot": [
+       60,
+       61
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellbeachp1172122",
+     "nome": "mergell beach p1 17 21 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellbeachp117202122",
+     "nome": "mergell beach p1 17 20 21 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    }
+   ]
+  },
+  {
+   "id": "20241104-143200",
+   "rilevato": "2024-11-04T14:32:00Z",
+   "excel": "2024-11-04T15:32",
+   "impronta": "f64449816b49e1d9",
+   "fonte": "foto",
+   "file": "Scheda affitti 04.11.24.JPG",
+   "foto": "foto/20241104-143200.jpg",
+   "n_unita": 13,
+   "mq_tot": 799,
+   "canone_tot": 12770,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeach12",
+     "nome": "mergellina beach 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeachp1172122",
+     "nome": "mergellina beach p1 17 21 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeach1112",
+     "nome": "mergellina beach 11 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeach13",
+     "nome": "mergellina beach 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 36,
+     "tot": 61,
+     "canone": 780,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellbeachp1172122",
+     "nome": "mergell beach p1 17 21 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    }
+   ]
+  },
+  {
+   "id": "20241104-150700",
+   "rilevato": "2024-11-04T15:07:00Z",
+   "excel": "2024-11-04T16:07",
+   "impronta": "8837923772107137",
+   "fonte": "foto",
+   "file": "Scheda affitti 04.11.24.2JPG.JPG",
+   "foto": "foto/20241104-150700.jpg",
+   "n_unita": 14,
+   "mq_tot": 821,
+   "canone_tot": 13400,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mansardabeach5",
+     "nome": "mansarda beach 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 22,
+     "canone": 630,
+     "riga": 2
+    }
+   ]
+  },
+  {
+   "id": "20241104-161300",
+   "rilevato": "2024-11-04T16:13:00Z",
+   "excel": "2024-11-04T17:13",
+   "impronta": "7033fb7297a4f9ab",
+   "fonte": "foto",
+   "file": "Scheda affitti 04.11.24.3.JPG",
+   "foto": "foto/20241104-161300.jpg",
+   "n_unita": 13,
+   "mq_tot": 755,
+   "canone_tot": 12380,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "squat2",
+     "nome": "squat 2",
+     "sezione": "VIA MALAGA",
+     "pt": 41,
+     "sopp": 0,
+     "cort": 25,
+     "tot": 66,
+     "canone": 1020,
+     "riga": 15
+    }
+   ]
+  },
+  {
+   "id": "20241105-085900",
+   "rilevato": "2024-11-05T08:59:00Z",
+   "excel": "2024-11-05T09:59",
+   "impronta": "52f56c854f46fb55",
+   "fonte": "foto",
+   "file": "Scheda affitti 05.11.24.JPG",
+   "foto": "foto/20241105-085900.jpg",
+   "n_unita": 12,
+   "mq_tot": 590,
+   "canone_tot": 10480,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "stoccaggio50",
+     "nome": "stoccaggio 50",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 65,
+     "sopp": 60,
+     "cort": 40,
+     "tot": 165,
+     "canone": 1900,
+     "riga": 10
+    }
+   ]
+  },
+  {
+   "id": "20241106-152500",
+   "rilevato": "2024-11-06T15:25:00Z",
+   "excel": "2024-11-06T16:25",
+   "impronta": "194d1bf1a41f5cbe",
+   "fonte": "foto",
+   "file": "Scheda affitti 06.11.24.JPG",
+   "foto": "foto/20241106-152500.jpg",
+   "n_unita": 13,
+   "mq_tot": 735,
+   "canone_tot": 11980,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "oceandrive6",
+     "nome": "ocean drive 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 66,
+     "sopp": 54,
+     "cort": 25,
+     "tot": 145,
+     "canone": 1500,
+     "riga": 10
+    }
+   ]
+  },
+  {
+   "id": "20241107-154300",
+   "rilevato": "2024-11-07T15:43:00Z",
+   "excel": "2024-11-07T16:43",
+   "impronta": "ae54e6d3ebe07315",
+   "fonte": "foto",
+   "file": "Scheda affitti 07.11.24.JPG",
+   "foto": "foto/20241107-154300.jpg",
+   "n_unita": 14,
+   "mq_tot": 812,
+   "canone_tot": 12980,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt18c",
+     "nome": "shed pt 18c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 30,
+     "cort": 14,
+     "tot": 77,
+     "canone": 1050,
+     "riga": 9
+    },
+    {
+     "tipo": "modificata",
+     "key": "unità23",
+     "nome": "unità 23",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 25,
+     "canone": 650,
+     "riga": 13,
+     "campi": {
+      "canone": [
+       700,
+       650
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "20241113-155800",
+   "rilevato": "2024-11-13T15:58:00Z",
+   "excel": "2024-11-13T16:58",
+   "impronta": "ad7bbd2f94728d19",
+   "fonte": "foto",
+   "file": "Scheda affitti 13.11.24.JPG",
+   "foto": "foto/20241113-155800.jpg",
+   "n_unita": 16,
+   "mq_tot": 873,
+   "canone_tot": 14710,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedp126c",
+     "nome": "shed p1 26c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 29,
+     "canone": 780,
+     "riga": 4
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina1",
+     "nome": "mergellina 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 19,
+     "sopp": 14,
+     "cort": 5,
+     "tot": 29,
+     "canone": 800,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeachp11722",
+     "nome": "mergellina beach p1 17 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unità63",
+     "nome": "unità 63",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 850,
+     "riga": 17
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeach12",
+     "nome": "mergellina beach 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeachp1172122",
+     "nome": "mergellina beach p1 17 21 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    }
+   ]
+  },
+  {
+   "id": "20241120-081700",
+   "rilevato": "2024-11-20T08:17:00Z",
+   "excel": "2024-11-20T09:17",
+   "impronta": "2aa4bb21643f859a",
+   "fonte": "foto",
+   "file": "Scheda affitti 20.11.24.JPG",
+   "foto": "foto/20241120-081700.jpg",
+   "n_unita": 14,
+   "mq_tot": 831,
+   "canone_tot": 13330,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "mergellina1",
+     "nome": "mergellina 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 19,
+     "sopp": 14,
+     "cort": 5,
+     "tot": 38,
+     "canone": 800,
+     "riga": 3,
+     "campi": {
+      "tot": [
+       29,
+       38
+      ]
+     }
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mansardabeach5",
+     "nome": "mansarda beach 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 22,
+     "canone": 630,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedpt6c",
+     "nome": "shed pt 6 c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 11,
+     "cort": 4,
+     "tot": 29,
+     "canone": 750,
+     "riga": 3
+    }
+   ]
+  },
+  {
+   "id": "20241120-152800",
+   "rilevato": "2024-11-20T15:28:00Z",
+   "excel": "2024-11-20T16:28",
+   "impronta": "496a39d8f422c536",
+   "fonte": "foto",
+   "file": "Scheda affitti 20.11.24_2.JPG",
+   "foto": "foto/20241120-152800.jpg",
+   "n_unita": 15,
+   "mq_tot": 882,
+   "canone_tot": 14180,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "shedp126c",
+     "nome": "shed p1 26c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 34,
+     "canone": 780,
+     "riga": 2,
+     "campi": {
+      "tot": [
+       29,
+       34
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "silos24",
+     "nome": "silos 24",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 21,
+     "sopp": 16,
+     "cort": 9,
+     "tot": 46,
+     "canone": 850,
+     "riga": 4
+    }
+   ]
+  },
+  {
+   "id": "20241122-112700",
+   "rilevato": "2024-11-22T11:27:00Z",
+   "excel": "2024-11-22T12:27",
+   "impronta": "b1741be88776959c",
+   "fonte": "foto",
+   "file": "Scheda affitti 22.11.24_2.JPG",
+   "foto": "foto/20241122-112700.jpg",
+   "n_unita": 18,
+   "mq_tot": 930,
+   "canone_tot": 16430,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedp127c",
+     "nome": "shed p1 27c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 34,
+     "canone": 800,
+     "riga": 3
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina37",
+     "nome": "mergellina 37",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 19,
+     "cort": 6,
+     "tot": 50,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stampaggio1",
+     "nome": "stampaggio 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 46,
+     "sopp": 33,
+     "cort": 0,
+     "tot": 79,
+     "canone": 1300,
+     "riga": 13
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mansarda1a",
+     "nome": "mansarda 1a",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 30,
+     "canone": 750,
+     "riga": 17
+    },
+    {
+     "tipo": "rimossa",
+     "key": "oceandrive6",
+     "nome": "ocean drive 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 66,
+     "sopp": 54,
+     "cort": 25,
+     "tot": 145,
+     "canone": 1500,
+     "riga": 11
+    }
+   ]
+  },
+  {
+   "id": "20241122-151200",
+   "rilevato": "2024-11-22T15:12:00Z",
+   "excel": "2024-11-22T16:12",
+   "impronta": "878b3a2111fb3dde",
+   "fonte": "foto",
+   "file": "Scheda affitti 22.11.24_1.JPG",
+   "foto": "foto/20241122-151200.jpg",
+   "n_unita": 17,
+   "mq_tot": 905,
+   "canone_tot": 15780,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "unità23",
+     "nome": "unità 23",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 25,
+     "canone": 650,
+     "riga": 15
+    }
+   ]
+  },
+  {
+   "id": "20241127-152900",
+   "rilevato": "2024-11-27T15:29:00Z",
+   "excel": "2024-11-27T16:29",
+   "impronta": "eb26e3a2b20069fd",
+   "fonte": "foto",
+   "file": "Scheda affitti 27.11.24.JPG",
+   "foto": "foto/20241127-152900.jpg",
+   "n_unita": 16,
+   "mq_tot": 867,
+   "canone_tot": 14980,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "mergellina1",
+     "nome": "mergellina 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 19,
+     "sopp": 14,
+     "cort": 5,
+     "tot": 38,
+     "canone": 800,
+     "riga": 4
+    }
+   ]
+  },
+  {
+   "id": "20241128-155200",
+   "rilevato": "2024-11-28T15:52:00Z",
+   "excel": "2024-11-28T16:52",
+   "impronta": "6842a99c64f5b1e1",
+   "fonte": "foto",
+   "file": "Scheda affitti 28.11.24.JPG",
+   "foto": "foto/20241128-155200.jpg",
+   "n_unita": 17,
+   "mq_tot": 1067,
+   "canone_tot": 17480,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "stampaggio4/5",
+     "nome": "stampaggio 4/5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 96,
+     "sopp": 75,
+     "cort": 29,
+     "tot": 200,
+     "canone": 2500,
+     "riga": 13
+    }
+   ]
+  },
+  {
+   "id": "20241129-152700",
+   "rilevato": "2024-11-29T15:27:00Z",
+   "excel": "2024-11-29T16:27",
+   "impronta": "a12022e6ba0cb284",
+   "fonte": "foto",
+   "file": "Scheda affitti 29.11.24.JPG",
+   "foto": "foto/20241129-152700.jpg",
+   "n_unita": 16,
+   "mq_tot": 997,
+   "canone_tot": 16480,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "scaletta20",
+     "nome": "scaletta 20",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 70,
+     "canone": 1000,
+     "riga": 9
+    }
+   ]
+  },
+  {
+   "id": "20241206-155400",
+   "rilevato": "2024-12-06T15:54:00Z",
+   "excel": "2024-12-06T16:54",
+   "impronta": "1d0075dba2e5f4a7",
+   "fonte": "foto",
+   "file": "Scheda affitti 06.12.24.JPG",
+   "foto": "foto/20241206-155400.jpg",
+   "n_unita": 15,
+   "mq_tot": 959,
+   "canone_tot": 15730,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "squat15",
+     "nome": "squat 15",
+     "sezione": "VIA MALAGA",
+     "pt": 23,
+     "sopp": 0,
+     "cort": 15,
+     "tot": 38,
+     "canone": 750,
+     "riga": 14
+    }
+   ]
+  },
+  {
+   "id": "20241210-110000",
+   "rilevato": "2024-12-10T11:00:00Z",
+   "excel": "2024-12-10T12:00",
+   "impronta": "7a74d3331e43e327",
+   "fonte": "foto",
+   "file": "Scheda affitti 10.12.24.JPG",
+   "foto": "foto/20241210-110000.jpg",
+   "n_unita": 14,
+   "mq_tot": 903,
+   "canone_tot": 14780,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "attico5",
+     "nome": "attico 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 30,
+     "sopp": 26,
+     "cort": 0,
+     "tot": 56,
+     "canone": 950,
+     "riga": 7
+    }
+   ]
+  },
+  {
+   "id": "20241210-112200",
+   "rilevato": "2024-12-10T11:22:00Z",
+   "excel": "2024-12-10T12:22",
+   "impronta": "23412a5792bfca35",
+   "fonte": "foto",
+   "file": "Scheda affitti 10.12.24 2.JPG",
+   "foto": "foto/20241210-112200.jpg",
+   "n_unita": 13,
+   "mq_tot": 826,
+   "canone_tot": 13730,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "shedpt18c",
+     "nome": "shed pt 18c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 30,
+     "cort": 14,
+     "tot": 77,
+     "canone": 1050,
+     "riga": 8
+    }
+   ]
+  },
+  {
+   "id": "20241212-151200",
+   "rilevato": "2024-12-12T15:12:00Z",
+   "excel": "2024-12-12T16:12",
+   "impronta": "0e7244a16c8e600e",
+   "fonte": "foto",
+   "file": "Scheda affitti 12.12.24 2.JPG",
+   "foto": "foto/20241212-151200.jpg",
+   "n_unita": 15,
+   "mq_tot": 946,
+   "canone_tot": 15880,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "stazione42",
+     "nome": "stazione 42",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 42,
+     "sopp": 28,
+     "cort": 7,
+     "tot": 77,
+     "canone": 1150,
+     "riga": 9
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "sinergit12",
+     "nome": "sinergit 12",
+     "sezione": "VIA MALAGA",
+     "pt": 21,
+     "sopp": 7,
+     "cort": 15,
+     "tot": 43,
+     "canone": 1000,
+     "riga": 16
+    }
+   ]
+  },
+  {
+   "id": "20241224-110800",
+   "rilevato": "2024-12-24T11:08:00Z",
+   "excel": "2024-12-24T12:08",
+   "impronta": "33e3c47cd67f97d3",
+   "fonte": "foto",
+   "file": "Scheda affitti 24.12.24 2.JPG",
+   "foto": "foto/20241224-110800.jpg",
+   "n_unita": 15,
+   "mq_tot": 950,
+   "canone_tot": 15900,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina1",
+     "nome": "mergellina 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 19,
+     "sopp": 14,
+     "cort": 5,
+     "tot": 38,
+     "canone": 800,
+     "riga": 3
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeachp122",
+     "nome": "mergellina beach p1 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp126c",
+     "nome": "shed p1 26c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 34,
+     "canone": 780,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeachp11722",
+     "nome": "mergellina beach p1 17 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    }
+   ]
+  },
+  {
+   "id": "20241230-102800",
+   "rilevato": "2024-12-30T10:28:00Z",
+   "excel": "2024-12-30T11:28",
+   "impronta": "bc1c567b8c10d3d8",
+   "fonte": "foto",
+   "file": "Scheda affitti 30.12.24 2.JPG",
+   "foto": "foto/20241230-102800.jpg",
+   "n_unita": 14,
+   "mq_tot": 907,
+   "canone_tot": 14900,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "sinergit12",
+     "nome": "sinergit 12",
+     "sezione": "VIA MALAGA",
+     "pt": 21,
+     "sopp": 7,
+     "cort": 15,
+     "tot": 43,
+     "canone": 1000,
+     "riga": 16
+    }
+   ]
+  },
+  {
+   "id": "20250108-154500",
+   "rilevato": "2025-01-08T15:45:00Z",
+   "excel": "2025-01-08T16:45",
+   "impronta": "58a19e560da3abb2",
+   "fonte": "foto",
+   "file": "Scheda affitti 08.01.25.JPG",
+   "foto": "foto/20250108-154500.jpg",
+   "n_unita": 12,
+   "mq_tot": 772,
+   "canone_tot": 12900,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "mergellina37",
+     "nome": "mergellina 37",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 19,
+     "cort": 6,
+     "tot": 50,
+     "canone": 900,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "montaggiopt3",
+     "nome": "montaggio pt 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 46,
+     "sopp": 32,
+     "cort": 7,
+     "tot": 85,
+     "canone": 1100,
+     "riga": 8
+    }
+   ]
+  },
+  {
+   "id": "20250109-153900",
+   "rilevato": "2025-01-09T15:39:00Z",
+   "excel": "2025-01-09T16:39",
+   "impronta": "da225c3e9080e3f2",
+   "fonte": "foto",
+   "file": "Scheda affitti 09.01.25.JPG",
+   "foto": "foto/20250109-153900.jpg",
+   "n_unita": 14,
+   "mq_tot": 895,
+   "canone_tot": 14620,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellinabeach4",
+     "nome": "mergellina beach 4",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt4e",
+     "nome": "shed pt 4e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 11,
+     "cort": 18,
+     "tot": 46,
+     "canone": 820,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt18c",
+     "nome": "shed pt 18c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 30,
+     "cort": 14,
+     "tot": 77,
+     "canone": 1050,
+     "riga": 8
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeachp122",
+     "nome": "mergellina beach p1 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 850,
+     "riga": 5
+    }
+   ]
+  },
+  {
+   "id": "20250114-145600",
+   "rilevato": "2025-01-14T14:56:00Z",
+   "excel": "2025-01-14T15:56",
+   "impronta": "0ec9e51db6ddf61f",
+   "fonte": "foto",
+   "file": "Scheda affitti 14.01.25.JPG",
+   "foto": "foto/20250114-145600.jpg",
+   "n_unita": 12,
+   "mq_tot": 791,
+   "canone_tot": 12620,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "lungamarcia15",
+     "nome": "lunga marcia 15",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 26,
+     "sopp": 20,
+     "cort": 5,
+     "tot": 51,
+     "canone": 900,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "museo10",
+     "nome": "museo 10",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina1",
+     "nome": "mergellina 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 19,
+     "sopp": 14,
+     "cort": 5,
+     "tot": 38,
+     "canone": 800,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "montacarichi9",
+     "nome": "montacarich 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 33,
+     "cort": 0,
+     "tot": 70,
+     "canone": 1000,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stampaggio1",
+     "nome": "stampaggio 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 46,
+     "sopp": 33,
+     "cort": 0,
+     "tot": 79,
+     "canone": 1300,
+     "riga": 10
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mansarda1a",
+     "nome": "mansarda 1a",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 30,
+     "canone": 750,
+     "riga": 13
+    }
+   ]
+  },
+  {
+   "id": "20250115-155800",
+   "rilevato": "2025-01-15T15:58:00Z",
+   "excel": "2025-01-15T16:58",
+   "impronta": "a44cb84d6d68e518",
+   "fonte": "foto",
+   "file": "Scheda affitti 15.01.25.JPG",
+   "foto": "foto/20250115-155800.jpg",
+   "n_unita": 14,
+   "mq_tot": 757,
+   "canone_tot": 12950,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "shedp127c",
+     "nome": "shed p1 27c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 34,
+     "canone": 780,
+     "riga": 3,
+     "campi": {
+      "canone": [
+       800,
+       780
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina17",
+     "nome": "mergellina 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 800,
+     "riga": 4
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "cottura3",
+     "nome": "cottura 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 24,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stampaggio17",
+     "nome": "stampaggio 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 35,
+     "cort": 0,
+     "tot": 72,
+     "canone": 1100,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stampaggio4/5",
+     "nome": "stampaggio 4/5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 96,
+     "sopp": 75,
+     "cort": 29,
+     "tot": 200,
+     "canone": 2500,
+     "riga": 10
+    }
+   ]
+  },
+  {
+   "id": "20250121-103500",
+   "rilevato": "2025-01-21T10:35:00Z",
+   "excel": "2025-01-21T11:35",
+   "impronta": "fc0f805ad5de051b",
+   "fonte": "foto",
+   "file": "Scheda affitti 21.01.25.JPG",
+   "foto": "foto/20250121-103500.jpg",
+   "n_unita": 14,
+   "mq_tot": 796,
+   "canone_tot": 12950,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "studio",
+     "nome": "studio",
+     "sezione": "CASCATA (Rozzano)",
+     "pt": 90,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 90,
+     "canone": 900,
+     "riga": 17
+    },
+    {
+     "tipo": "rimossa",
+     "key": "lungamarcia15",
+     "nome": "lunga marcia 15",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 26,
+     "sopp": 20,
+     "cort": 5,
+     "tot": 51,
+     "canone": 900,
+     "riga": 7
+    }
+   ]
+  },
+  {
+   "id": "20250123-154800",
+   "rilevato": "2025-01-23T15:48:00Z",
+   "excel": "2025-01-23T16:48",
+   "impronta": "01d2abaf55f1e5fd",
+   "fonte": "foto",
+   "file": "Scheda affitti 23.01.25.JPG",
+   "foto": "foto/20250123-154800.jpg",
+   "n_unita": 13,
+   "mq_tot": 750,
+   "canone_tot": 12130,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "shedpt4e",
+     "nome": "shed pt 4e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 11,
+     "cort": 18,
+     "tot": 46,
+     "canone": 820,
+     "riga": 5
+    }
+   ]
+  },
+  {
+   "id": "20250226-143900",
+   "rilevato": "2025-02-26T14:39:00Z",
+   "excel": "2025-02-26T15:39",
+   "impronta": "0628852f32f00b2d",
+   "fonte": "foto",
+   "file": "Scheda affitti 26.02.25.JPG",
+   "foto": "foto/20250226-143900.jpg",
+   "n_unita": 16,
+   "mq_tot": 942,
+   "canone_tot": 15010,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "fabbrica12",
+     "nome": "fabbrica 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 18,
+     "cort": 6,
+     "tot": 55,
+     "canone": 880,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina28",
+     "nome": "mergellina 28",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 23,
+     "cort": 7,
+     "tot": 55,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "montaggio5",
+     "nome": "montaggio 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 28,
+     "cort": 7,
+     "tot": 82,
+     "canone": 1100,
+     "riga": 12
+    }
+   ]
+  },
+  {
+   "id": "20250312-075500",
+   "rilevato": "2025-03-12T07:55:00Z",
+   "excel": "2025-03-12T08:55",
+   "impronta": "8df671d36b24426d",
+   "fonte": "foto",
+   "file": "Scheda affitti 12.03.25.JPG",
+   "foto": "foto/20250312-075500.jpg",
+   "n_unita": 15,
+   "mq_tot": 887,
+   "canone_tot": 14130,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "fabbrica12",
+     "nome": "fabbrica 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 18,
+     "cort": 6,
+     "tot": 55,
+     "canone": 880,
+     "riga": 6
+    }
+   ]
+  },
+  {
+   "id": "20250312-150900",
+   "rilevato": "2025-03-12T15:09:00Z",
+   "excel": "2025-03-12T16:09",
+   "impronta": "34d74e2c756c395a",
+   "fonte": "foto",
+   "file": "Scheda affitti 12.03.25.2.JPG",
+   "foto": "foto/20250312-150900.jpg",
+   "n_unita": 15,
+   "mq_tot": 887,
+   "canone_tot": 14100,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "silos24",
+     "nome": "silos 24",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 21,
+     "sopp": 16,
+     "cort": 9,
+     "tot": 46,
+     "canone": 820,
+     "riga": 5,
+     "campi": {
+      "canone": [
+       850,
+       820
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "20250326-152700",
+   "rilevato": "2025-03-26T15:27:00Z",
+   "excel": "2025-03-26T16:27",
+   "impronta": "5eaeb147117308c2",
+   "fonte": "foto",
+   "file": "Scheda affitti 26.03.25.JPG",
+   "foto": "foto/20250326-152700.jpg",
+   "n_unita": 15,
+   "mq_tot": 911,
+   "canone_tot": 14150,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "extramini2",
+     "nome": "extramini 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 48,
+     "canone": 750,
+     "riga": 3
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "fabbrica2",
+     "nome": "fabbrica 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 20,
+     "cort": 6,
+     "tot": 63,
+     "canone": 1000,
+     "riga": 8
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina17",
+     "nome": "mergellina 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 800,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina28",
+     "nome": "mergellina 28",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 23,
+     "cort": 7,
+     "tot": 55,
+     "canone": 900,
+     "riga": 6
+    }
+   ]
+  },
+  {
+   "id": "20250327-153800",
+   "rilevato": "2025-03-27T15:38:00Z",
+   "excel": "2025-03-27T16:38",
+   "impronta": "c82eb99135d2f280",
+   "fonte": "foto",
+   "file": "Scheda affitti 27.03.25.JPG",
+   "foto": "foto/20250327-153800.jpg",
+   "n_unita": 18,
+   "mq_tot": 1090,
+   "canone_tot": 17080,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedp12e",
+     "nome": "shed p1 2e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 13,
+     "cort": 26,
+     "tot": 56,
+     "canone": 780,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stazione49",
+     "nome": "stazione 49",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 49,
+     "sopp": 29,
+     "cort": 10,
+     "tot": 88,
+     "canone": 1300,
+     "riga": 14
+    },
+    {
+     "tipo": "modificata",
+     "key": "unità9",
+     "nome": "unità 9",
+     "sezione": "VIA MALAGA",
+     "pt": 20,
+     "sopp": 13,
+     "cort": 15,
+     "tot": 48,
+     "canone": 820,
+     "riga": 16,
+     "campi": {
+      "canone": [
+       850,
+       820
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unità58",
+     "nome": "unità 58",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 10,
+     "cort": 0,
+     "tot": 35,
+     "canone": 850,
+     "riga": 17
+    },
+    {
+     "tipo": "modificata",
+     "key": "unità63",
+     "nome": "unità 63",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 880,
+     "riga": 18,
+     "campi": {
+      "canone": [
+       850,
+       880
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "20250416-142000",
+   "rilevato": "2025-04-16T14:20:00Z",
+   "excel": "2025-04-16T16:20",
+   "impronta": "4c92cbe0d342b93f",
+   "fonte": "foto",
+   "file": "Scheda affitti 16.04.25.JPG",
+   "foto": "foto/20250416-142000.jpg",
+   "n_unita": 21,
+   "mq_tot": 1275,
+   "canone_tot": 20140,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt23c",
+     "nome": "shed pt 23c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 13,
+     "sopp": 11,
+     "cort": 4,
+     "tot": 28,
+     "canone": 700,
+     "riga": 3
+    },
+    {
+     "tipo": "modificata",
+     "key": "shedp127c",
+     "nome": "shed p1 27c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 34,
+     "canone": 760,
+     "riga": 5,
+     "campi": {
+      "canone": [
+       780,
+       760
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp128c",
+     "nome": "shed p1 28c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 34,
+     "canone": 780,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "palestra",
+     "nome": "palestra",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 82,
+     "sopp": 27,
+     "cort": 14,
+     "tot": 123,
+     "canone": 1600,
+     "riga": 17
+    }
+   ]
+  },
+  {
+   "id": "20250521-135800",
+   "rilevato": "2025-05-21T13:58:00Z",
+   "excel": "2025-05-21T15:58",
+   "impronta": "620fd400a7e19bcd",
+   "fonte": "foto",
+   "file": "Scheda affitti 21.05.25.JPG",
+   "foto": "foto/20250521-135800.jpg",
+   "n_unita": 20,
+   "mq_tot": 1332,
+   "canone_tot": 20750,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedp12c",
+     "nome": "shed p1 2c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 34,
+     "canone": 760,
+     "riga": 4
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "silos13",
+     "nome": "silos 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 7
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stampaggio7",
+     "nome": "stampaggio 7",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 35,
+     "cort": 0,
+     "tot": 72,
+     "canone": 1100,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp116c",
+     "nome": "shed p1 16c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 25,
+     "cort": 4,
+     "tot": 66,
+     "canone": 1100,
+     "riga": 12
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "beach3",
+     "nome": "beach 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 24,
+     "cort": 17,
+     "tot": 65,
+     "canone": 1100,
+     "riga": 13
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "decorazione8",
+     "nome": "decorazione 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 54,
+     "sopp": 29,
+     "cort": 7,
+     "tot": 90,
+     "canone": 1300,
+     "riga": 15
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp123c",
+     "nome": "shed p1 23c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 36,
+     "sopp": 30,
+     "cort": 40,
+     "tot": 106,
+     "canone": 1500,
+     "riga": 16
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellinabeach4",
+     "nome": "mergellina beach 4",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp127c",
+     "nome": "shed p1 27c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 34,
+     "canone": 760,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp128c",
+     "nome": "shed p1 28c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 34,
+     "canone": 780,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp12e",
+     "nome": "shed p1 2e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 13,
+     "cort": 26,
+     "tot": 56,
+     "canone": 780,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "museo10",
+     "nome": "museo 10",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 10
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedpt18c",
+     "nome": "shed pt 18c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 30,
+     "cort": 14,
+     "tot": 77,
+     "canone": 1050,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stazione49",
+     "nome": "stazione 49",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 49,
+     "sopp": 29,
+     "cort": 10,
+     "tot": 88,
+     "canone": 1300,
+     "riga": 16
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità63",
+     "nome": "unità 63",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 880,
+     "riga": 21
+    }
+   ]
+  },
+  {
+   "id": "20250619-131800",
+   "rilevato": "2025-06-19T13:18:00Z",
+   "excel": "2025-06-19T15:18",
+   "impronta": "f02e1bc8d0a585db",
+   "fonte": "foto",
+   "file": "Scheda affitti 19.06.25.JPG",
+   "foto": "foto/20250619-131800.jpg",
+   "n_unita": 25,
+   "mq_tot": 1556,
+   "canone_tot": 24790,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "lungamarcia2",
+     "nome": "lunga marcia 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 11,
+     "cort": 3,
+     "tot": 29,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "extramini4",
+     "nome": "extramini 4",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 48,
+     "canone": 750,
+     "riga": 3
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina36",
+     "nome": "mergellina 36",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 21,
+     "sopp": 18,
+     "cort": 5,
+     "tot": 44,
+     "canone": 820,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "vistamare7",
+     "nome": "vistamare 7",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 0,
+     "cort": 25,
+     "tot": 65,
+     "canone": 830,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "scaletta12",
+     "nome": "scaletta 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 15,
+     "cort": 4,
+     "tot": 41,
+     "canone": 850,
+     "riga": 7
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina11",
+     "nome": "mergellina 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 27,
+     "sopp": 19,
+     "cort": 6,
+     "tot": 52,
+     "canone": 900,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "silos13/18",
+     "nome": "silos 13/18",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "fabbrica16",
+     "nome": "fabbrica 16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 20,
+     "cort": 6,
+     "tot": 63,
+     "canone": 1000,
+     "riga": 11
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "montacarichi12",
+     "nome": "motacarichi 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 37,
+     "cort": 24,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 12
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "montaggio5/2",
+     "nome": "montaggio 5/2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 28,
+     "cort": 7,
+     "tot": 82,
+     "canone": 1100,
+     "riga": 15
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "essiccatura24",
+     "nome": "essecatura 24",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 33,
+     "cort": 0,
+     "tot": 80,
+     "canone": 1200,
+     "riga": 19
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mansarda8a",
+     "nome": "mansarda 8a",
+     "sezione": "VIA MALAGA",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 700,
+     "riga": 23
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedpt23c",
+     "nome": "shed pt 23c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 13,
+     "sopp": 11,
+     "cort": 4,
+     "tot": 28,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "extramini2",
+     "nome": "extramini 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 48,
+     "canone": 750,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp12c",
+     "nome": "shed p1 2c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 34,
+     "canone": 760,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "silos13",
+     "nome": "silos 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "fabbrica2",
+     "nome": "fabbrica 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 20,
+     "cort": 6,
+     "tot": 63,
+     "canone": 1000,
+     "riga": 8
+    },
+    {
+     "tipo": "rimossa",
+     "key": "montaggio5",
+     "nome": "montaggio 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 28,
+     "cort": 7,
+     "tot": 82,
+     "canone": 1100,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "palestra",
+     "nome": "palestra",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 82,
+     "sopp": 27,
+     "cort": 14,
+     "tot": 123,
+     "canone": 1600,
+     "riga": 17
+    }
+   ]
+  },
+  {
+   "id": "20250627-151300",
+   "rilevato": "2025-06-27T15:13:00Z",
+   "excel": "2025-06-27T17:13",
+   "impronta": "b15b8b29462dff82",
+   "fonte": "foto",
+   "file": "Scheda affitti 27.06.25.JPG",
+   "foto": "foto/20250627-151300.jpg",
+   "n_unita": 25,
+   "mq_tot": 1556,
+   "canone_tot": 24140,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "lungamarcia2",
+     "nome": "lunga marcia 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 11,
+     "cort": 3,
+     "tot": 29,
+     "canone": 650,
+     "riga": 2,
+     "campi": {
+      "canone": [
+       700,
+       650
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "fabbrica16",
+     "nome": "fabbrica 16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 20,
+     "cort": 6,
+     "tot": 63,
+     "canone": 900,
+     "riga": 11,
+     "campi": {
+      "canone": [
+       1000,
+       900
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "montaggio5/2",
+     "nome": "montaggio 5/2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 28,
+     "cort": 7,
+     "tot": 82,
+     "canone": 1000,
+     "riga": 12,
+     "campi": {
+      "canone": [
+       1100,
+       1000
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "beach3",
+     "nome": "beach 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 24,
+     "cort": 17,
+     "tot": 65,
+     "canone": 1000,
+     "riga": 13,
+     "campi": {
+      "canone": [
+       1100,
+       1000
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp116/18c",
+     "nome": "shed p1 16/18c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 25,
+     "cort": 4,
+     "tot": 66,
+     "canone": 1100,
+     "riga": 17
+    },
+    {
+     "tipo": "modificata",
+     "key": "essiccatura24",
+     "nome": "essecatura 24",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 33,
+     "cort": 0,
+     "tot": 80,
+     "canone": 1100,
+     "riga": 18,
+     "campi": {
+      "canone": [
+       1200,
+       1100
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "decorazione8",
+     "nome": "decorazione 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 54,
+     "sopp": 29,
+     "cort": 7,
+     "tot": 90,
+     "canone": 1200,
+     "riga": 20,
+     "campi": {
+      "canone": [
+       1300,
+       1200
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "shedp123c",
+     "nome": "shed p1 23c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 36,
+     "sopp": 30,
+     "cort": 40,
+     "tot": 106,
+     "canone": 1400,
+     "riga": 21,
+     "campi": {
+      "canone": [
+       1500,
+       1400
+      ]
+     }
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp116c",
+     "nome": "shed p1 16c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 25,
+     "cort": 4,
+     "tot": 66,
+     "canone": 1100,
+     "riga": 16
+    }
+   ]
+  },
+  {
+   "id": "20250707-140600",
+   "rilevato": "2025-07-07T14:06:00Z",
+   "excel": "2025-07-07T16:06",
+   "impronta": "0d7871e3965fb5ea",
+   "fonte": "foto",
+   "file": "Scheda affitti 07.07.25.JPG",
+   "foto": "foto/20250707-140600.jpg",
+   "n_unita": 24,
+   "mq_tot": 1450,
+   "canone_tot": 22740,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "montaggio5",
+     "nome": "montaggio 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 28,
+     "cort": 7,
+     "tot": 82,
+     "canone": 1000,
+     "riga": 12
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "beach2",
+     "nome": "beach 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 24,
+     "cort": 17,
+     "tot": 65,
+     "canone": 1000,
+     "riga": 13
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "montacarichi11",
+     "nome": "motacarichi 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 37,
+     "cort": 24,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 14
+    },
+    {
+     "tipo": "rimossa",
+     "key": "montaggio5/2",
+     "nome": "montaggio 5/2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 28,
+     "cort": 7,
+     "tot": 82,
+     "canone": 1000,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach3",
+     "nome": "beach 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 24,
+     "cort": 17,
+     "tot": 65,
+     "canone": 1000,
+     "riga": 13
+    },
+    {
+     "tipo": "rimossa",
+     "key": "montacarichi12",
+     "nome": "motacarichi 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 37,
+     "cort": 24,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 14
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp123c",
+     "nome": "shed p1 23c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 36,
+     "sopp": 30,
+     "cort": 40,
+     "tot": 106,
+     "canone": 1400,
+     "riga": 21
+    }
+   ]
+  },
+  {
+   "id": "20250711-142400",
+   "rilevato": "2025-07-11T14:24:00Z",
+   "excel": "2025-07-11T16:24",
+   "impronta": "1c5a0c29ff9c724c",
+   "fonte": "foto",
+   "file": "Scheda affitti 11.07.25.JPG",
+   "foto": "foto/20250711-142400.jpg",
+   "n_unita": 27,
+   "mq_tot": 1560,
+   "canone_tot": 24970,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedp130e",
+     "nome": "shed p1 30e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 13,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 29,
+     "canone": 650,
+     "riga": 3
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina45",
+     "nome": "mergellina 45",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 26,
+     "sopp": 0,
+     "cort": 7,
+     "tot": 33,
+     "canone": 680,
+     "riga": 4
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "superextra1",
+     "nome": "super extra 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 61,
+     "canone": 900,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "decorazione10",
+     "nome": "decorazione 10",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 20,
+     "cort": 6,
+     "tot": 63,
+     "canone": 900,
+     "riga": 12
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp117e",
+     "nome": "shed p1 17e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 28,
+     "sopp": 24,
+     "cort": 0,
+     "tot": 52,
+     "canone": 1000,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "fabbrica16",
+     "nome": "fabbrica 16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 20,
+     "cort": 6,
+     "tot": 63,
+     "canone": 900,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach2",
+     "nome": "beach 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 24,
+     "cort": 17,
+     "tot": 65,
+     "canone": 1000,
+     "riga": 13
+    }
+   ]
+  },
+  {
+   "id": "20250723-140300",
+   "rilevato": "2025-07-23T14:03:00Z",
+   "excel": "2025-07-23T16:03",
+   "impronta": "e11acfe4e9768b99",
+   "fonte": "foto",
+   "file": "Scheda affitti 23.07.25.JPG",
+   "foto": "foto/20250723-140300.jpg",
+   "n_unita": 30,
+   "mq_tot": 1766,
+   "canone_tot": 27980,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt5c",
+     "nome": "shed pt 5c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 11,
+     "cort": 3,
+     "tot": 31,
+     "canone": 650,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "beach15",
+     "nome": "beach 15",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 20,
+     "sopp": 18,
+     "cort": 0,
+     "tot": 38,
+     "canone": 830,
+     "riga": 7
+    },
+    {
+     "tipo": "modificata",
+     "key": "decorazione10",
+     "nome": "decorazione 10",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 18,
+     "cort": 5,
+     "tot": 58,
+     "canone": 900,
+     "riga": 12,
+     "campi": {
+      "pt": [
+       37,
+       35
+      ],
+      "sopp": [
+       20,
+       18
+      ],
+      "cort": [
+       6,
+       5
+      ],
+      "tot": [
+       63,
+       58
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "cottura2",
+     "nome": "cottura 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 24,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 13
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "cementoarmato",
+     "nome": "cemento armato",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 45,
+     "sopp": 0,
+     "cort": 45,
+     "tot": 90,
+     "canone": 980,
+     "riga": 15
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt16c",
+     "nome": "shed pt 16c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 35,
+     "cort": 5,
+     "tot": 80,
+     "canone": 1000,
+     "riga": 17
+    },
+    {
+     "tipo": "modificata",
+     "key": "montacarichi11",
+     "nome": "motacarichi 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 43,
+     "sopp": 25,
+     "cort": 7,
+     "tot": 75,
+     "canone": 1100,
+     "riga": 18,
+     "campi": {
+      "pt": [
+       22,
+       43
+      ],
+      "sopp": [
+       37,
+       25
+      ],
+      "cort": [
+       24,
+       7
+      ],
+      "tot": [
+       83,
+       75
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "oceandrive9",
+     "nome": "ocean drive 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 51,
+     "cort": 8,
+     "tot": 106,
+     "canone": 1300,
+     "riga": 24
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mansarda2a",
+     "nome": "mansarda 2a",
+     "sezione": "VIA MALAGA",
+     "pt": 28,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 28,
+     "canone": 750,
+     "riga": 26
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mansarda2b",
+     "nome": "mansarda 2b",
+     "sezione": "VIA MALAGA",
+     "pt": 33,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 33,
+     "canone": 800,
+     "riga": 27
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unità62",
+     "nome": "unità 62",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 850,
+     "riga": 30
+    },
+    {
+     "tipo": "rimossa",
+     "key": "lungamarcia2",
+     "nome": "lunga marcia 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 11,
+     "cort": 3,
+     "tot": 29,
+     "canone": 650,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp130e",
+     "nome": "shed p1 30e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 13,
+     "sopp": 16,
+     "cort": 0,
+     "tot": 29,
+     "canone": 650,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "cottura3",
+     "nome": "cottura 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 24,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 13
+    },
+    {
+     "tipo": "rimossa",
+     "key": "montaggio5",
+     "nome": "montaggio 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 28,
+     "cort": 7,
+     "tot": 82,
+     "canone": 1000,
+     "riga": 16
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stazione42",
+     "nome": "stazione 42",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 42,
+     "sopp": 28,
+     "cort": 7,
+     "tot": 77,
+     "canone": 1150,
+     "riga": 22
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mansarda8a",
+     "nome": "mansarda 8a",
+     "sezione": "VIA MALAGA",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 700,
+     "riga": 25
+    }
+   ]
+  },
+  {
+   "id": "20250807-143500",
+   "rilevato": "2025-08-07T14:35:00Z",
+   "excel": "2025-08-07T16:35",
+   "impronta": "12d0d07dec48f2cd",
+   "fonte": "foto",
+   "file": "Scheda affitti 07.08.25.JPG",
+   "foto": "foto/20250807-143500.jpg",
+   "n_unita": 28,
+   "mq_tot": 1682,
+   "canone_tot": 26430,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "beach5",
+     "nome": "beach 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "modificata",
+     "key": "extramini4",
+     "nome": "extramini 4*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 48,
+     "canone": 750,
+     "riga": 3,
+     "campi": {
+      "nome": [
+       "extramini 4",
+       "extramini 4*"
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "lungamarcia7",
+     "nome": "lunga marcia 7*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 19,
+     "sopp": 15,
+     "cort": 5,
+     "tot": 39,
+     "canone": 820,
+     "riga": 4
+    },
+    {
+     "tipo": "modificata",
+     "key": "superextra1",
+     "nome": "super extra 1*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 61,
+     "canone": 900,
+     "riga": 8,
+     "campi": {
+      "nome": [
+       "super extra 1",
+       "super extra 1*"
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "supercondor9",
+     "nome": "super condor 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 5,
+     "tot": 52,
+     "canone": 900,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "cottura2/3",
+     "nome": "cottura 2/3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 24,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina44",
+     "nome": "mergellina 44",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 25,
+     "tot": 67,
+     "canone": 1000,
+     "riga": 14
+    },
+    {
+     "tipo": "modificata",
+     "key": "essiccatura24",
+     "nome": "essiccatura 24",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 33,
+     "cort": 0,
+     "tot": 80,
+     "canone": 1100,
+     "riga": 20,
+     "campi": {
+      "nome": [
+       "essecatura 24",
+       "essiccatura 24"
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "mansarda2a",
+     "nome": "mansarda 2a*",
+     "sezione": "VIA MALAGA",
+     "pt": 28,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 28,
+     "canone": 750,
+     "riga": 24,
+     "campi": {
+      "nome": [
+       "mansarda 2a",
+       "mansarda 2a*"
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "mansarda2b",
+     "nome": "mansarda 2b*",
+     "sezione": "VIA MALAGA",
+     "pt": 33,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 33,
+     "canone": 800,
+     "riga": 25,
+     "campi": {
+      "nome": [
+       "mansarda 2b",
+       "mansarda 2b*"
+      ]
+     }
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedpt5c",
+     "nome": "shed pt 5c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 11,
+     "cort": 3,
+     "tot": 31,
+     "canone": 650,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina45",
+     "nome": "mergellina 45",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 26,
+     "sopp": 0,
+     "cort": 7,
+     "tot": 33,
+     "canone": 680,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "silos24",
+     "nome": "silos 24",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 21,
+     "sopp": 16,
+     "cort": 9,
+     "tot": 46,
+     "canone": 820,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina36",
+     "nome": "mergellina 36",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 21,
+     "sopp": 18,
+     "cort": 5,
+     "tot": 44,
+     "canone": 820,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "decorazione10",
+     "nome": "decorazione 10",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 18,
+     "cort": 5,
+     "tot": 58,
+     "canone": 900,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "cottura2",
+     "nome": "cottura 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 24,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 13
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stampaggio17",
+     "nome": "stampaggio 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 35,
+     "cort": 0,
+     "tot": 72,
+     "canone": 1100,
+     "riga": 19
+    }
+   ]
+  },
+  {
+   "id": "20250915-144900",
+   "rilevato": "2025-09-15T14:49:00Z",
+   "excel": "2025-09-15T16:49",
+   "impronta": "073c830628202670",
+   "fonte": "foto",
+   "file": "Scheda affitti 15.09.25.JPG",
+   "foto": "foto/20250915-144900.jpg",
+   "n_unita": 22,
+   "mq_tot": 1408,
+   "canone_tot": 21260,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "mergellina11",
+     "nome": "mergellina 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 27,
+     "sopp": 19,
+     "cort": 5,
+     "tot": 51,
+     "canone": 900,
+     "riga": 6,
+     "campi": {
+      "cort": [
+       6,
+       5
+      ],
+      "tot": [
+       52,
+       51
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina54",
+     "nome": "mergellina 54",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 25,
+     "tot": 67,
+     "canone": 1000,
+     "riga": 11
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "bypass10",
+     "nome": "bypass 10",
+     "sezione": "VIA MALAGA",
+     "pt": 40,
+     "sopp": 0,
+     "cort": 10,
+     "tot": 50,
+     "canone": 750,
+     "riga": 20
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach5",
+     "nome": "beach 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 42,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "lungamarcia7",
+     "nome": "lunga marcia 7*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 19,
+     "sopp": 15,
+     "cort": 5,
+     "tot": 39,
+     "canone": 820,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "superextra1",
+     "nome": "super extra 1*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 61,
+     "canone": 900,
+     "riga": 8
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina44",
+     "nome": "mergellina 44",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 25,
+     "tot": 67,
+     "canone": 1000,
+     "riga": 14
+    },
+    {
+     "tipo": "rimossa",
+     "key": "montacarichi11",
+     "nome": "motacarichi 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 43,
+     "sopp": 25,
+     "cort": 7,
+     "tot": 75,
+     "canone": 1100,
+     "riga": 17
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mansarda2a",
+     "nome": "mansarda 2a*",
+     "sezione": "VIA MALAGA",
+     "pt": 28,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 28,
+     "canone": 750,
+     "riga": 24
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mansarda2b",
+     "nome": "mansarda 2b*",
+     "sezione": "VIA MALAGA",
+     "pt": 33,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 33,
+     "canone": 800,
+     "riga": 25
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità62",
+     "nome": "unità 62",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 850,
+     "riga": 28
+    }
+   ]
+  },
+  {
+   "id": "20250930-144900",
+   "rilevato": "2025-09-30T14:49:00Z",
+   "excel": "2025-09-30T16:49",
+   "impronta": "c5055436b154693e",
+   "fonte": "foto",
+   "file": "Scheda affitti 30.09.25.JPG",
+   "foto": "foto/20250930-144900.jpg",
+   "n_unita": 19,
+   "mq_tot": 1255,
+   "canone_tot": 18710,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "vistamare7",
+     "nome": "vistamare 7",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 0,
+     "cort": 25,
+     "tot": 65,
+     "canone": 930,
+     "riga": 6,
+     "campi": {
+      "canone": [
+       830,
+       930
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp116",
+     "nome": "shed p1 16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 25,
+     "cort": 4,
+     "tot": 66,
+     "canone": 1100,
+     "riga": 13
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach15",
+     "nome": "beach 15",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 20,
+     "sopp": 18,
+     "cort": 0,
+     "tot": 38,
+     "canone": 830,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina54",
+     "nome": "mergellina 54",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 25,
+     "tot": 67,
+     "canone": 1000,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp116/18c",
+     "nome": "shed p1 16/18c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 25,
+     "cort": 4,
+     "tot": 66,
+     "canone": 1100,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità9",
+     "nome": "unità 9",
+     "sezione": "VIA MALAGA",
+     "pt": 20,
+     "sopp": 13,
+     "cort": 15,
+     "tot": 48,
+     "canone": 820,
+     "riga": 21
+    }
+   ]
+  },
+  {
+   "id": "20251001-135300",
+   "rilevato": "2025-10-01T13:53:00Z",
+   "excel": "2025-10-01T15:53",
+   "impronta": "1892bbb5610e2a72",
+   "fonte": "foto",
+   "file": "Scheda affitti 01.10.25.JPG",
+   "foto": "foto/20251001-135300.jpg",
+   "n_unita": 25,
+   "mq_tot": 1540,
+   "canone_tot": 23910,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "residence4",
+     "nome": "residence 4",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 0,
+     "cort": 7,
+     "tot": 39,
+     "canone": 800,
+     "riga": 3
+    },
+    {
+     "tipo": "modificata",
+     "key": "vistamare7",
+     "nome": "vistamare 7",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 0,
+     "cort": 25,
+     "tot": 65,
+     "canone": 830,
+     "riga": 4,
+     "campi": {
+      "canone": [
+       930,
+       830
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina3",
+     "nome": "mergellina 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 16,
+     "sopp": 20,
+     "cort": 4,
+     "tot": 40,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "fabbrica13",
+     "nome": "fabbrica 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 18,
+     "cort": 6,
+     "tot": 55,
+     "canone": 900,
+     "riga": 9
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "vistamare1",
+     "nome": "vistamare 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 54,
+     "sopp": 0,
+     "cort": 20,
+     "tot": 74,
+     "canone": 950,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "museo5",
+     "nome": "museo 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina55",
+     "nome": "mergellina 55",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 23,
+     "cort": 6,
+     "tot": 54,
+     "canone": 1000,
+     "riga": 15
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "scaletta16",
+     "nome": "scaletta 16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 70,
+     "canone": 1000,
+     "riga": 16
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "capannina32.1",
+     "nome": "capannina 32.1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 23,
+     "sopp": 31,
+     "cort": 7,
+     "tot": 61,
+     "canone": 1050,
+     "riga": 18
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedpt16c",
+     "nome": "shed pt 16c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 35,
+     "cort": 5,
+     "tot": 80,
+     "canone": 1000,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "decorazione8",
+     "nome": "decorazione 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 54,
+     "sopp": 29,
+     "cort": 7,
+     "tot": 90,
+     "canone": 1200,
+     "riga": 15
+    }
+   ]
+  },
+  {
+   "id": "20251020-145700",
+   "rilevato": "2025-10-20T14:57:00Z",
+   "excel": "2025-10-20T16:57",
+   "impronta": "48d7a39dfe4a1a4c",
+   "fonte": "foto",
+   "file": "Scheda affitti 20.10.25.JPG",
+   "foto": "foto/20251020-145700.jpg",
+   "n_unita": 21,
+   "mq_tot": 1326,
+   "canone_tot": 20010,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "residence4",
+     "nome": "residence 4*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 0,
+     "cort": 7,
+     "tot": 39,
+     "canone": 800,
+     "riga": 2,
+     "campi": {
+      "nome": [
+       "residence 4",
+       "residence 4*"
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "silos13",
+     "nome": "silos 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 12
+    },
+    {
+     "tipo": "modificata",
+     "key": "mergellina55",
+     "nome": "mergellina 55",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 23,
+     "cort": 25,
+     "tot": 73,
+     "canone": 1000,
+     "riga": 14,
+     "campi": {
+      "cort": [
+       6,
+       25
+      ],
+      "tot": [
+       54,
+       73
+      ]
+     }
+    },
+    {
+     "tipo": "rimossa",
+     "key": "extramini4",
+     "nome": "extramini 4*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 0,
+     "cort": 17,
+     "tot": 48,
+     "canone": 750,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "silos13/18",
+     "nome": "silos 13/18",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 13
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp117e",
+     "nome": "shed p1 17e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 28,
+     "sopp": 24,
+     "cort": 0,
+     "tot": 52,
+     "canone": 1000,
+     "riga": 17
+    },
+    {
+     "tipo": "rimossa",
+     "key": "capannina32.1",
+     "nome": "capannina 32.1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 23,
+     "sopp": 31,
+     "cort": 7,
+     "tot": 61,
+     "canone": 1050,
+     "riga": 18
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stampaggio7",
+     "nome": "stampaggio 7",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 35,
+     "cort": 0,
+     "tot": 72,
+     "canone": 1100,
+     "riga": 19
+    }
+   ]
+  },
+  {
+   "id": "20251022-143500",
+   "rilevato": "2025-10-22T14:35:00Z",
+   "excel": "2025-10-22T16:35",
+   "impronta": "597ca918f3800861",
+   "fonte": "foto",
+   "file": "Scheda affitti 22.10.25.JPG",
+   "foto": "foto/20251022-143500.jpg",
+   "n_unita": 22,
+   "mq_tot": 1355,
+   "canone_tot": 21310,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina49",
+     "nome": "mergellina 49",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 23,
+     "cort": 25,
+     "tot": 73,
+     "canone": 1000,
+     "riga": 14
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unita13",
+     "nome": "unita 13",
+     "sezione": "VIA MALAGA",
+     "pt": 20,
+     "sopp": 9,
+     "cort": 0,
+     "tot": 29,
+     "canone": 850,
+     "riga": 20
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "torre4",
+     "nome": "torre 4",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 40,
+     "canone": 1000,
+     "riga": 21
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unità88",
+     "nome": "unità 88",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 1050,
+     "riga": 22
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina55",
+     "nome": "mergellina 55",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 23,
+     "cort": 25,
+     "tot": 73,
+     "canone": 1000,
+     "riga": 14
+    },
+    {
+     "tipo": "rimossa",
+     "key": "bypass10",
+     "nome": "bypass 10",
+     "sezione": "VIA MALAGA",
+     "pt": 40,
+     "sopp": 0,
+     "cort": 10,
+     "tot": 50,
+     "canone": 750,
+     "riga": 20
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità58",
+     "nome": "unità 58",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 10,
+     "cort": 0,
+     "tot": 35,
+     "canone": 850,
+     "riga": 21
+    }
+   ]
+  },
+  {
+   "id": "20251104-113300",
+   "rilevato": "2025-11-04T11:33:00Z",
+   "excel": "2025-11-04T12:33",
+   "impronta": "53282ee5b8bc4f2a",
+   "fonte": "foto",
+   "file": "Scheda affitti 04.11.25.JPG",
+   "foto": "foto/20251104-113300.jpg",
+   "n_unita": 18,
+   "mq_tot": 1084,
+   "canone_tot": 16063,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "forgiatura8",
+     "nome": "forgiatura 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 12
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stampaggio10",
+     "nome": "stampaggio 10",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 35,
+     "cort": 0,
+     "tot": 72,
+     "canone": 1100,
+     "riga": 15
+    },
+    {
+     "tipo": "modificata",
+     "key": "unità88",
+     "nome": "unità 88",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 3,
+     "riga": 18,
+     "campi": {
+      "canone": [
+       1050,
+       3
+      ]
+     }
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina11",
+     "nome": "mergellina 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 27,
+     "sopp": 19,
+     "cort": 5,
+     "tot": 51,
+     "canone": 900,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina49",
+     "nome": "mergellina 49",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 23,
+     "cort": 25,
+     "tot": 73,
+     "canone": 1000,
+     "riga": 14
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp116",
+     "nome": "shed p1 16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 25,
+     "cort": 4,
+     "tot": 66,
+     "canone": 1100,
+     "riga": 16
+    },
+    {
+     "tipo": "rimossa",
+     "key": "essiccatura24",
+     "nome": "essiccatura 24",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 33,
+     "cort": 0,
+     "tot": 80,
+     "canone": 1100,
+     "riga": 17
+    },
+    {
+     "tipo": "rimossa",
+     "key": "oceandrive9",
+     "nome": "ocean drive 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 51,
+     "cort": 8,
+     "tot": 106,
+     "canone": 1300,
+     "riga": 18
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unita13",
+     "nome": "unita 13",
+     "sezione": "VIA MALAGA",
+     "pt": 20,
+     "sopp": 9,
+     "cort": 0,
+     "tot": 29,
+     "canone": 850,
+     "riga": 20
+    }
+   ]
+  },
+  {
+   "id": "20251106-133600",
+   "rilevato": "2025-11-06T13:36:00Z",
+   "excel": "2025-11-06T14:36",
+   "impronta": "d9eb50dcd69b5a38",
+   "fonte": "foto",
+   "file": "Scheda affitti 06.11.25.JPG",
+   "foto": "foto/20251106-133600.jpg",
+   "n_unita": 22,
+   "mq_tot": 1344,
+   "canone_tot": 21620,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "lungamarcia14",
+     "nome": "lunga marcia 14*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 5,
+     "tot": 37,
+     "canone": 750,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt22c",
+     "nome": "shed pt 22c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 5,
+     "tot": 37,
+     "canone": 830,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "beach20",
+     "nome": "beach 20",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 880,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "fabbrica15",
+     "nome": "fabbrica 15",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 18,
+     "cort": 6,
+     "tot": 55,
+     "canone": 900,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina32",
+     "nome": "mergellina 32",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 4,
+     "tot": 51,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "montaggio19",
+     "nome": "montaggio 19",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 46,
+     "sopp": 30,
+     "cort": 7,
+     "tot": 83,
+     "canone": 1250,
+     "riga": 17
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stoccaggio50",
+     "nome": "stoccaggio 50",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 65,
+     "sopp": 60,
+     "cort": 17,
+     "tot": 142,
+     "canone": 1800,
+     "riga": 19
+    },
+    {
+     "tipo": "modificata",
+     "key": "unità88",
+     "nome": "unità 88",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 1050,
+     "riga": 22,
+     "campi": {
+      "canone": [
+       3,
+       1050
+      ]
+     }
+    },
+    {
+     "tipo": "rimossa",
+     "key": "fabbrica13",
+     "nome": "fabbrica 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 18,
+     "cort": 6,
+     "tot": 55,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "forgiatura8",
+     "nome": "forgiatura 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "scaletta16",
+     "nome": "scaletta 16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 70,
+     "canone": 1000,
+     "riga": 14
+    }
+   ]
+  },
+  {
+   "id": "20251111-152600",
+   "rilevato": "2025-11-11T15:26:00Z",
+   "excel": "2025-11-11T16:26",
+   "impronta": "db391833e6ea10c7",
+   "fonte": "foto",
+   "file": "Scheda affitti 11.11.25.JPG",
+   "foto": "foto/20251111-152600.jpg",
+   "n_unita": 23,
+   "mq_tot": 1492,
+   "canone_tot": 23770,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "stoccaggio50",
+     "nome": "stocaggio 50",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 65,
+     "sopp": 60,
+     "cort": 17,
+     "tot": 142,
+     "canone": 1800,
+     "riga": 19,
+     "campi": {
+      "nome": [
+       "stoccaggio 50",
+       "stocaggio 50"
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "sinergit6",
+     "nome": "sinergit 6",
+     "sezione": "VIA MALAGA",
+     "pt": 33,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 63,
+     "canone": 1200,
+     "riga": 22
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "superleone1",
+     "nome": "super leone 1",
+     "sezione": "VIA MALAGA",
+     "pt": 40,
+     "sopp": 70,
+     "cort": 20,
+     "tot": 130,
+     "canone": 2000,
+     "riga": 24
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità88",
+     "nome": "unità 88",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 45,
+     "canone": 1050,
+     "riga": 22
+    }
+   ]
+  },
+  {
+   "id": "20251118-155900",
+   "rilevato": "2025-11-18T15:59:00Z",
+   "excel": "2025-11-18T16:59",
+   "impronta": "2797cd6ae812a2b6",
+   "fonte": "foto",
+   "file": "Scheda affitti 18.11.25.JPG",
+   "foto": "foto/20251118-155900.jpg",
+   "n_unita": 22,
+   "mq_tot": 1551,
+   "canone_tot": 23390,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "vistamare6",
+     "nome": "vistamare 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 0,
+     "cort": 25,
+     "tot": 65,
+     "canone": 830,
+     "riga": 4
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "forgiatura16",
+     "nome": "forgiatura 16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 32,
+     "cort": 18,
+     "tot": 85,
+     "canone": 1100,
+     "riga": 15
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "montaggio17",
+     "nome": "montaggio 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 38,
+     "sopp": 36,
+     "cort": 9,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 16
+    },
+    {
+     "tipo": "modificata",
+     "key": "montaggio19",
+     "nome": "montaggio 19",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 46,
+     "sopp": 30,
+     "cort": 7,
+     "tot": 83,
+     "canone": 1200,
+     "riga": 17,
+     "campi": {
+      "canone": [
+       1250,
+       1200
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "montacarichi1",
+     "nome": "montacarichi 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 90,
+     "sopp": 25,
+     "cort": 0,
+     "tot": 115,
+     "canone": 1500,
+     "riga": 18
+    },
+    {
+     "tipo": "modificata",
+     "key": "superleone1",
+     "nome": "superleone 1",
+     "sezione": "VIA MALAGA",
+     "pt": 40,
+     "sopp": 70,
+     "cort": 20,
+     "tot": 130,
+     "canone": 2000,
+     "riga": 23,
+     "campi": {
+      "nome": [
+       "super leone 1",
+       "superleone 1"
+      ]
+     }
+    },
+    {
+     "tipo": "rimossa",
+     "key": "vistamare7",
+     "nome": "vistamare 7",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 0,
+     "cort": 25,
+     "tot": 65,
+     "canone": 830,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedpt22c",
+     "nome": "shed pt 22c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 5,
+     "tot": 37,
+     "canone": 830,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "supercondor9",
+     "nome": "super condor 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 5,
+     "tot": 52,
+     "canone": 900,
+     "riga": 9
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stampaggio10",
+     "nome": "stampaggio 10",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 35,
+     "cort": 0,
+     "tot": 72,
+     "canone": 1100,
+     "riga": 18
+    },
+    {
+     "tipo": "rimossa",
+     "key": "sinergit6",
+     "nome": "sinergit 6",
+     "sezione": "VIA MALAGA",
+     "pt": 33,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 63,
+     "canone": 1200,
+     "riga": 22
+    }
+   ]
+  },
+  {
+   "id": "20251210-092400",
+   "rilevato": "2025-12-10T09:24:00Z",
+   "excel": "2025-12-10T10:24",
+   "impronta": "7e77b272df2249ac",
+   "fonte": "foto",
+   "file": "Scheda affitti 10.12.25.JPG",
+   "foto": "foto/20251210-092400.jpg",
+   "n_unita": 19,
+   "mq_tot": 1328,
+   "canone_tot": 20290,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "beach21",
+     "nome": "beach 21",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 880,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "fabbrica3",
+     "nome": "fabbrica 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 18,
+     "cort": 7,
+     "tot": 58,
+     "canone": 950,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "museo6",
+     "nome": "museo 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "cottura1",
+     "nome": "cottura 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 24,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "residence4",
+     "nome": "residence 4*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 0,
+     "cort": 7,
+     "tot": 39,
+     "canone": 800,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach20",
+     "nome": "beach 20",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 880,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "vistamare1",
+     "nome": "vistamare 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 54,
+     "sopp": 0,
+     "cort": 20,
+     "tot": 74,
+     "canone": 950,
+     "riga": 10
+    },
+    {
+     "tipo": "rimossa",
+     "key": "museo5",
+     "nome": "museo 5",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "cottura2/3",
+     "nome": "cottura 2/3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 24,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "forgiatura16",
+     "nome": "forgiatura 16",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 32,
+     "cort": 18,
+     "tot": 85,
+     "canone": 1100,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "montaggio19",
+     "nome": "montaggio 19",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 46,
+     "sopp": 30,
+     "cort": 7,
+     "tot": 83,
+     "canone": 1200,
+     "riga": 17
+    }
+   ]
+  },
+  {
+   "id": "20251210-094000",
+   "rilevato": "2025-12-10T09:40:00Z",
+   "excel": "2025-12-10T10:40",
+   "impronta": "71cb9ffde8d56972",
+   "fonte": "foto",
+   "file": "Scheda affitti 10.12.25_2.JPG",
+   "foto": "foto/20251210-094000.jpg",
+   "n_unita": 19,
+   "mq_tot": 1333,
+   "canone_tot": 20340,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "fabbrica3",
+     "nome": "fabbrica 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 20,
+     "cort": 6,
+     "tot": 63,
+     "canone": 1000,
+     "riga": 13,
+     "campi": {
+      "pt": [
+       33,
+       37
+      ],
+      "sopp": [
+       18,
+       20
+      ],
+      "cort": [
+       7,
+       6
+      ],
+      "tot": [
+       58,
+       63
+      ],
+      "canone": [
+       950,
+       1000
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "20260108-093100",
+   "rilevato": "2026-01-08T09:31:00Z",
+   "excel": "2026-01-08T10:31",
+   "impronta": "e1631942905c07fe",
+   "fonte": "foto",
+   "file": "Scheda affitti 08.01.26.JPG",
+   "foto": "foto/20260108-093100.jpg",
+   "n_unita": 17,
+   "mq_tot": 1066,
+   "canone_tot": 17280,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedp126c",
+     "nome": "shed p1 26c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 20,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 40,
+     "canone": 850,
+     "riga": 4
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "supercondor8",
+     "nome": "super condor 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 0,
+     "tot": 47,
+     "canone": 900,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "fabbrica13",
+     "nome": "fabbrica 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 18,
+     "cort": 6,
+     "tot": 55,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "silos21",
+     "nome": "silos 21",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stampaggio18",
+     "nome": "stampaggio 18",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 35,
+     "cort": 0,
+     "tot": 72,
+     "canone": 1100,
+     "riga": 13
+    },
+    {
+     "tipo": "rimossa",
+     "key": "lungamarcia14",
+     "nome": "lunga marcia 14*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 5,
+     "tot": 37,
+     "canone": 750,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach21",
+     "nome": "beach 21",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 880,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "fabbrica15",
+     "nome": "fabbrica 15",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 18,
+     "cort": 6,
+     "tot": 55,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "silos13",
+     "nome": "silos 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "cementoarmato",
+     "nome": "cemento armato",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 45,
+     "sopp": 0,
+     "cort": 45,
+     "tot": 90,
+     "canone": 980,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "montacarichi1",
+     "nome": "montacarichi 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 90,
+     "sopp": 25,
+     "cort": 0,
+     "tot": 115,
+     "canone": 1500,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stoccaggio50",
+     "nome": "stocaggio 50",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 65,
+     "sopp": 60,
+     "cort": 17,
+     "tot": 142,
+     "canone": 1800,
+     "riga": 16
+    }
+   ]
+  },
+  {
+   "id": "20260113-095600",
+   "rilevato": "2026-01-13T09:56:00Z",
+   "excel": "2026-01-13T10:56",
+   "impronta": "c6260147015a1a71",
+   "fonte": "foto",
+   "file": "Scheda affitti 13.01.26.JPG",
+   "foto": "foto/20260113-095600.jpg",
+   "n_unita": 22,
+   "mq_tot": 1444,
+   "canone_tot": 22680,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "fabbrica12",
+     "nome": "fabbrica 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 18,
+     "cort": 6,
+     "tot": 55,
+     "canone": 900,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "museo1",
+     "nome": "museo 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp110e",
+     "nome": "shed p1 10e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 28,
+     "sopp": 24,
+     "cort": 0,
+     "tot": 52,
+     "canone": 1000,
+     "riga": 11
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt17c",
+     "nome": "shed pt 17c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 35,
+     "cort": 5,
+     "tot": 80,
+     "canone": 1100,
+     "riga": 12
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unità17",
+     "nome": "unità 17",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 9,
+     "cort": 0,
+     "tot": 34,
+     "canone": 850,
+     "riga": 16
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "torre9",
+     "nome": "torre 9",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 30,
+     "canone": 900,
+     "riga": 17
+    },
+    {
+     "tipo": "modificata",
+     "key": "sinergit10",
+     "nome": "sinergit 10",
+     "sezione": "VIA MALAGA",
+     "pt": 33,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 63,
+     "canone": 1100,
+     "riga": 19,
+     "campi": {
+      "canone": [
+       1200,
+       1100
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "sinergit8",
+     "nome": "sinergit 8",
+     "sezione": "VIA MALAGA",
+     "pt": 40,
+     "sopp": 29,
+     "cort": 5,
+     "tot": 74,
+     "canone": 1300,
+     "riga": 20
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unità27",
+     "nome": "unità 27",
+     "sezione": "VIA MALAGA",
+     "pt": 62,
+     "sopp": 109,
+     "cort": 0,
+     "tot": 171,
+     "canone": 2200,
+     "riga": 22
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "studio1",
+     "nome": "studio 1",
+     "sezione": "CASCATA (Rozzano)",
+     "pt": 90,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 90,
+     "canone": 600,
+     "riga": 24
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "studio2",
+     "nome": "studio 2",
+     "sezione": "CASCATA (Rozzano)",
+     "pt": 60,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 60,
+     "canone": 400,
+     "riga": 25
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp126c",
+     "nome": "shed p1 26c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 20,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 40,
+     "canone": 850,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "fabbrica13",
+     "nome": "fabbrica 13",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 18,
+     "cort": 6,
+     "tot": 55,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "museo6",
+     "nome": "museo 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 9
+    },
+    {
+     "tipo": "rimossa",
+     "key": "montaggio17",
+     "nome": "montaggio 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 38,
+     "sopp": 36,
+     "cort": 9,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 14
+    },
+    {
+     "tipo": "rimossa",
+     "key": "studio",
+     "nome": "studio",
+     "sezione": "CASCATA (Rozzano)",
+     "pt": 90,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 90,
+     "canone": 900,
+     "riga": 20
+    }
+   ]
+  },
+  {
+   "id": "20260115-104300",
+   "rilevato": "2026-01-15T10:43:00Z",
+   "excel": "2026-01-15T11:43",
+   "impronta": "90c28ccbd16b90e9",
+   "fonte": "foto",
+   "file": "Scheda affitti 15.01.26.JPG",
+   "foto": "foto/20260115-104300.jpg",
+   "n_unita": 24,
+   "mq_tot": 1526,
+   "canone_tot": 24640,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "beach22",
+     "nome": "beach 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 880,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "beach14",
+     "nome": "beach 14",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 15,
+     "tot": 57,
+     "canone": 930,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina29",
+     "nome": "mergellina 29",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 4,
+     "tot": 51,
+     "canone": 950,
+     "riga": 9
+    },
+    {
+     "tipo": "modificata",
+     "key": "studio1",
+     "nome": "studio 1",
+     "sezione": "CASCATA (Rozzano)",
+     "pt": 75,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 75,
+     "canone": 600,
+     "riga": 26,
+     "campi": {
+      "pt": [
+       90,
+       75
+      ],
+      "tot": [
+       90,
+       75
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "studio3",
+     "nome": "studio 3",
+     "sezione": "CASCATA (Rozzano)",
+     "pt": 58,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 58,
+     "canone": 550,
+     "riga": 27
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina32",
+     "nome": "mergellina 32",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 4,
+     "tot": 51,
+     "canone": 950,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "studio2",
+     "nome": "studio 2",
+     "sezione": "CASCATA (Rozzano)",
+     "pt": 60,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 60,
+     "canone": 400,
+     "riga": 25
+    }
+   ]
+  },
+  {
+   "id": "20260130-154600",
+   "rilevato": "2026-01-30T15:46:00Z",
+   "excel": "2026-01-30T16:46",
+   "impronta": "3b4ac0b1054a6032",
+   "fonte": "foto",
+   "file": "Scheda affitti 30.01.26.JPG",
+   "foto": "foto/20260130-154600.jpg",
+   "n_unita": 18,
+   "mq_tot": 1072,
+   "canone_tot": 17810,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "supercondor1",
+     "nome": "super condor 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 0,
+     "tot": 47,
+     "canone": 900,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina27",
+     "nome": "mergellina 27",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 4,
+     "tot": 51,
+     "canone": 950,
+     "riga": 7
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "torre3",
+     "nome": "torre 3",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 40,
+     "canone": 1000,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach22",
+     "nome": "beach 22",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 0,
+     "tot": 42,
+     "canone": 880,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "supercondor8",
+     "nome": "super condor 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 0,
+     "tot": 47,
+     "canone": 900,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "fabbrica12",
+     "nome": "fabbrica 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 18,
+     "cort": 6,
+     "tot": 55,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina29",
+     "nome": "mergellina 29",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 4,
+     "tot": 51,
+     "canone": 950,
+     "riga": 9
+    },
+    {
+     "tipo": "rimossa",
+     "key": "museo1",
+     "nome": "museo 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 10
+    },
+    {
+     "tipo": "rimossa",
+     "key": "cottura1",
+     "nome": "cottura 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 24,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "silos21",
+     "nome": "silos 21",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "torre4",
+     "nome": "torre 4",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 40,
+     "canone": 1000,
+     "riga": 20
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità27",
+     "nome": "unità 27",
+     "sezione": "VIA MALAGA",
+     "pt": 62,
+     "sopp": 109,
+     "cort": 0,
+     "tot": 171,
+     "canone": 2200,
+     "riga": 24
+    }
+   ]
+  },
+  {
+   "id": "20260203-155100",
+   "rilevato": "2026-02-03T15:51:00Z",
+   "excel": "2026-02-03T16:51",
+   "impronta": "06e751bb608f622a",
+   "fonte": "foto",
+   "file": "Scheda affitti 03.02.26.JPG",
+   "foto": "foto/20260203-155100.jpg",
+   "n_unita": 22,
+   "mq_tot": 1333,
+   "canone_tot": 21630,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina42",
+     "nome": "mergellina 42",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 6,
+     "tot": 31,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina26",
+     "nome": "mergellina 26",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 0,
+     "cort": 18,
+     "tot": 42,
+     "canone": 800,
+     "riga": 3
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt4e",
+     "nome": "shed pt 4e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 11,
+     "cort": 18,
+     "tot": 46,
+     "canone": 870,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "beach17",
+     "nome": "beach 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 15,
+     "tot": 57,
+     "canone": 930,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "montacarichi8",
+     "nome": "montacarichi 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 30,
+     "sopp": 25,
+     "cort": 0,
+     "tot": 55,
+     "canone": 950,
+     "riga": 9
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "forgiatura9",
+     "nome": "forgiatura 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 14
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "forgiatura17",
+     "nome": "forgiatura 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 42,
+     "sopp": 34,
+     "cort": 20,
+     "tot": 96,
+     "canone": 1200,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "scaletta12",
+     "nome": "scaletta 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 15,
+     "cort": 4,
+     "tot": 41,
+     "canone": 850,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach14",
+     "nome": "beach 14",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 15,
+     "tot": 57,
+     "canone": 930,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina27",
+     "nome": "mergellina 27",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 4,
+     "tot": 51,
+     "canone": 950,
+     "riga": 7
+    }
+   ]
+  },
+  {
+   "id": "20260209-090300",
+   "rilevato": "2026-02-09T09:03:00Z",
+   "excel": "2026-02-09T10:03",
+   "impronta": "49daa883fe67e315",
+   "fonte": "foto",
+   "file": "Scheda affitti 09.02.26.JPG",
+   "foto": "foto/20260209-090300.jpg",
+   "n_unita": 18,
+   "mq_tot": 1099,
+   "canone_tot": 18700,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina42/43",
+     "nome": "mergellina 42/43",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 6,
+     "tot": 31,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "vistamare1",
+     "nome": "vistamare 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 54,
+     "sopp": 0,
+     "cort": 20,
+     "tot": 74,
+     "canone": 950,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina42",
+     "nome": "mergellina 42",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 6,
+     "tot": 31,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "vistamare6",
+     "nome": "vistamare 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 0,
+     "cort": 25,
+     "tot": 65,
+     "canone": 830,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "supercondor1",
+     "nome": "super condor 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 0,
+     "tot": 47,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "fabbrica3",
+     "nome": "fabbrica 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 20,
+     "cort": 6,
+     "tot": 63,
+     "canone": 1000,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "studio1",
+     "nome": "studio 1",
+     "sezione": "CASCATA (Rozzano)",
+     "pt": 75,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 75,
+     "canone": 600,
+     "riga": 24
+    },
+    {
+     "tipo": "rimossa",
+     "key": "studio3",
+     "nome": "studio 3",
+     "sezione": "CASCATA (Rozzano)",
+     "pt": 58,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 58,
+     "canone": 550,
+     "riga": 25
+    }
+   ]
+  },
+  {
+   "id": "20260210-104800",
+   "rilevato": "2026-02-10T10:48:00Z",
+   "excel": "2026-02-10T11:48",
+   "impronta": "bfd2f8f3a26061b7",
+   "fonte": "foto",
+   "file": "Scheda affitti 10.02.26.JPG",
+   "foto": "foto/20260210-104800.jpg",
+   "n_unita": 17,
+   "mq_tot": 1047,
+   "canone_tot": 17700,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "shedp110e",
+     "nome": "shed p1 10e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 28,
+     "sopp": 24,
+     "cort": 0,
+     "tot": 52,
+     "canone": 1000,
+     "riga": 9
+    }
+   ]
+  },
+  {
+   "id": "20260220-153500",
+   "rilevato": "2026-02-20T15:35:00Z",
+   "excel": "2026-02-20T16:35",
+   "impronta": "27a2db9ecd6db298",
+   "fonte": "foto",
+   "file": "Scheda affitti 20.02.26.JPG",
+   "foto": "foto/20260220-153500.jpg",
+   "n_unita": 17,
+   "mq_tot": 989,
+   "canone_tot": 17300,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "beach9",
+     "nome": "beach 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 15,
+     "tot": 40,
+     "canone": 750,
+     "riga": 3
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp13c",
+     "nome": "shed p1 3c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "forgiatura17",
+     "nome": "forgiatura 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 42,
+     "sopp": 34,
+     "cort": 20,
+     "tot": 96,
+     "canone": 1200,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità17",
+     "nome": "unità 17",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 9,
+     "cort": 0,
+     "tot": 34,
+     "canone": 850,
+     "riga": 14
+    }
+   ]
+  },
+  {
+   "id": "20260224-153300",
+   "rilevato": "2026-02-24T15:33:00Z",
+   "excel": "2026-02-24T16:33",
+   "impronta": "6612af116c95e810",
+   "fonte": "foto",
+   "file": "Scheda affitti 24.02.26.JPG",
+   "foto": "foto/20260224-153300.jpg",
+   "n_unita": 15,
+   "mq_tot": 858,
+   "canone_tot": 15070,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "beach17",
+     "nome": "beach 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 15,
+     "tot": 57,
+     "canone": 930,
+     "riga": 8
+    },
+    {
+     "tipo": "rimossa",
+     "key": "sinergit8",
+     "nome": "sinergit 8",
+     "sezione": "VIA MALAGA",
+     "pt": 40,
+     "sopp": 29,
+     "cort": 5,
+     "tot": 74,
+     "canone": 1300,
+     "riga": 18
+    }
+   ]
+  },
+  {
+   "id": "20260401-131100",
+   "rilevato": "2026-04-01T13:11:00Z",
+   "excel": "2026-04-01T15:11",
+   "impronta": "8929442ddf02bdba",
+   "fonte": "foto",
+   "file": "Scheda affitti 01.04.26.JPG",
+   "foto": "foto/20260401-131100.jpg",
+   "n_unita": 23,
+   "mq_tot": 1309,
+   "canone_tot": 21970,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina42",
+     "nome": "mergellina 42",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 6,
+     "tot": 31,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "modificata",
+     "key": "mergellina26",
+     "nome": "mergellina 26",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 0,
+     "cort": 18,
+     "tot": 42,
+     "canone": 750,
+     "riga": 3,
+     "campi": {
+      "canone": [
+       800,
+       750
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "beach9/11",
+     "nome": "beach 9 / 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 15,
+     "tot": 40,
+     "canone": 750,
+     "riga": 4
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "vistamare9",
+     "nome": "vistamare 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 27,
+     "sopp": 0,
+     "cort": 35,
+     "tot": 62,
+     "canone": 800,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "scaletta12",
+     "nome": "scaletta 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 15,
+     "cort": 4,
+     "tot": 41,
+     "canone": 800,
+     "riga": 6
+    },
+    {
+     "tipo": "modificata",
+     "key": "mergellina3",
+     "nome": "mergellina 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 16,
+     "sopp": 20,
+     "cort": 4,
+     "tot": 40,
+     "canone": 800,
+     "riga": 7,
+     "campi": {
+      "canone": [
+       850,
+       800
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "lungamargia10",
+     "nome": "lungamargia 10*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 13,
+     "cort": 7,
+     "tot": 38,
+     "canone": 800,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina27",
+     "nome": "mergellina 27",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 7,
+     "tot": 54,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "silos6",
+     "nome": "silos 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 27,
+     "cort": 14,
+     "tot": 73,
+     "canone": 1100,
+     "riga": 14
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp19c",
+     "nome": "shed p1 9c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 18
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stampaggio8",
+     "nome": "stampaggio 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 35,
+     "cort": 0,
+     "tot": 72,
+     "canone": 1200,
+     "riga": 19
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stoccaggio51",
+     "nome": "stoccaggio 51",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 44,
+     "sopp": 52,
+     "cort": 10,
+     "tot": 106,
+     "canone": 1500,
+     "riga": 20
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "squat15",
+     "nome": "squat 15",
+     "sezione": "VIA MALAGA",
+     "pt": 23,
+     "sopp": 0,
+     "cort": 15,
+     "tot": 38,
+     "canone": 800,
+     "riga": 22
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unità31",
+     "nome": "unità 31",
+     "sezione": "VIA MALAGA",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 22,
+     "tot": 54,
+     "canone": 950,
+     "riga": 24
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina42/43",
+     "nome": "mergellina 42/43",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 6,
+     "tot": 31,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach9",
+     "nome": "beach 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 15,
+     "tot": 40,
+     "canone": 750,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "torre3",
+     "nome": "torre 3",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 40,
+     "canone": 1000,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "superleone1",
+     "nome": "superleone 1",
+     "sezione": "VIA MALAGA",
+     "pt": 40,
+     "sopp": 70,
+     "cort": 20,
+     "tot": 130,
+     "canone": 2000,
+     "riga": 17
+    }
+   ]
+  },
+  {
+   "id": "20260506-125400",
+   "rilevato": "2026-05-06T12:54:00Z",
+   "excel": "2026-05-06T14:54",
+   "impronta": "6a8ebd6da64dd1fd",
+   "fonte": "foto",
+   "file": "Scheda affitti 06.05.26.JPG",
+   "foto": "foto/20260506-125400.jpg",
+   "n_unita": 20,
+   "mq_tot": 1121,
+   "canone_tot": 18970,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "palazzina101/112",
+     "nome": "palazzina 101/112",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 550,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "beach11",
+     "nome": "beach 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 15,
+     "tot": 40,
+     "canone": 750,
+     "riga": 4
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina7",
+     "nome": "mergellina 7",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 16,
+     "sopp": 14,
+     "cort": 5,
+     "tot": 35,
+     "canone": 800,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp11/3c",
+     "nome": "shed p1 1/3c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 900,
+     "riga": 9
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina28/37",
+     "nome": "mergellina 28/37",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 7,
+     "tot": 54,
+     "canone": 950,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "forgiatura11",
+     "nome": "forgiatura 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina42",
+     "nome": "mergellina 42",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 6,
+     "tot": 31,
+     "canone": 700,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach9/11",
+     "nome": "beach 9 / 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 15,
+     "tot": 40,
+     "canone": 750,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "scaletta12",
+     "nome": "scaletta 12",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 15,
+     "cort": 4,
+     "tot": 41,
+     "canone": 800,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina3",
+     "nome": "mergellina 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 16,
+     "sopp": 20,
+     "cort": 4,
+     "tot": 40,
+     "canone": 800,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp13c",
+     "nome": "shed p1 3c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 900,
+     "riga": 10
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina27",
+     "nome": "mergellina 27",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 7,
+     "tot": 54,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stampaggio18",
+     "nome": "stampaggio 18",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 37,
+     "sopp": 35,
+     "cort": 0,
+     "tot": 72,
+     "canone": 1100,
+     "riga": 16
+    },
+    {
+     "tipo": "rimossa",
+     "key": "forgiatura9",
+     "nome": "forgiatura 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 17
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità31",
+     "nome": "unità 31",
+     "sezione": "VIA MALAGA",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 22,
+     "tot": 54,
+     "canone": 950,
+     "riga": 24
+    }
+   ]
+  },
+  {
+   "id": "20260507-105200",
+   "rilevato": "2026-05-07T10:52:00Z",
+   "excel": "2026-05-07T12:52",
+   "impronta": "3d90c2a69e972b50",
+   "fonte": "foto",
+   "file": "Scheda affitti 07.05.26.JPG",
+   "foto": "foto/20260507-105200.jpg",
+   "n_unita": 21,
+   "mq_tot": 1161,
+   "canone_tot": 19970,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "torre4",
+     "nome": "torre 4",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 40,
+     "canone": 1000,
+     "riga": 22
+    }
+   ]
+  },
+  {
+   "id": "20260522-140800",
+   "rilevato": "2026-05-22T14:08:00Z",
+   "excel": "2026-05-22T16:08",
+   "impronta": "7a373cf914845e1b",
+   "fonte": "foto",
+   "file": "Scheda affitti 22.05.26.JPG",
+   "foto": "foto/20260522-140800.jpg",
+   "n_unita": 20,
+   "mq_tot": 1066,
+   "canone_tot": 18650,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina45",
+     "nome": "mergellina 45",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 5,
+     "tot": 30,
+     "canone": 700,
+     "riga": 3
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina24",
+     "nome": "mergellina 24",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 0,
+     "cort": 10,
+     "tot": 34,
+     "canone": 750,
+     "riga": 4
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "residence3",
+     "nome": "residence 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 0,
+     "cort": 8,
+     "tot": 43,
+     "canone": 800,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "torre9/10",
+     "nome": "torre 9/10",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 30,
+     "canone": 850,
+     "riga": 20
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unità10",
+     "nome": "unità 10",
+     "sezione": "VIA MALAGA",
+     "pt": 18,
+     "sopp": 9,
+     "cort": 5,
+     "tot": 32,
+     "canone": 850,
+     "riga": 21
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "unità139",
+     "nome": "unità 139",
+     "sezione": "VIA MALAGA",
+     "pt": 20,
+     "sopp": 10,
+     "cort": 5,
+     "tot": 35,
+     "canone": 900,
+     "riga": 22
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina26",
+     "nome": "mergellina 26",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 0,
+     "cort": 18,
+     "tot": 42,
+     "canone": 750,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "beach11",
+     "nome": "beach 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 15,
+     "tot": 40,
+     "canone": 750,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "lungamargia10",
+     "nome": "lungamargia 10*",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 13,
+     "cort": 7,
+     "tot": 38,
+     "canone": 800,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedpt4e",
+     "nome": "shed pt 4e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 11,
+     "cort": 18,
+     "tot": 46,
+     "canone": 870,
+     "riga": 8
+    },
+    {
+     "tipo": "rimossa",
+     "key": "torre9",
+     "nome": "torre 9",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 30,
+     "canone": 900,
+     "riga": 21
+    },
+    {
+     "tipo": "rimossa",
+     "key": "torre4",
+     "nome": "torre 4",
+     "sezione": "VIA MALAGA",
+     "pt": 25,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 40,
+     "canone": 1000,
+     "riga": 22
+    },
+    {
+     "tipo": "rimossa",
+     "key": "sinergit10",
+     "nome": "sinergit 10",
+     "sezione": "VIA MALAGA",
+     "pt": 33,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 63,
+     "canone": 1100,
+     "riga": 23
+    }
+   ]
+  },
+  {
+   "id": "20260609-155700",
+   "rilevato": "2026-06-09T15:57:00Z",
+   "excel": "2026-06-09T17:57",
+   "impronta": "5ad70ca92025db43",
+   "fonte": "foto",
+   "file": "Scheda affitti 09.06.26.JPG",
+   "foto": "foto/20260609-155700.jpg",
+   "n_unita": 17,
+   "mq_tot": 821,
+   "canone_tot": 15180,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "palazzina101/112",
+     "nome": "palazzina 101/112",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 8,
+     "tot": 23,
+     "canone": 630,
+     "riga": 2,
+     "campi": {
+      "cort": [
+       0,
+       8
+      ],
+      "tot": [
+       15,
+       23
+      ],
+      "canone": [
+       550,
+       630
+      ]
+     }
+    },
+    {
+     "tipo": "rimossa",
+     "key": "vistamare1",
+     "nome": "vistamare 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 54,
+     "sopp": 0,
+     "cort": 20,
+     "tot": 74,
+     "canone": 950,
+     "riga": 10
+    },
+    {
+     "tipo": "rimossa",
+     "key": "silos6",
+     "nome": "silos 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 27,
+     "cort": 14,
+     "tot": 73,
+     "canone": 1100,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stoccaggio51",
+     "nome": "stoccaggio 51",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 44,
+     "sopp": 52,
+     "cort": 10,
+     "tot": 106,
+     "canone": 1500,
+     "riga": 17
+    }
+   ]
+  },
+  {
+   "id": "20260618-123200",
+   "rilevato": "2026-06-18T12:32:00Z",
+   "excel": "2026-06-18T14:32",
+   "impronta": "b01bb85d6bc572e3",
+   "fonte": "foto",
+   "file": "Scheda affitti 18.06.26.JPG",
+   "foto": "foto/20260618-123200.jpg",
+   "n_unita": 19,
+   "mq_tot": 889,
+   "canone_tot": 16840,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "palazzina203/208",
+     "nome": "palazzina 203/208",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 5,
+     "cort": 0,
+     "tot": 20,
+     "canone": 700,
+     "riga": 3
+    },
+    {
+     "tipo": "modificata",
+     "key": "mergellina24",
+     "nome": "mergellina 24",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 0,
+     "cort": 10,
+     "tot": 34,
+     "canone": 730,
+     "riga": 4,
+     "campi": {
+      "canone": [
+       750,
+       730
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "residence3",
+     "nome": "residence 3",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 0,
+     "cort": 8,
+     "tot": 43,
+     "canone": 780,
+     "riga": 5,
+     "campi": {
+      "canone": [
+       800,
+       780
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "shedp11/3c",
+     "nome": "shed p1 1/3c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 850,
+     "riga": 8,
+     "campi": {
+      "canone": [
+       900,
+       850
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina17",
+     "nome": "mergellina 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 16,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 31,
+     "canone": 850,
+     "riga": 9
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "supercondor2",
+     "nome": "super condor 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 0,
+     "tot": 47,
+     "canone": 900,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "scaletta23",
+     "nome": "scaletta 23",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 14
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina45",
+     "nome": "mergellina 45",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 0,
+     "cort": 5,
+     "tot": 30,
+     "canone": 700,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "forgiatura11",
+     "nome": "forgiatura 11",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 12
+    }
+   ]
+  },
+  {
+   "id": "20260623-090100",
+   "rilevato": "2026-06-23T09:01:00Z",
+   "excel": "2026-06-23T11:01",
+   "impronta": "6ca7bb3c0b31e518",
+   "fonte": "foto",
+   "file": "Scheda affitti 23.06.26.JPG",
+   "foto": "foto/20260623-090100.jpg",
+   "n_unita": 19,
+   "mq_tot": 884,
+   "canone_tot": 16940,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "palazzina203/208",
+     "nome": "palazzina 203/208",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 700,
+     "riga": 2,
+     "campi": {
+      "sopp": [
+       5,
+       0
+      ],
+      "tot": [
+       20,
+       15
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "palazzina103",
+     "nome": "palazzina 103",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 8,
+     "tot": 23,
+     "canone": 730,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "palazzina101/112",
+     "nome": "palazzina 101/112",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 8,
+     "tot": 23,
+     "canone": 630,
+     "riga": 2
+    }
+   ]
+  },
+  {
+   "id": "20260703-074000",
+   "rilevato": "2026-07-03T07:40:00Z",
+   "excel": "2026-07-03T09:40",
+   "impronta": "0d3d23f4a1acbe77",
+   "fonte": "foto",
+   "file": "Scheda affitti 03.07.26.JPG",
+   "foto": "foto/20260703-074000.jpg",
+   "n_unita": 19,
+   "mq_tot": 884,
+   "canone_tot": 16920,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "palazzina203/208",
+     "nome": "palazzina 203/208",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 680,
+     "riga": 2,
+     "campi": {
+      "canone": [
+       700,
+       680
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "20260806-124300",
+   "rilevato": "2026-08-06T12:43:00Z",
+   "excel": "2026-08-06T14:43",
+   "impronta": "a8be8e97363f8692",
+   "fonte": "foto",
+   "file": "Scheda affitti 06.08.26.JPG",
+   "foto": "foto/20260806-124300.jpg",
+   "n_unita": 23,
+   "mq_tot": 1550,
+   "canone_tot": 24740,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina2",
+     "nome": "mergellina 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 16,
+     "sopp": 14,
+     "cort": 5,
+     "tot": 35,
+     "canone": 800,
+     "riga": 4
+    },
+    {
+     "tipo": "modificata",
+     "key": "shedp11/3c",
+     "nome": "shed p1 1 / 3c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 850,
+     "riga": 5,
+     "campi": {
+      "nome": [
+       "shed p1 1/3c",
+       "shed p1 1 / 3c"
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "supercondor2/5/6",
+     "nome": "super condor 2 / 5 / 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 0,
+     "tot": 47,
+     "canone": 900,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "attico4",
+     "nome": "attico 4",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 25,
+     "cort": 0,
+     "tot": 56,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina28/37/34",
+     "nome": "mergellina 28 / 37 / 34",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 7,
+     "tot": 54,
+     "canone": 950,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp121e",
+     "nome": "shed p1 21e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 30,
+     "sopp": 25,
+     "cort": 0,
+     "tot": 55,
+     "canone": 980,
+     "riga": 10
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "decorazione7",
+     "nome": "decorazione 7",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 17,
+     "cort": 11,
+     "tot": 61,
+     "canone": 1000,
+     "riga": 11
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "forgiatura16/14",
+     "nome": "forgiatura 16 / 14",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 33,
+     "cort": 15,
+     "tot": 83,
+     "canone": 1050,
+     "riga": 12
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt12/17c",
+     "nome": "shed pt 12 / 17c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 35,
+     "cort": 5,
+     "tot": 80,
+     "canone": 1100,
+     "riga": 13
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "scaletta21/23",
+     "nome": "scaletta 21 / 23",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 14
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp19/11c",
+     "nome": "shed p1 9 / 11c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 15
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stoccaggio75",
+     "nome": "stoccaggio 75",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 63,
+     "sopp": 62,
+     "cort": 8,
+     "tot": 133,
+     "canone": 1500,
+     "riga": 17
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stoccaggio9",
+     "nome": "stoccaggio 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 72,
+     "sopp": 45,
+     "cort": 7,
+     "tot": 124,
+     "canone": 1600,
+     "riga": 18
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "stazione33",
+     "nome": "stazione 33",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 103,
+     "sopp": 48,
+     "cort": 5,
+     "tot": 156,
+     "canone": 1800,
+     "riga": 19
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "capannina51",
+     "nome": "capannina 51",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 58,
+     "sopp": 90,
+     "cort": 15,
+     "tot": 163,
+     "canone": 2100,
+     "riga": 20
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mansarda2a",
+     "nome": "mansarda 2a",
+     "sezione": "VIA MALAGA",
+     "pt": 23,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 23,
+     "canone": 800,
+     "riga": 22
+    },
+    {
+     "tipo": "rimossa",
+     "key": "palazzina103",
+     "nome": "palazzina 103",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 8,
+     "tot": 23,
+     "canone": 730,
+     "riga": 3
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina24",
+     "nome": "mergellina 24",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 24,
+     "sopp": 0,
+     "cort": 10,
+     "tot": 34,
+     "canone": 730,
+     "riga": 4
+    },
+    {
+     "tipo": "rimossa",
+     "key": "vistamare9",
+     "nome": "vistamare 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 27,
+     "sopp": 0,
+     "cort": 35,
+     "tot": 62,
+     "canone": 800,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina7",
+     "nome": "mergellina 7",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 16,
+     "sopp": 14,
+     "cort": 5,
+     "tot": 35,
+     "canone": 800,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina17",
+     "nome": "mergellina 17",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 16,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 31,
+     "canone": 850,
+     "riga": 9
+    },
+    {
+     "tipo": "rimossa",
+     "key": "supercondor2",
+     "nome": "super condor 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 0,
+     "tot": 47,
+     "canone": 900,
+     "riga": 10
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina28/37",
+     "nome": "mergellina 28/37",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 7,
+     "tot": 54,
+     "canone": 950,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedpt17c",
+     "nome": "shed pt 17c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 35,
+     "cort": 5,
+     "tot": 80,
+     "canone": 1100,
+     "riga": 13
+    },
+    {
+     "tipo": "rimossa",
+     "key": "scaletta23",
+     "nome": "scaletta 23",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 14
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp19c",
+     "nome": "shed p1 9c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "squat15",
+     "nome": "squat 15",
+     "sezione": "VIA MALAGA",
+     "pt": 23,
+     "sopp": 0,
+     "cort": 15,
+     "tot": 38,
+     "canone": 800,
+     "riga": 18
+    }
+   ]
+  },
+  {
+   "id": "20260819-080300",
+   "rilevato": "2026-08-19T08:03:00Z",
+   "excel": "2026-08-19T10:03",
+   "impronta": "7b20ecf188318819",
+   "fonte": "foto",
+   "file": "Scheda affitti 19.08.26.JPG",
+   "foto": "foto/20260819-080300.jpg",
+   "n_unita": 23,
+   "mq_tot": 1550,
+   "canone_tot": 24740,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedp13c",
+     "nome": "shed p1 3c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "supercondor2",
+     "nome": "super condor 2",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 0,
+     "tot": 47,
+     "canone": 900,
+     "riga": 6
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina28",
+     "nome": "mergellina 28",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 7,
+     "tot": 54,
+     "canone": 950,
+     "riga": 8
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "forgiatura14",
+     "nome": "forgiatura 14",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 33,
+     "cort": 15,
+     "tot": 83,
+     "canone": 1050,
+     "riga": 12
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedpt12c",
+     "nome": "shed pt 12c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 35,
+     "cort": 5,
+     "tot": 80,
+     "canone": 1100,
+     "riga": 13
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "scaletta21",
+     "nome": "scaletta 21",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 14
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp19c",
+     "nome": "shed p1 9c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 15
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "capannino51",
+     "nome": "capannino 51",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 58,
+     "sopp": 90,
+     "cort": 15,
+     "tot": 163,
+     "canone": 2100,
+     "riga": 20
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp11/3c",
+     "nome": "shed p1 1 / 3c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "supercondor2/5/6",
+     "nome": "super condor 2 / 5 / 6",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 0,
+     "tot": 47,
+     "canone": 900,
+     "riga": 6
+    },
+    {
+     "tipo": "rimossa",
+     "key": "mergellina28/37/34",
+     "nome": "mergellina 28 / 37 / 34",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 25,
+     "sopp": 22,
+     "cort": 7,
+     "tot": 54,
+     "canone": 950,
+     "riga": 8
+    },
+    {
+     "tipo": "rimossa",
+     "key": "forgiatura16/14",
+     "nome": "forgiatura 16 / 14",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 33,
+     "cort": 15,
+     "tot": 83,
+     "canone": 1050,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedpt12/17c",
+     "nome": "shed pt 12 / 17c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 40,
+     "sopp": 35,
+     "cort": 5,
+     "tot": 80,
+     "canone": 1100,
+     "riga": 13
+    },
+    {
+     "tipo": "rimossa",
+     "key": "scaletta21/23",
+     "nome": "scaletta 21 / 23",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 14
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp19/11c",
+     "nome": "shed p1 9 / 11c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 48,
+     "sopp": 30,
+     "cort": 5,
+     "tot": 83,
+     "canone": 1100,
+     "riga": 15
+    },
+    {
+     "tipo": "rimossa",
+     "key": "capannina51",
+     "nome": "capannina 51",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 58,
+     "sopp": 90,
+     "cort": 15,
+     "tot": 163,
+     "canone": 2100,
+     "riga": 20
+    }
+   ]
+  },
+  {
+   "id": "20260903-124900",
+   "rilevato": "2026-09-03T12:49:00Z",
+   "excel": "2026-09-03T14:49",
+   "impronta": "1d7e738412182808",
+   "fonte": "foto",
+   "file": "Scheda affitti 03.09.26.JPG",
+   "foto": "foto/20260903-124900.jpg",
+   "n_unita": 22,
+   "mq_tot": 1480,
+   "canone_tot": 23840,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "palazzina204/208",
+     "nome": "palazzina 204/208",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 680,
+     "riga": 2
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "shedp11c",
+     "nome": "shed p1 1c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "forgiatura1",
+     "nome": "forgiatura 1",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 43,
+     "sopp": 21,
+     "cort": 5,
+     "tot": 69,
+     "canone": 1050,
+     "riga": 11
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "capannina51",
+     "nome": "capannina 51",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 58,
+     "sopp": 90,
+     "cort": 15,
+     "tot": 163,
+     "canone": 2100,
+     "riga": 19
+    },
+    {
+     "tipo": "rimossa",
+     "key": "palazzina203/208",
+     "nome": "palazzina 203/208",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 680,
+     "riga": 2
+    },
+    {
+     "tipo": "rimossa",
+     "key": "shedp13c",
+     "nome": "shed p1 3c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 850,
+     "riga": 5
+    },
+    {
+     "tipo": "rimossa",
+     "key": "attico4",
+     "nome": "attico 4",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 31,
+     "sopp": 25,
+     "cort": 0,
+     "tot": 56,
+     "canone": 900,
+     "riga": 7
+    },
+    {
+     "tipo": "rimossa",
+     "key": "forgiatura14",
+     "nome": "forgiatura 14",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 33,
+     "cort": 15,
+     "tot": 83,
+     "canone": 1050,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "capannino51",
+     "nome": "capannino 51",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 58,
+     "sopp": 90,
+     "cort": 15,
+     "tot": 163,
+     "canone": 2100,
+     "riga": 20
+    }
+   ]
+  },
+  {
+   "id": "20260905-073700",
+   "rilevato": "2026-09-05T07:37:00Z",
+   "excel": "2026-09-05T09:37",
+   "impronta": "8c8e047022b98a53",
+   "fonte": "foto",
+   "file": "Scheda affitti 05.09.26.JPG",
+   "foto": "foto/20260905-073700.jpg",
+   "n_unita": 21,
+   "mq_tot": 1448,
+   "canone_tot": 22990,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "shedp11c",
+     "nome": "shed p1 1c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 850,
+     "riga": 5
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "file": "Scheda affitti 10.12.24.JPG",
+ "header_right": "10/12/24 12.00",
+ "columns": [
+  "MQ P T",
+  "MQ SOPP",
+  "MQ CORT",
+  "MQ TOT",
+  "CANONE",
+  "CANONE + IVA"
+ ],
+ "rows": [
+  {
+   "type": "section",
+   "text": "VIA TUCIDIDE 349/7641043"
+  },
+  {
+   "type": "unit",
+   "name": "shed p1 26c",
+   "cells": [
+    "18",
+    "16",
+    "0",
+    "34",
+    "€ 780",
+    "€ 952"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed p1 27c",
+   "cells": [
+    "18",
+    "16",
+    "0",
+    "34",
+    "€ 800",
+    "€ 976"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "silos 24",
+   "cells": [
+    "21",
+    "16",
+    "9",
+    "46",
+    "€ 850",
+    "€ 1.037"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina beach p1 17 22",
+   "cells": [
+    "22",
+    "20",
+    "0",
+    "42",
+    "€ 850",
+    "€ 1.037"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 37",
+   "cells": [
+    "25",
+    "19",
+    "6",
+    "50",
+    "€ 900",
+    "€ 1.098"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "montacarich 9",
+   "cells": [
+    "37",
+    "33",
+    "0",
+    "70",
+    "€ 1.000",
+    "€ 1.220"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed pt 18c",
+   "cells": [
+    "33",
+    "30",
+    "14",
+    "77",
+    "€ 1.050",
+    "€ 1.281"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "montaggio pt 3",
+   "cells": [
+    "46",
+    "32",
+    "7",
+    "85",
+    "€ 1.100",
+    "€ 1.342"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stampaggio 1",
+   "cells": [
+    "46",
+    "33",
+    "0",
+    "79",
+    "€ 1.300",
+    "€ 1.586"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stampaggio 4/5",
+   "cells": [
+    "96",
+    "75",
+    "29",
+    "200",
+    "€ 2.500",
+    "€ 3.050"
+   ]
+  },
+  {
+   "type": "section",
+   "text": "VIA MALAGA"
+  },
+  {
+   "type": "unit",
+   "name": "mansarda 1a",
+   "cells": [
+    "30",
+    "0",
+    "0",
+    "30",
+    "€ 750",
+    "€ 750"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "unità 9",
+   "cells": [
+    "20",
+    "13",
+    "15",
+    "48",
+    "€ 850",
+    "€ 1.037"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "unità 63",
+   "cells": [
+    "30",
+    "15",
+    "0",
+    "45",
+    "€ 850",
+    "€ 1.037"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "sinergit 10",
+   "cells": [
+    "33",
+    "25",
+    "5",
+    "63",
+    "€ 1.200",
+    "€ 1.464"
+   ]
+  }
+ ],
+ "note": "mansarda 1a IVA shown 750."
+}

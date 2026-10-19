@@ -1,0 +1,167 @@
+{
+ "file": "Scheda affitti 14.10.24.JPG",
+ "header_right": "14/10/24 10.47",
+ "columns": [
+  "MQ P T",
+  "MQ SOPP",
+  "MQ CORT",
+  "MQ TOT",
+  "CANONE",
+  "CANONE + IVA"
+ ],
+ "rows": [
+  {
+   "type": "section",
+   "text": "VIA TUCIDIDE 349/7641043"
+  },
+  {
+   "type": "unit",
+   "name": "mergellina beach 7/12",
+   "cells": [
+    "25",
+    "0",
+    "17",
+    "42",
+    "€ 700",
+    "€ 854"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "miniextra 3",
+   "cells": [
+    "35",
+    "0",
+    "20",
+    "55",
+    "€ 750",
+    "€ 915"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina beach 13",
+   "cells": [
+    "25",
+    "0",
+    "35",
+    "60",
+    "€ 780",
+    "€ 952"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina beach p1 18/22",
+   "cells": [
+    "22",
+    "20",
+    "0",
+    "42",
+    "€ 850",
+    "€ 1.037"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "decorazione 11",
+   "cells": [
+    "35",
+    "18",
+    "5",
+    "58",
+    "€ 930",
+    "€ 1.135"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "attico 6",
+   "cells": [
+    "41",
+    "15",
+    "0",
+    "56",
+    "€ 1.000",
+    "€ 1.220"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "scaletta 20",
+   "cells": [
+    "35",
+    "30",
+    "5",
+    "70",
+    "€ 1.000",
+    "€ 1.220"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stoccaggio 50",
+   "cells": [
+    "65",
+    "60",
+    "40",
+    "165",
+    "€ 1.900",
+    "€ 2.318"
+   ]
+  },
+  {
+   "type": "section",
+   "text": "VIA MALAGA"
+  },
+  {
+   "type": "unit",
+   "name": "unità 23",
+   "cells": [
+    "25",
+    "0",
+    "0",
+    "25",
+    "€ 700",
+    "€ 854"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "squat 15",
+   "cells": [
+    "23",
+    "0",
+    "15",
+    "38",
+    "€ 750",
+    "€ 915"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "squat 2",
+   "cells": [
+    "41",
+    "0",
+    "25",
+    "66",
+    "€ 1.020",
+    "€ 1.244"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "sinergit 10",
+   "cells": [
+    "33",
+    "25",
+    "5",
+    "63",
+    "€ 1.200",
+    "€ 1.464"
+   ]
+  }
+ ],
+ "note": ""
+}

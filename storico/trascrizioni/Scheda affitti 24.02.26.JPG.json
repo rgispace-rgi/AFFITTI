@@ -1,0 +1,187 @@
+{
+ "file": "Scheda affitti 24.02.26.JPG",
+ "header_right": "24/2/26 16.32",
+ "columns": [
+  "MQ P T",
+  "MQ SOPP",
+  "MQ CORT",
+  "MQ TOT",
+  "CANONE"
+ ],
+ "rows": [
+  {
+   "type": "section",
+   "text": "VIA TUCIDIDE 02/7388836"
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 42/43",
+   "cells": [
+    "25",
+    "0",
+    "6",
+    "31",
+    "€ 700"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "beach 9",
+   "cells": [
+    "25",
+    "0",
+    "15",
+    "40",
+    "€ 750"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 26",
+   "cells": [
+    "24",
+    "0",
+    "18",
+    "42",
+    "€ 800"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 3",
+   "cells": [
+    "16",
+    "20",
+    "4",
+    "40",
+    "€ 850"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed pt 4e",
+   "cells": [
+    "17",
+    "11",
+    "18",
+    "46",
+    "€ 870"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed p1 3c",
+   "cells": [
+    "17",
+    "15",
+    "0",
+    "32",
+    "€ 900"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "vistamare 1",
+   "cells": [
+    "54",
+    "0",
+    "20",
+    "74",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "montacarichi 8",
+   "cells": [
+    "30",
+    "25",
+    "0",
+    "55",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed pt 17c",
+   "cells": [
+    "40",
+    "35",
+    "5",
+    "80",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stampaggio 18",
+   "cells": [
+    "37",
+    "35",
+    "0",
+    "72",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "forgiatura 9",
+   "cells": [
+    "48",
+    "30",
+    "5",
+    "83",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "section",
+   "text": "VIA MALAGA"
+  },
+  {
+   "type": "unit",
+   "name": "torre 9",
+   "cells": [
+    "30",
+    "0",
+    "0",
+    "30",
+    "€ 900"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "torre 3",
+   "cells": [
+    "25",
+    "15",
+    "0",
+    "40",
+    "€ 1.000"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "sinergit 10",
+   "cells": [
+    "33",
+    "25",
+    "5",
+    "63",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "superleone 1",
+   "cells": [
+    "40",
+    "70",
+    "20",
+    "130",
+    "€ 2.000"
+   ]
+  }
+ ],
+ "note": "No CANONE + IVA column."
+}

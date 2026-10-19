@@ -1,0 +1,268 @@
+{
+ "file": "Scheda affitti 18.11.25.JPG",
+ "header_right": "18/11/25 16.58",
+ "columns": [
+  "MQ P T",
+  "MQ SOPP",
+  "MQ CORT",
+  "MQ TOT",
+  "CANONE"
+ ],
+ "rows": [
+  {
+   "type": "section",
+   "text": "VIA TUCIDIDE 02/7388836"
+  },
+  {
+   "type": "unit",
+   "name": "lunga marcia 14*",
+   "cells": [
+    "17",
+    "15",
+    "5",
+    "37",
+    "€ 750"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "residence 4*",
+   "cells": [
+    "32",
+    "0",
+    "7",
+    "39",
+    "€ 800"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "vistamare 6",
+   "cells": [
+    "40",
+    "0",
+    "25",
+    "65",
+    "€ 830"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 3",
+   "cells": [
+    "16",
+    "20",
+    "4",
+    "40",
+    "€ 850"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "scaletta 12",
+   "cells": [
+    "22",
+    "15",
+    "4",
+    "41",
+    "€ 850"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "beach 20",
+   "cells": [
+    "22",
+    "20",
+    "0",
+    "42",
+    "€ 880"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "fabbrica 15",
+   "cells": [
+    "31",
+    "18",
+    "6",
+    "55",
+    "€ 900"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 32",
+   "cells": [
+    "25",
+    "22",
+    "4",
+    "51",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "vistamare 1",
+   "cells": [
+    "54",
+    "0",
+    "20",
+    "74",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "museo 5",
+   "cells": [
+    "32",
+    "25",
+    "5",
+    "62",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "cottura 2/3",
+   "cells": [
+    "33",
+    "24",
+    "5",
+    "62",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "silos 13",
+   "cells": [
+    "32",
+    "25",
+    "5",
+    "62",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "cemento armato",
+   "cells": [
+    "45",
+    "0",
+    "45",
+    "90",
+    "€ 980"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "forgiatura 16",
+   "cells": [
+    "35",
+    "32",
+    "18",
+    "85",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "montaggio 17",
+   "cells": [
+    "38",
+    "36",
+    "9",
+    "83",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "montaggio 19",
+   "cells": [
+    "46",
+    "30",
+    "7",
+    "83",
+    "€ 1.200"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "montacarichi 1",
+   "cells": [
+    "90",
+    "25",
+    "0",
+    "115",
+    "€ 1.500"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stocaggio 50",
+   "cells": [
+    "65",
+    "60",
+    "17",
+    "142",
+    "€ 1.800"
+   ]
+  },
+  {
+   "type": "section",
+   "text": "VIA MALAGA Gennaro 349/1854595"
+  },
+  {
+   "type": "unit",
+   "name": "torre 4",
+   "cells": [
+    "25",
+    "15",
+    "0",
+    "40",
+    "€ 1.000"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "sinergit 10",
+   "cells": [
+    "33",
+    "25",
+    "5",
+    "63",
+    "€ 1.200"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "superleone 1",
+   "cells": [
+    "40",
+    "70",
+    "20",
+    "130",
+    "€ 2.000"
+   ]
+  },
+  {
+   "type": "section",
+   "text": "CASCATA via conca del naviglio 2 rozzano"
+  },
+  {
+   "type": "unit",
+   "name": "studio",
+   "cells": [
+    "90",
+    "0",
+    "0",
+    "90",
+    "€ 900"
+   ]
+  }
+ ],
+ "note": ""
+}

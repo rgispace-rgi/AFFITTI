@@ -1,0 +1,191 @@
+{
+ "file": "Scheda affitti 27.09.24.JPG",
+ "header_right": "27/9/24 11.49",
+ "columns": [
+  "MQ P T",
+  "MQ SOPP",
+  "MQ CORT",
+  "MQ TOT",
+  "CANONE",
+  "CANONE + IVA"
+ ],
+ "rows": [
+  {
+   "type": "section",
+   "text": "VIA TUCIDIDE 349/7641043"
+  },
+  {
+   "type": "unit",
+   "name": "mansarda beach",
+   "cells": [
+    "22",
+    "0",
+    "0",
+    "22",
+    "€ 600",
+    "€ 732"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed p1 6c",
+   "cells": [
+    "14",
+    "11",
+    "4",
+    "29",
+    "€ 720",
+    "€ 878"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "miniextra 3",
+   "cells": [
+    "35",
+    "0",
+    "20",
+    "55",
+    "€ 750",
+    "€ 915"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "minicondor 9",
+   "cells": [
+    "31",
+    "0",
+    "24",
+    "55",
+    "€ 750",
+    "€ 915"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed pt 22c",
+   "cells": [
+    "16",
+    "14",
+    "5",
+    "35",
+    "€ 800",
+    "€ 976"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina beach p1 15/16",
+   "cells": [
+    "22",
+    "20",
+    "0",
+    "42",
+    "€ 850",
+    "€ 1.037"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina beach p1 14",
+   "cells": [
+    "22",
+    "20",
+    "20",
+    "62",
+    "€ 900",
+    "€ 1.098"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "decorazione 11",
+   "cells": [
+    "35",
+    "18",
+    "5",
+    "58",
+    "€ 930",
+    "€ 1.135"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "scaletta 20/25",
+   "cells": [
+    "35",
+    "30",
+    "5",
+    "70",
+    "€ 1.000",
+    "€ 1.220"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stoccaggio 50",
+   "cells": [
+    "65",
+    "60",
+    "40",
+    "165",
+    "€ 1.900",
+    "€ 2.318"
+   ]
+  },
+  {
+   "type": "section",
+   "text": "VIA MALAGA"
+  },
+  {
+   "type": "unit",
+   "name": "unità 23",
+   "cells": [
+    "25",
+    "0",
+    "0",
+    "25",
+    "€ 750",
+    "€ 915"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "squat 15",
+   "cells": [
+    "23",
+    "0",
+    "15",
+    "38",
+    "€ 750",
+    "€ 915"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "sinergit 4",
+   "cells": [
+    "33",
+    "25",
+    "48",
+    "106",
+    "€ 1.250",
+    "€ 1.525"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "sinergit 10",
+   "cells": [
+    "33",
+    "25",
+    "5",
+    "63",
+    "€ 1.200",
+    "€ 1.464"
+   ]
+  }
+ ],
+ "note": ""
+}

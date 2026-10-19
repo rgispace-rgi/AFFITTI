@@ -1,0 +1,220 @@
+{
+ "file": "Scheda affitti 09.02.26.JPG",
+ "header_right": "9/2/26 10.02",
+ "columns": [
+  "MQ P T",
+  "MQ SOPP",
+  "MQ CORT",
+  "MQ TOT",
+  "CANONE"
+ ],
+ "rows": [
+  {
+   "type": "section",
+   "text": "VIA MALAGA 02/7388836"
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 42/43",
+   "cells": [
+    "25",
+    "0",
+    "6",
+    "31",
+    "€ 700"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 26",
+   "cells": [
+    "24",
+    "0",
+    "18",
+    "42",
+    "€ 800"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 3",
+   "cells": [
+    "16",
+    "20",
+    "4",
+    "40",
+    "€ 850"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed pt 4e",
+   "cells": [
+    "17",
+    "11",
+    "18",
+    "46",
+    "€ 870"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "beach 17",
+   "cells": [
+    "22",
+    "20",
+    "15",
+    "57",
+    "€ 930"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "vistamare 1",
+   "cells": [
+    "54",
+    "0",
+    "20",
+    "74",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "montacarichi 8",
+   "cells": [
+    "30",
+    "25",
+    "0",
+    "55",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed p1 10e",
+   "cells": [
+    "28",
+    "24",
+    "0",
+    "52",
+    "€ 1.000"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed pt 17c",
+   "cells": [
+    "40",
+    "35",
+    "5",
+    "80",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stampaggio 18",
+   "cells": [
+    "37",
+    "35",
+    "0",
+    "72",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "forgiatura 9",
+   "cells": [
+    "48",
+    "30",
+    "5",
+    "83",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "forgiatura 17",
+   "cells": [
+    "42",
+    "34",
+    "20",
+    "96",
+    "€ 1.200"
+   ]
+  },
+  {
+   "type": "section",
+   "text": "VIA MALAGA"
+  },
+  {
+   "type": "unit",
+   "name": "unità 17",
+   "cells": [
+    "25",
+    "9",
+    "0",
+    "34",
+    "€ 850"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "torre 9",
+   "cells": [
+    "30",
+    "0",
+    "0",
+    "30",
+    "€ 900"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "torre 3",
+   "cells": [
+    "25",
+    "15",
+    "0",
+    "40",
+    "€ 1.000"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "sinergit 10",
+   "cells": [
+    "33",
+    "25",
+    "5",
+    "63",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "sinergit 8",
+   "cells": [
+    "40",
+    "29",
+    "5",
+    "74",
+    "€ 1.300"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "superleone 1",
+   "cells": [
+    "40",
+    "70",
+    "20",
+    "130",
+    "€ 2.000"
+   ]
+  }
+ ],
+ "note": "No IVA column (5 numeric columns). Header address cell says VIA MALAGA 02/7388836 but the same sheet later has a separate VIA MALAGA section row; header contradicts layout."
+}

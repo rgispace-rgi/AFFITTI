@@ -140,10 +140,12 @@
       <span class="title" id="snap-title"></span>
       <button class="btn" id="snap-prev">◀ Precedente</button>
       <button class="btn" id="snap-next">Successiva ▶</button>
+      <button class="btn" id="snap-foto-btn" style="display:none">🖼️ Foto originale</button>
       <button class="btn" onclick="window.print()">🖨️ Stampa</button>
       <button class="btn" id="snap-close">✕ Chiudi</button>
     </div>
     <div class="snap-wrap"><table class="affitti" id="snap"></table></div>
+    <img id="snap-foto" alt="Foto originale della scheda" style="display:none;max-width:100%;margin-top:10px;border:1px solid #ddd">
     <div class="removed-list" id="snap-removed"></div>
     <div class="legend"><span class="a">inserita in questa versione</span><span class="m">modificata (celle cambiate con bordo)</span></div>
   </div>
@@ -171,7 +173,7 @@ const norm = s => String(s ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ
 const fmtData = iso => new Intl.DateTimeFormat('it-IT', { timeZone: 'Europe/Rome', day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(iso));
 const giorno = iso => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Rome' }).format(new Date(iso));
 const fmtExcel = s => { if (!s) return ''; const [d, t] = s.split('T'); const [y, m, g] = d.split('-'); return `${+g}/${+m}/${y.slice(2)} ${t.replace(':', '.')}`; };
-const euro = v => v == null ? '—' : '€ ' + Number(v).toLocaleString('it-IT');
+const euro = v => v == null ? '—' : '€ ' + Number(v).toLocaleString('it-IT', { useGrouping: 'always' });
 const mq = v => v == null ? '—' : Number(v).toLocaleString('it-IT') + ' mq';
 const val = (c, v) => c === 'canone' ? euro(v) : MQ.includes(c) ? mq(v) : (v ?? '—');
 
@@ -274,7 +276,7 @@ function vistaCronologia() {
     out.push(`<div class="version">
       <div class="vhead">
         <span class="vdate">${fmtData(v.rilevato)}</span>
-        <span class="vtot">${v.excel ? 'Excel salvato ' + esc(fmtExcel(v.excel)) + ' · ' : ''}${v.n_unita} unità · ${delta(v, vi, 'mq_tot', mq)} · ${delta(v, vi, 'canone_tot', euro)}</span>
+        <span class="vtot">${v.fonte === 'foto' ? '📷 da foto «' + esc(v.file) + '» · ' : v.excel ? 'Excel salvato ' + esc(fmtExcel(v.excel)) + ' · ' : ''}${v.n_unita} unità · ${delta(v, vi, 'mq_tot', mq)} · ${delta(v, vi, 'canone_tot', euro)}</span>
         <button class="btn" data-snap="${vi}">📷 Vedi tabella</button>
       </div>${corpo}</div>`);
   }
@@ -342,6 +344,8 @@ async function apriSnap(vi) {
 
 function disegnaSnap(snap, v) {
   const g = snap.griglia, ncol = Math.max(...g.map(r => r.length));
+  // colonne in euro: quelle la cui etichetta (riga 2) parla di canone / anno
+  const euroCol = new Set((g[1] || []).map((x, i) => i > 0 && /CANONE|ANNO|€/i.test(String(x ?? '')) ? i : -1).filter(i => i > 0));
   const span = {}, skip = new Set();
   for (const [r0, c0, r1, c1] of snap.unioni || []) {
     span[r0 + ',' + c0] = [c1 - c0 + 1, r1 - r0 + 1];
@@ -367,7 +371,7 @@ function disegnaSnap(snap, v) {
       const x = row[ci];
       let t = '';
       if (x && typeof x === 'object' && x.data) t = fmtExcel(x.data);
-      else if (typeof x === 'number') t = (ci === ncol - 1 && hasNum && ri > 1) ? euro(x) : x.toLocaleString('it-IT');
+      else if (typeof x === 'number') t = (euroCol.has(ci) && hasNum && ri > 1) ? euro(x) : x.toLocaleString('it-IT');
       else t = x ?? '';
       const sp = span[ri + ',' + ci];
       const attrs = sp ? `${sp[0] > 1 ? ` colspan="${sp[0]}"` : ''}${sp[1] > 1 ? ` rowspan="${sp[1]}"` : ''}` : '';
@@ -380,6 +384,16 @@ function disegnaSnap(snap, v) {
   });
   document.getElementById('snap').innerHTML = html;
   const tolte = iniziale ? [] : v.eventi.filter(e => e.tipo === 'rimossa');
+  const fb = document.getElementById('snap-foto-btn'), fi = document.getElementById('snap-foto');
+  fb.style.display = snap.foto ? '' : 'none';
+  fi.style.display = 'none'; fi.removeAttribute('src');
+  fb.onclick = () => {
+    const on = fi.style.display === 'none';
+    if (on && !fi.src) fi.src = snap.foto;   // le foto non cambiano: bastano le pagine statiche
+    fi.style.display = on ? 'block' : 'none';
+    fb.textContent = on ? '📄 Nascondi foto' : '🖼️ Foto originale';
+  };
+  fb.textContent = '🖼️ Foto originale';
   document.getElementById('snap-removed').innerHTML = tolte.length
     ? '<b>Tolte in questa versione:</b><ul class="ev">' + tolte.map(liEvento).join('') + '</ul>' : '';
 }

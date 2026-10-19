@@ -9,6 +9,24 @@ Pagina pubblica: https://rgispace-rgi.github.io/AFFITTI/
 | `scripts/snapshot.py` | Scarica l'Excel, estrae unità (nome, via, MQ P.T./sopp./cortile/tot, canone), confronta con l'ultima versione e salva in `data/`. |
 | `.github/workflows/registro.yml` | Esegue `snapshot.py` ogni 15 minuti su GitHub Actions e fa commit dei nuovi dati. |
 
+## Storico da foto (16/09/2024 → 05/09/2026)
+
+Le 81 foto `Scheda affitti GG.MM.AA.JPG` di `\\Nas-LoftAMilano\Dati\A\AFFITTI` sono state
+trascritte in `storico/trascrizioni/` (una JSON per foto) e controllate contro la vecchia
+estrazione `_ESTRAZIONE_loft_master.csv`: 1351/1357 unità identiche, le 6 differenze
+verificate a vista sulla foto. Data = nome del file, ora = data di modifica del file.
+Le foto (ricompresse) sono in `foto/` e si vedono nel registro con "Foto originale".
+
+Note: nelle schede 03.02.26 e 09.02.26 l'intestazione dice per errore "VIA MALAGA":
+la prima sezione è sempre trattata come VIA TUCIDIDE. Alcuni TOT stampati non sono
+PT+SOPP+CORT (es. shed pt 6 c: 29) e sono riportati come nella foto.
+
+Ricostruire lo storico (solo prima del primo controllo automatico):
+
+```bash
+python scripts/importa_foto.py --nas "//Nas-LoftAMilano/Dati/A/AFFITTI"
+```
+
 ## Dati (`data/`)
 
 - `indice.json` – elenco versioni con totali ed eventi (`iniziale`, `aggiunta`, `rimossa`, `modificata` con valori prima/dopo).

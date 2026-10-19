@@ -1,0 +1,242 @@
+{
+ "file": "Scheda affitti 22.05.26.JPG",
+ "header_right": "22/5/26 16.07",
+ "columns": [
+  "MQ P T",
+  "MQ SOPP",
+  "MQ CORT",
+  "MQ TOT",
+  "CANONE"
+ ],
+ "rows": [
+  {
+   "type": "section",
+   "text": "VIA TUCIDIDE 02/7388836"
+  },
+  {
+   "type": "unit",
+   "name": "palazzina 101/112",
+   "cells": [
+    "15",
+    "0",
+    "0",
+    "15",
+    "€ 550"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 45",
+   "cells": [
+    "25",
+    "0",
+    "5",
+    "30",
+    "€ 700"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 24",
+   "cells": [
+    "24",
+    "0",
+    "10",
+    "34",
+    "€ 750"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "residence 3",
+   "cells": [
+    "35",
+    "0",
+    "8",
+    "43",
+    "€ 800"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "vistamare 9",
+   "cells": [
+    "27",
+    "0",
+    "35",
+    "62",
+    "€ 800"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 7",
+   "cells": [
+    "16",
+    "14",
+    "5",
+    "35",
+    "€ 800"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed p1 1/3c",
+   "cells": [
+    "17",
+    "15",
+    "0",
+    "32",
+    "€ 900"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 28/37",
+   "cells": [
+    "25",
+    "22",
+    "7",
+    "54",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "vistamare 1",
+   "cells": [
+    "54",
+    "0",
+    "20",
+    "74",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "montacarichi 8",
+   "cells": [
+    "30",
+    "25",
+    "0",
+    "55",
+    "€ 950"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "silos 6",
+   "cells": [
+    "32",
+    "27",
+    "14",
+    "73",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed pt 17c",
+   "cells": [
+    "40",
+    "35",
+    "5",
+    "80",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "forgiatura 11",
+   "cells": [
+    "48",
+    "30",
+    "5",
+    "83",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed p1 9c",
+   "cells": [
+    "48",
+    "30",
+    "5",
+    "83",
+    "€ 1.100"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stampaggio 8",
+   "cells": [
+    "37",
+    "35",
+    "0",
+    "72",
+    "€ 1.200"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stoccaggio 51",
+   "cells": [
+    "44",
+    "52",
+    "10",
+    "106",
+    "€ 1.500"
+   ]
+  },
+  {
+   "type": "section",
+   "text": "VIA MALAGA"
+  },
+  {
+   "type": "unit",
+   "name": "squat 15",
+   "cells": [
+    "23",
+    "0",
+    "15",
+    "38",
+    "€ 800"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "torre 9/10",
+   "cells": [
+    "30",
+    "0",
+    "0",
+    "30",
+    "€ 850"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "unità 10",
+   "cells": [
+    "18",
+    "9",
+    "5",
+    "32",
+    "€ 850"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "unità 139",
+   "cells": [
+    "20",
+    "10",
+    "5",
+    "35",
+    "€ 900"
+   ]
+  }
+ ],
+ "note": "palazzina 101/112 has flame and snowflake icons after name; residence 3 has flame icon (not part of names)."
+}

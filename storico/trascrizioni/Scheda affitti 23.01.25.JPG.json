@@ -1,0 +1,183 @@
+{
+ "file": "Scheda affitti 23.01.25.JPG",
+ "header_right": "23/1/25 16.47",
+ "columns": [
+  "MQ P T",
+  "MQ SOPP",
+  "MQ CORT",
+  "MQ TOT",
+  "CANONE",
+  "CANONE + IVA"
+ ],
+ "rows": [
+  {
+   "type": "section",
+   "text": "VIA TUCIDIDE 349/7641043"
+  },
+  {
+   "type": "unit",
+   "name": "mergellina beach 4",
+   "cells": [
+    "25",
+    "0",
+    "17",
+    "42",
+    "€ 700",
+    "€ 854"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed p1 27c",
+   "cells": [
+    "18",
+    "16",
+    "0",
+    "34",
+    "€ 780",
+    "€ 952"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "mergellina 17",
+   "cells": [
+    "17",
+    "15",
+    "0",
+    "32",
+    "€ 800",
+    "€ 976"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "silos 24",
+   "cells": [
+    "21",
+    "16",
+    "9",
+    "46",
+    "€ 850",
+    "€ 1.037"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "cottura 3",
+   "cells": [
+    "33",
+    "24",
+    "5",
+    "62",
+    "€ 950",
+    "€ 1.159"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "museo 10",
+   "cells": [
+    "32",
+    "25",
+    "5",
+    "62",
+    "€ 950",
+    "€ 1.159"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "shed pt 18c",
+   "cells": [
+    "33",
+    "30",
+    "14",
+    "77",
+    "€ 1.050",
+    "€ 1.281"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stampaggio 17",
+   "cells": [
+    "37",
+    "35",
+    "0",
+    "72",
+    "€ 1.100",
+    "€ 1.342"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "stazione 42",
+   "cells": [
+    "42",
+    "28",
+    "7",
+    "77",
+    "€ 1.150",
+    "€ 1.403"
+   ]
+  },
+  {
+   "type": "section",
+   "text": "VIA MALAGA"
+  },
+  {
+   "type": "unit",
+   "name": "unità 9",
+   "cells": [
+    "20",
+    "13",
+    "15",
+    "48",
+    "€ 850",
+    "€ 1.037"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "unità 63",
+   "cells": [
+    "30",
+    "15",
+    "0",
+    "45",
+    "€ 850",
+    "€ 1.037"
+   ]
+  },
+  {
+   "type": "unit",
+   "name": "sinergit 10",
+   "cells": [
+    "33",
+    "25",
+    "5",
+    "63",
+    "€ 1.200",
+    "€ 1.464"
+   ]
+  },
+  {
+   "type": "section",
+   "text": "CASCATA"
+  },
+  {
+   "type": "unit",
+   "name": "studio",
+   "cells": [
+    "90",
+    "0",
+    "0",
+    "90",
+    "€ 900",
+    "€ 1.098"
+   ]
+  }
+ ],
+ "note": ""
+}

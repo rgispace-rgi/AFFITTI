@@ -126,12 +126,31 @@ def leggi_tabella(xlsx_bytes):
 
 
 # ---------------------------------------------------------------- unita
+# errori di battitura visti nelle schede: stessa unita'
+ALIAS = {"stocaggio": "stoccaggio", "montacarich": "montacarichi", "motacarichi": "montacarichi",
+         "essecatura": "essiccatura"}
+
+
 def chiave(nome):
+    """Chiave che riconosce la stessa unita': minuscolo, senza emoji/simboli,
+    senza spazi (super condor 9 = supercondor 9), refusi noti corretti."""
     k = nome.lower()
     k = re.sub(r"[^\w\s/.\-]", " ", k)          # via emoji e simboli
-    k = re.sub(r"\s*/\s*", "/", k)
-    k = re.sub(r"\s+", " ", k).strip()
-    return k
+    k = " ".join(ALIAS.get(p, p) for p in k.split())
+    return re.sub(r"\s+", "", k)
+
+
+def canon_sezione(testo):
+    """Nome uniforme della via/sezione (senza numeri di telefono)."""
+    t = str(testo or "").split("\n")[0].strip()
+    u = t.upper()
+    if "TUCIDIDE" in u:
+        return "VIA TUCIDIDE"
+    if "MALAGA" in u:
+        return "VIA MALAGA"
+    if "CASCATA" in u or "ROZZANO" in u:
+        return "CASCATA (Rozzano)"
+    return re.sub(r"\s*[\d/ ]{6,}$", "", t).strip() or "?"
 
 
 def num(v):
@@ -145,7 +164,7 @@ def estrai_unita(griglia):
     altrimenti e' un'unita' (anche se senza mq/canone)."""
     if len(griglia) < 2:
         return []
-    sezione = str(griglia[1][0] or "").split("\n")[0].strip() or "?"
+    sezione = canon_sezione(griglia[1][0])
     unita, viste = [], {}
     for i, riga in enumerate(griglia[2:], start=2):
         nome = riga[0]
@@ -154,7 +173,7 @@ def estrai_unita(griglia):
         valori = [num(v) for v in riga[1:]]
         primo = re.sub(r"[^A-Za-zÀ-ÿ]", "", nome.split()[0])
         if all(v is None for v in valori) and len(primo) >= 2 and primo == primo.upper():
-            sezione = nome.strip()
+            sezione = canon_sezione(nome)
             continue
         dati = dict(zip(CAMPI, (valori + [None] * len(CAMPI))[:len(CAMPI)]))
         if dati["tot"] is None and any(dati[c] is not None for c in ("pt", "sopp", "cort")):
