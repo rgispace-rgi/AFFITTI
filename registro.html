@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro modifiche – Affitti</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #f0f0f0; --card: #fff; --text: #1f2937; --muted: #6b7280; --line: #e5e7eb;
+    --add: #16a34a; --add-bg: #dcfce7; --del: #dc2626; --del-bg: #fee2e2;
+    --mod: #b45309; --mod-bg: #fef3c7; --accent: #2563eb;
+  }
+  body { font-family: Arial, sans-serif; background: var(--bg); color: var(--text); padding: 16px; font-size: 15px; }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  a { color: var(--accent); }
+
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; margin-bottom: 12px; }
+  h1 { font-size: 22px; }
+  .meta { color: var(--muted); font-size: 13px; }
+  header .back { margin-left: auto; font-size: 14px; }
+
+  .controls { background: var(--card); border-radius: 8px; padding: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+  #q { flex: 1 1 260px; font-size: 16px; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px; }
+  .controls label { font-size: 13px; color: var(--muted); display: inline-flex; align-items: center; gap: 4px; }
+  .controls input[type=date] { padding: 5px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; width: 100%; }
+  .chip { border: 1px solid #cbd5e1; background: #fff; border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer; }
+  .chip.on { background: var(--text); color: #fff; border-color: var(--text); }
+
+  .tabs { display: flex; gap: 4px; margin-bottom: 10px; }
+  .tab { border: none; background: #e5e7eb; padding: 8px 16px; border-radius: 6px 6px 0 0; font-size: 15px; font-weight: bold; cursor: pointer; color: #374151; }
+  .tab.on { background: var(--card); color: var(--text); }
+
+  .version { background: var(--card); border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; }
+  .vhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+  .vdate { font-weight: bold; font-size: 16px; }
+  .vtot { color: var(--muted); font-size: 13px; }
+  .vhead .btn { margin-left: auto; }
+  .btn { border: 1px solid #cbd5e1; background: #fff; border-radius: 6px; padding: 5px 10px; font-size: 13px; cursor: pointer; white-space: nowrap; }
+  .btn:hover { background: #f3f4f6; }
+  ul.ev { list-style: none; margin-top: 8px; }
+  ul.ev li { padding: 5px 8px; border-radius: 5px; margin-top: 4px; font-size: 14px; line-height: 1.4; }
+  li.aggiunta   { background: var(--add-bg); }
+  li.rimossa    { background: var(--del-bg); }
+  li.modificata { background: var(--mod-bg); }
+  li.iniziale   { background: #f3f4f6; }
+  .tag { font-weight: bold; font-size: 12px; text-transform: uppercase; margin-right: 6px; }
+  li.aggiunta .tag { color: var(--add); } li.rimossa .tag { color: var(--del); } li.modificata .tag { color: var(--mod); }
+  .unit-link { font-weight: bold; color: inherit; cursor: pointer; text-decoration: underline dotted; }
+  .sez { color: var(--muted); font-size: 12px; }
+  .old { text-decoration: line-through; color: var(--muted); }
+  details.init summary { cursor: pointer; margin-top: 6px; font-size: 14px; color: var(--muted); }
+  .delta-up { color: var(--add); } .delta-down { color: var(--del); }
+
+  table.units { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 8px; overflow: hidden; font-size: 14px; }
+  table.units th, table.units td { padding: 7px 8px; border-bottom: 1px solid var(--line); text-align: left; }
+  table.units th { background: #f9fafb; font-size: 12px; text-transform: uppercase; color: var(--muted); cursor: pointer; user-select: none; white-space: nowrap; }
+  table.units td.n { text-align: right; white-space: nowrap; }
+  table.units tr.u-row { cursor: pointer; }
+  table.units tr.u-row:hover { background: #f9fafb; }
+  tr.gone td { color: var(--muted); }
+  .st { font-size: 12px; font-weight: bold; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .st.on  { background: var(--add-bg); color: var(--add); }
+  .st.off { background: var(--del-bg); color: var(--del); }
+  tr.timeline td { background: #fafafa; padding: 6px 12px 12px; }
+  .units-wrap { overflow-x: auto; }
+
+  .empty { background: var(--card); border-radius: 8px; padding: 24px; text-align: center; color: var(--muted); }
+  #status { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+  #status.error { color: var(--del); }
+
+  /* foto della tabella */
+  #modal { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: none; align-items: flex-start; justify-content: center; padding: 20px 10px; overflow-y: auto; z-index: 10; }
+  #modal.open { display: flex; }
+  .sheet { background: #fff; border-radius: 8px; padding: 14px; width: 100%; max-width: 800px; }
+  .sheet-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+  .sheet-head .title { font-weight: bold; font-size: 16px; margin-right: auto; }
+  .snap-wrap { overflow-x: auto; }
+  table.affitti { border-collapse: collapse; width: 100%; background: #fff; border: 2.5px solid #c00; font-size: 16px; }
+  table.affitti td { border: 1px solid #555; padding: 3px 6px; white-space: nowrap; }
+  table.affitti .row-header-info td { font-weight: bold; text-align: center; }
+  table.affitti .row-col-labels td { font-weight: bold; text-align: center; line-height: 1.25; }
+  table.affitti .cell-address { white-space: pre-line; font-style: italic; font-weight: normal; }
+  table.affitti .row-data td { font-weight: bold; }
+  table.affitti .row-data td:not(:first-child) { text-align: right; }
+  table.affitti tr.hl-add td { background: var(--add-bg); }
+  table.affitti tr.hl-mod td { background: var(--mod-bg); }
+  table.affitti td.hl-cell { outline: 2px solid var(--mod); outline-offset: -2px; }
+  .legend { font-size: 12px; color: var(--muted); margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .legend span::before { content: ''; display: inline-block; width: 10px; height: 10px; margin-right: 4px; vertical-align: -1px; border-radius: 2px; }
+  .legend .a::before { background: var(--add-bg); border: 1px solid var(--add); }
+  .legend .m::before { background: var(--mod-bg); border: 1px solid var(--mod); }
+  .removed-list { margin-top: 10px; font-size: 14px; }
+
+  @media (max-width: 600px) {
+    body { padding: 10px; }
+    .hide-sm { display: none; }
+  }
+  @media print {
+    body { background: #fff; padding: 0; }
+    body > .wrap { display: none; }
+    #modal { position: static; background: none; padding: 0; display: block !important; }
+    .sheet-head .btn, .legend { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Registro modifiche</h1>
+    <span class="meta" id="meta"></span>
+    <a class="back" href="index.html">← Tabella attuale</a>
+  </header>
+
+  <div class="controls">
+    <input id="q" type="search" placeholder="Cerca unità o via (es. stazione, mergellina 36)…" autocomplete="off">
+    <label>dal <input type="date" id="dal"></label>
+    <label>al <input type="date" id="al"></label>
+    <div class="chips" id="chips">
+      <button class="chip on" data-f="tutti">Tutte</button>
+      <button class="chip" data-f="aggiunta">Inserite</button>
+      <button class="chip" data-f="rimossa">Tolte</button>
+      <button class="chip" data-f="canone">Prezzo cambiato</button>
+      <button class="chip" data-f="mq">Metratura cambiata</button>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab on" data-t="cronologia">Cronologia</button>
+    <button class="tab" data-t="unita">Unità</button>
+  </div>
+  <div id="status">Caricamento…</div>
+  <div id="view"></div>
+</div>
+
+<div id="modal" role="dialog" aria-modal="true">
+  <div class="sheet">
+    <div class="sheet-head">
+      <span class="title" id="snap-title"></span>
+      <button class="btn" id="snap-prev">◀ Precedente</button>
+      <button class="btn" id="snap-next">Successiva ▶</button>
+      <button class="btn" onclick="window.print()">🖨️ Stampa</button>
+      <button class="btn" id="snap-close">✕ Chiudi</button>
+    </div>
+    <div class="snap-wrap"><table class="affitti" id="snap"></table></div>
+    <div class="removed-list" id="snap-removed"></div>
+    <div class="legend"><span class="a">inserita in questa versione</span><span class="m">modificata (celle cambiate con bordo)</span></div>
+  </div>
+</div>
+
+<script>
+// Su GitHub Pages i dati si leggono da raw.githubusercontent (sempre aggiornati);
+// in locale dalla cartella data/.
+const DATA = location.hostname.endsWith('github.io')
+  ? 'https://raw.githubusercontent.com/rgispace-rgi/AFFITTI/main/data/'
+  : 'data/';
+
+const CAMPI = { pt: 'MQ P.T.', sopp: 'MQ sopp.', cort: 'MQ cortile', tot: 'MQ tot', canone: 'Canone', nome: 'Nome', sezione: 'Via' };
+const MQ = ['pt', 'sopp', 'cort', 'tot'];
+
+let versioni = [];             // da indice.json, ordine cronologico
+let unitaIdx = {};             // key -> scheda unità
+let filtro = 'tutti', tab = 'cronologia', sortKey = 'nome', sortDir = 1;
+const cacheVers = {};
+let snapIdx = -1;
+
+// ---------- utilità ----------
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm = s => String(s ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
+const fmtData = iso => new Intl.DateTimeFormat('it-IT', { timeZone: 'Europe/Rome', day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(iso));
+const giorno = iso => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Rome' }).format(new Date(iso));
+const fmtExcel = s => { if (!s) return ''; const [d, t] = s.split('T'); const [y, m, g] = d.split('-'); return `${+g}/${+m}/${y.slice(2)} ${t.replace(':', '.')}`; };
+const euro = v => v == null ? '—' : '€ ' + Number(v).toLocaleString('it-IT');
+const mq = v => v == null ? '—' : Number(v).toLocaleString('it-IT') + ' mq';
+const val = (c, v) => c === 'canone' ? euro(v) : MQ.includes(c) ? mq(v) : (v ?? '—');
+
+async function getJSON(name) {
+  const r = await fetch(DATA + name + '?t=' + Date.now(), { cache: 'no-store' });
+  if (!r.ok) throw new Error(name + ': HTTP ' + r.status);
+  return r.json();
+}
+
+// ---------- caricamento ----------
+async function carica() {
+  try {
+    const [indice, stato] = await Promise.all([getJSON('indice.json'), getJSON('stato.json').catch(() => ({}))]);
+    versioni = indice.versioni || [];
+    const ultimo = stato.ultimo_controllo || (versioni.at(-1) || {}).rilevato;
+    document.getElementById('meta').textContent =
+      `${versioni.length} versioni salvate` + (ultimo ? ` · ultimo controllo ${fmtData(ultimo)}` : '');
+    costruisciUnita();
+    document.getElementById('status').textContent = '';
+    render();
+    apriDaHash();
+  } catch (e) {
+    const st = document.getElementById('status');
+    st.className = 'error';
+    st.textContent = '❌ Registro non disponibile (' + e.message + '). Se è appena stato attivato, attendi il primo controllo.';
+  }
+}
+
+// Ricostruisce la storia di ogni unità dagli eventi
+function costruisciUnita() {
+  unitaIdx = {};
+  versioni.forEach((v, vi) => {
+    for (const e of v.eventi) {
+      let u = unitaIdx[e.key];
+      if (!u) u = unitaIdx[e.key] = { key: e.key, storia: [], inserita: null, tolta: null, iniziale: false };
+      u.storia.push({ v, vi, e });
+      u.nome = e.nome; u.sezione = e.sezione;
+      if (e.tipo === 'rimossa') { u.tolta = v.rilevato; }
+      else { u.dati = e; u.tolta = null; }
+      if (e.tipo === 'iniziale') { u.inserita = v.rilevato; u.iniziale = true; }
+      if (e.tipo === 'aggiunta') { u.inserita = v.rilevato; u.iniziale = false; }
+    }
+  });
+}
+
+// ---------- filtri ----------
+function eventoPassa(e) {
+  if (filtro === 'aggiunta' && e.tipo !== 'aggiunta') return false;
+  if (filtro === 'rimossa' && e.tipo !== 'rimossa') return false;
+  if (filtro === 'canone' && !(e.campi && 'canone' in e.campi)) return false;
+  if (filtro === 'mq' && !(e.campi && MQ.some(c => c in e.campi))) return false;
+  const q = norm(document.getElementById('q').value);
+  if (q && !norm(e.nome + ' ' + e.sezione + ' ' + e.key).includes(q)) return false;
+  return true;
+}
+function versionePassa(v) {
+  const d = giorno(v.rilevato), dal = document.getElementById('dal').value, al = document.getElementById('al').value;
+  return (!dal || d >= dal) && (!al || d <= al);
+}
+const filtriAttivi = () => filtro !== 'tutti' || document.getElementById('q').value.trim() !== '';
+
+// ---------- descrizione eventi ----------
+function link(e) { return `<span class="unit-link" data-unit="${esc(e.key)}">${esc(e.nome)}</span> <span class="sez">${esc(e.sezione)}</span>`; }
+function dettagli(e) { return `${mq(e.tot)} · ${euro(e.canone)}`; }
+function liEvento(e) {
+  if (e.tipo === 'aggiunta') return `<li class="aggiunta"><span class="tag">+ inserita</span>${link(e)} — ${dettagli(e)}</li>`;
+  if (e.tipo === 'rimossa')  return `<li class="rimossa"><span class="tag">− tolta</span>${link(e)} — era ${dettagli(e)}</li>`;
+  if (e.tipo === 'iniziale') return `<li class="iniziale">${link(e)} — ${dettagli(e)}</li>`;
+  const ch = Object.entries(e.campi).map(([c, [a, b]]) =>
+    `${CAMPI[c] || c}: <span class="old">${esc(val(c, a))}</span> → <b>${esc(val(c, b))}</b>`).join(' · ');
+  return `<li class="modificata"><span class="tag">✎ modificata</span>${link(e)} — ${ch}</li>`;
+}
+function delta(v, vi, campo, fmt) {
+  if (vi === 0) return fmt(v[campo]);
+  const d = v[campo] - versioni[vi - 1][campo];
+  if (!d) return fmt(v[campo]);
+  return `${fmt(v[campo])} <span class="${d > 0 ? 'delta-up' : 'delta-down'}">(${d > 0 ? '+' : ''}${d.toLocaleString('it-IT')})</span>`;
+}
+
+// ---------- viste ----------
+function render() {
+  document.querySelectorAll('.tab').forEach(b => b.classList.toggle('on', b.dataset.t === tab));
+  document.getElementById('view').innerHTML = tab === 'cronologia' ? vistaCronologia() : vistaUnita();
+}
+
+function vistaCronologia() {
+  const out = [];
+  for (let vi = versioni.length - 1; vi >= 0; vi--) {
+    const v = versioni[vi];
+    if (!versionePassa(v)) continue;
+    const ev = v.eventi.filter(eventoPassa);
+    const iniziale = v.eventi.length && v.eventi[0].tipo === 'iniziale';
+    if (filtriAttivi() && !ev.length) continue;
+    let corpo;
+    if (iniziale) {
+      corpo = `<details class="init" ${filtriAttivi() ? 'open' : ''}><summary>Inizio del registro: ${v.n_unita} unità presenti — mostra elenco</summary><ul class="ev">${ev.map(liEvento).join('')}</ul></details>`;
+    } else {
+      corpo = `<ul class="ev">${ev.map(liEvento).join('') || '<li class="iniziale">Nessuna modifica alle unità (cambiata solo la formattazione/intestazione).</li>'}</ul>`;
+    }
+    out.push(`<div class="version">
+      <div class="vhead">
+        <span class="vdate">${fmtData(v.rilevato)}</span>
+        <span class="vtot">${v.excel ? 'Excel salvato ' + esc(fmtExcel(v.excel)) + ' · ' : ''}${v.n_unita} unità · ${delta(v, vi, 'mq_tot', mq)} · ${delta(v, vi, 'canone_tot', euro)}</span>
+        <button class="btn" data-snap="${vi}">📷 Vedi tabella</button>
+      </div>${corpo}</div>`);
+  }
+  return out.join('') || '<div class="empty">Nessuna modifica trovata con questi filtri.</div>';
+}
+
+function vistaUnita() {
+  const q = norm(document.getElementById('q').value);
+  let lista = Object.values(unitaIdx).filter(u => !q || norm(u.nome + ' ' + u.sezione + ' ' + u.key).includes(q));
+  lista = lista.filter(u => u.storia.some(s => versionePassa(s.v) && eventoPassa(s.e)) || (filtro === 'tutti' && !document.getElementById('dal').value && !document.getElementById('al').value));
+  const get = {
+    nome: u => norm(u.nome), sezione: u => norm(u.sezione), tot: u => u.dati?.tot ?? -1, canone: u => u.dati?.canone ?? -1,
+    inserita: u => u.inserita || '', tolta: u => u.tolta || '', mod: u => u.storia.length,
+  };
+  lista.sort((a, b) => { const x = get[sortKey](a), y = get[sortKey](b); return (x > y ? 1 : x < y ? -1 : 0) * sortDir; });
+  if (!lista.length) return '<div class="empty">Nessuna unità trovata.</div>';
+  const th = (k, t, cls = '') => `<th data-sort="${k}" class="${cls}">${t}${sortKey === k ? (sortDir > 0 ? ' ▲' : ' ▼') : ''}</th>`;
+  const rows = lista.map(u => {
+    const ins = u.iniziale ? `≤ ${fmtData(u.inserita).split(',')[0]}` : (u.inserita ? fmtData(u.inserita).split(',')[0] : '');
+    const tol = u.tolta ? fmtData(u.tolta).split(',')[0] : '';
+    return `<tr class="u-row ${u.tolta ? 'gone' : ''}" data-unit="${esc(u.key)}">
+      <td><b>${esc(u.nome)}</b></td><td class="hide-sm">${esc(u.sezione)}</td>
+      <td class="n">${mq(u.dati?.tot)}</td><td class="n">${euro(u.dati?.canone)}</td>
+      <td class="hide-sm">${ins}</td><td>${u.tolta ? `<span class="st off">tolta ${tol}</span>` : '<span class="st on">presente</span>'}</td>
+      <td class="n hide-sm">${u.storia.length - 1}</td></tr>`;
+  }).join('');
+  return `<div class="units-wrap"><table class="units"><thead><tr>
+    ${th('nome', 'Unità')}${th('sezione', 'Via', 'hide-sm')}${th('tot', 'MQ tot')}${th('canone', 'Canone')}
+    ${th('inserita', 'Inserita', 'hide-sm')}${th('tolta', 'Stato')}${th('mod', 'Modifiche', 'hide-sm')}
+  </tr></thead><tbody>${rows}</tbody></table></div>
+  <p class="meta" style="margin-top:8px">“≤ data” = già presente quando è iniziato il registro. Tocca una riga per vedere la sua storia. Valori di una unità tolta = gli ultimi registrati.</p>`;
+}
+
+function toggleTimeline(tr) {
+  const next = tr.nextElementSibling;
+  if (next && next.classList.contains('timeline')) { next.remove(); return; }
+  const u = unitaIdx[tr.dataset.unit];
+  const items = u.storia.slice().reverse().map(s =>
+    `<div style="margin-top:6px"><b>${fmtData(s.v.rilevato)}</b> <button class="btn" data-snap="${s.vi}">📷</button><ul class="ev">${liEvento(s.e)}</ul></div>`).join('');
+  const t = document.createElement('tr');
+  t.className = 'timeline';
+  t.innerHTML = `<td colspan="7">${items}</td>`;
+  tr.after(t);
+}
+
+// ---------- foto della tabella ----------
+async function apriSnap(vi) {
+  snapIdx = vi;
+  const v = versioni[vi];
+  document.getElementById('snap-title').textContent = 'Tabella del ' + fmtData(v.rilevato);
+  document.getElementById('snap-prev').disabled = vi === 0;
+  document.getElementById('snap-next').disabled = vi === versioni.length - 1;
+  document.getElementById('modal').classList.add('open');
+  history.replaceState(null, '', '#v=' + v.id);
+  const tbl = document.getElementById('snap');
+  tbl.innerHTML = '<tr><td style="border:none;padding:20px">Caricamento…</td></tr>';
+  try {
+    const snap = cacheVers[v.id] || (cacheVers[v.id] = await getJSON('versioni/' + v.id + '.json'));
+    if (snapIdx !== vi) return;
+    disegnaSnap(snap, v);
+  } catch (e) {
+    tbl.innerHTML = `<tr><td style="border:none;padding:20px;color:#c00">Errore: ${esc(e.message)}</td></tr>`;
+  }
+}
+
+function disegnaSnap(snap, v) {
+  const g = snap.griglia, ncol = Math.max(...g.map(r => r.length));
+  const span = {}, skip = new Set();
+  for (const [r0, c0, r1, c1] of snap.unioni || []) {
+    span[r0 + ',' + c0] = [c1 - c0 + 1, r1 - r0 + 1];
+    for (let r = r0; r <= r1; r++) for (let c = c0; c <= c1; c++) if (r !== r0 || c !== c0) skip.add(r + ',' + c);
+  }
+  // evidenziazioni (solo se non è la prima versione)
+  const iniziale = v.eventi[0]?.tipo === 'iniziale';
+  const evByKey = {};
+  if (!iniziale) for (const e of v.eventi) evByKey[e.key] = e;
+  const rowInfo = {};
+  for (const u of snap.unita || []) if (evByKey[u.key]) rowInfo[u.riga] = evByKey[u.key];
+  const colCampo = { 1: 'pt', 2: 'sopp', 3: 'cort', 4: 'tot', 5: 'canone' };
+
+  let html = '';
+  g.forEach((row, ri) => {
+    const hasNum = row.slice(1).some(x => typeof x === 'number');
+    let cls = ri === 0 ? 'row-header-info' : ri === 1 ? 'row-col-labels' : hasNum ? 'row-data' : '';
+    const ev = rowInfo[ri];
+    if (ev) cls += ev.tipo === 'aggiunta' ? ' hl-add' : ' hl-mod';
+    html += `<tr class="${cls}">`;
+    for (let ci = 0; ci < ncol; ci++) {
+      if (skip.has(ri + ',' + ci)) continue;
+      const x = row[ci];
+      let t = '';
+      if (x && typeof x === 'object' && x.data) t = fmtExcel(x.data);
+      else if (typeof x === 'number') t = (ci === ncol - 1 && hasNum && ri > 1) ? euro(x) : x.toLocaleString('it-IT');
+      else t = x ?? '';
+      const sp = span[ri + ',' + ci];
+      const attrs = sp ? `${sp[0] > 1 ? ` colspan="${sp[0]}"` : ''}${sp[1] > 1 ? ` rowspan="${sp[1]}"` : ''}` : '';
+      let tdc = ri === 1 && ci === 0 ? 'cell-address' : '';
+      const campo = ci === 0 ? 'nome' : colCampo[ci];
+      if (ev && ev.tipo === 'modificata' && ev.campi && campo in ev.campi) tdc += ' hl-cell';
+      html += `<td class="${tdc}"${attrs}>${esc(t)}</td>`;
+    }
+    html += '</tr>';
+  });
+  document.getElementById('snap').innerHTML = html;
+  const tolte = iniziale ? [] : v.eventi.filter(e => e.tipo === 'rimossa');
+  document.getElementById('snap-removed').innerHTML = tolte.length
+    ? '<b>Tolte in questa versione:</b><ul class="ev">' + tolte.map(liEvento).join('') + '</ul>' : '';
+}
+
+function chiudiSnap() {
+  snapIdx = -1;
+  document.getElementById('modal').classList.remove('open');
+  history.replaceState(null, '', location.pathname + location.search);
+}
+
+function apriDaHash() {
+  const m = location.hash.match(/^#v=([\w-]+)/);
+  if (!m) return;
+  const vi = versioni.findIndex(v => v.id === m[1]);
+  if (vi >= 0) apriSnap(vi);
+}
+
+// ---------- eventi UI ----------
+document.getElementById('q').addEventListener('input', render);
+document.getElementById('dal').addEventListener('change', render);
+document.getElementById('al').addEventListener('change', render);
+document.getElementById('chips').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  filtro = b.dataset.f;
+  document.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c === b));
+  render();
+});
+document.querySelector('.tabs').addEventListener('click', e => {
+  const b = e.target.closest('.tab'); if (!b) return;
+  tab = b.dataset.t; render();
+});
+document.getElementById('view').addEventListener('click', e => {
+  const s = e.target.closest('[data-snap]');
+  if (s) { apriSnap(+s.dataset.snap); return; }
+  const h = e.target.closest('th[data-sort]');
+  if (h) { sortDir = sortKey === h.dataset.sort ? -sortDir : 1; sortKey = h.dataset.sort; render(); return; }
+  const tr = e.target.closest('tr.u-row');
+  if (tr) { toggleTimeline(tr); return; }
+  const ul = e.target.closest('.unit-link');
+  if (ul) {
+    tab = 'unita';
+    const u = unitaIdx[ul.dataset.unit];
+    document.getElementById('q').value = u ? u.nome : '';
+    render();
+    const row = document.querySelector('tr.u-row');
+    if (row) toggleTimeline(row);
+  }
+});
+document.getElementById('snap-close').onclick = chiudiSnap;
+document.getElementById('snap-prev').onclick = () => snapIdx > 0 && apriSnap(snapIdx - 1);
+document.getElementById('snap-next').onclick = () => snapIdx < versioni.length - 1 && apriSnap(snapIdx + 1);
+document.getElementById('modal').addEventListener('click', e => { if (e.target.id === 'modal') chiudiSnap(); });
+document.addEventListener('keydown', e => {
+  if (snapIdx < 0) return;
+  if (e.key === 'Escape') chiudiSnap();
+  if (e.key === 'ArrowLeft' && snapIdx > 0) apriSnap(snapIdx - 1);
+  if (e.key === 'ArrowRight' && snapIdx < versioni.length - 1) apriSnap(snapIdx + 1);
+});
+
+carica();
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+name: Registro modifiche AFFITTI
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # ogni 15 minuti (GitHub puo' ritardare di qualche minuto)
+  workflow_dispatch:          # avvio manuale dalla scheda Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: registro
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install openpyxl==3.1.5
+
+      - name: Controlla Excel e salva eventuale nuova versione
+        run: python scripts/snapshot.py
+
+      - name: Commit e push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Niente da salvare."
+            exit 0
+          fi
+          VER=$(python -c "import json;print(json.load(open('data/stato.json')).get('ultima_versione',''))")
+          if git diff --cached --name-only | grep -q '^data/versioni/'; then
+            git commit -m "Registro: nuova versione $VER"
+          else
+            git commit -m "Registro: controllo giornaliero"
+          fi
+          git pull --rebase
+          git push
