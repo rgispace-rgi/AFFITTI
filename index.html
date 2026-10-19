@@ -23,6 +23,9 @@
   .btn:hover { opacity: .82; }
   .btn-print { background: #16a34a; color: #fff; }
   .btn-log   { background: #2563eb; color: #fff; text-decoration: none; }
+  .btn-log[hidden] { display: none; }
+  /* spazio invisibile tra "+" e "Stampa": doppio clic/tocco mostra il pulsante Registro */
+  .log-spot  { display: inline-block; width: 28px; height: 36px; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
   .btn-size  { background: #e5e7eb; color: #374151; padding: 7px 13px; font-size: 16px; min-width: 34px; justify-content: center; }
   .btn-size:hover { background: #d1d5db; }
   .size-label { font-size: 12px; color: #888; font-family: Arial, sans-serif; padding: 0 2px; }
@@ -79,7 +82,8 @@
   <button class="btn btn-size" onclick="changeSize(-1)">−</button>
   <span class="size-label" id="size-label">18px</span>
   <button class="btn btn-size" onclick="changeSize(+1)">+</button>
-  <a class="btn btn-log" href="registro.html" target="_blank" rel="noopener">📜 Registro</a>
+  <span class="log-spot" id="log-spot" aria-hidden="true"></span>
+  <a class="btn btn-log" id="btn-log" href="registro.html" target="_blank" rel="noopener" hidden>📜 Registro</a>
   <button class="btn btn-print" onclick="window.print()">🖨️ Stampa</button>
 </div>
 
@@ -102,6 +106,17 @@ function changeSize(delta) {
   document.getElementById('tbl').style.fontSize = fontSize + 'px';
   document.getElementById('size-label').textContent = fontSize + 'px';
 }
+
+// Pulsante Registro nascosto: compare con due clic/tocchi rapidi sullo spazio vuoto
+(function () {
+  const spot = document.getElementById('log-spot'), btn = document.getElementById('btn-log');
+  let ultimo = 0;
+  spot.addEventListener('click', () => {
+    const ora = Date.now();
+    if (ora - ultimo < 500) { btn.hidden = false; spot.style.display = 'none'; }
+    ultimo = ora;
+  });
+})();
 
 function toDirectLink(url) {
   let u = url.trim();
