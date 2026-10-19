@@ -28,7 +28,15 @@
   .chip { border: 1px solid #cbd5e1; background: #fff; border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer; }
   .chip.on { background: var(--text); color: #fff; border-color: var(--text); }
 
-  .tabs { display: flex; gap: 4px; margin-bottom: 10px; }
+  .tabs { display: flex; gap: 4px; margin-bottom: 0; }
+  /* intestazione, ricerca, filtri e schede restano sempre visibili */
+  .top { position: sticky; top: 0; z-index: 5; background: var(--bg); padding-top: 16px; margin-top: -16px; border-bottom: 1px solid transparent; margin-bottom: 10px; }
+  .top.stuck { border-bottom-color: var(--line); box-shadow: 0 6px 8px -6px rgba(0,0,0,.15); }
+  .su { position: fixed; right: 18px; bottom: 18px; z-index: 6; width: 46px; height: 46px; border-radius: 50%; border: none;
+        background: var(--text); color: #fff; font-size: 22px; font-weight: bold; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.3);
+        opacity: 0; pointer-events: none; transform: translateY(10px); transition: opacity .2s, transform .2s; }
+  .su.on { opacity: .9; pointer-events: auto; transform: none; }
+  .su:hover { opacity: 1; }
   .tab { border: none; background: #e5e7eb; padding: 8px 16px; border-radius: 6px 6px 0 0; font-size: 15px; font-weight: bold; cursor: pointer; color: #374151; }
   .tab.on { background: var(--card); color: var(--text); }
 
@@ -107,6 +115,7 @@
 </head>
 <body>
 <div class="wrap">
+ <div class="top" id="top">
   <header>
     <h1>Registro modifiche</h1>
     <span class="meta" id="meta"></span>
@@ -130,6 +139,8 @@
     <button class="tab on" data-t="cronologia">Cronologia</button>
     <button class="tab" data-t="unita">Unità</button>
   </div>
+ </div>
+  <button id="su" class="su" title="Torna all'inizio" aria-label="Torna all'inizio">↑</button>
   <div id="status">Caricamento…</div>
   <div id="view"></div>
 </div>
@@ -478,6 +489,15 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft' && snapIdx > 0) apriSnap(snapIdx - 1);
   if (e.key === 'ArrowRight' && snapIdx < versioni.length - 1) apriSnap(snapIdx + 1);
 });
+
+// intestazione fissa (ombra quando si scorre) e pulsante "torna su"
+const btnSu = document.getElementById('su'), topBar = document.getElementById('top');
+function aggiornaScroll() {
+  btnSu.classList.toggle('on', scrollY > 250);
+  topBar.classList.toggle('stuck', scrollY > 5);
+}
+addEventListener('scroll', aggiornaScroll, { passive: true });
+btnSu.onclick = () => scrollTo({ top: 0, behavior: 'smooth' });
 
 carica();
 </script>
