@@ -147,7 +147,7 @@
     <div class="snap-wrap"><table class="affitti" id="snap"></table></div>
     <img id="snap-foto" alt="Foto originale della scheda" style="display:none;max-width:100%;margin-top:10px;border:1px solid #ddd">
     <div class="removed-list" id="snap-removed"></div>
-    <div class="legend"><span class="a">inserita in questa versione</span><span class="m">modificata (celle cambiate con bordo)</span></div>
+    <div class="legend"><span class="a">inserita in questa versione</span><span class="m">modificata (celle cambiate con bordo)</span><span>dettaglio di ogni cambiamento nell'elenco sopra</span></div>
   </div>
 </div>
 
@@ -237,8 +237,26 @@ const filtriAttivi = () => filtro !== 'tutti' || document.getElementById('q').va
 
 // ---------- descrizione eventi ----------
 function link(e) {
+  if (e.membri) {   // più unità dello stesso gruppo con lo stesso cambiamento
+    const nomi = e.membri.map(m => m.nome);
+    let pre = nomi[0].slice(0, nomi[0].lastIndexOf(' ') + 1);
+    if (!nomi.every(n => n.startsWith(pre))) pre = '';
+    return `<span class="unit-link" data-unit="${esc(e.key)}">${esc(e.gruppo)}</span> <span class="sez">${esc(e.sezione)}` +
+      ` · ${e.membri.length} unità: ${esc(nomi.map(n => n.slice(pre.length)).join(', '))}</span>`;
+  }
   return `<span class="unit-link" data-unit="${esc(e.key)}">${esc(e.nome)}</span> <span class="sez">${esc(e.sezione)}` +
     (e.gruppo ? ` · riga «${esc(e.gruppo)}»` : '') + `</span>`;
+}
+// unisce gli eventi uguali di unità dello stesso gruppo (es. palazzina 203/208: canone 700 → 680)
+function raggruppa(eventi) {
+  const out = [], idx = {};
+  for (const e of eventi) {
+    if (!e.gruppo) { out.push(e); continue; }
+    const k = [e.tipo, e.gruppo, e.sezione, e.tot, e.canone, JSON.stringify(e.campi || {})].join('|');
+    if (k in idx) out[idx[k]].membri.push(e);
+    else { idx[k] = out.length; out.push({ ...e, membri: [e] }); }
+  }
+  return out.map(e => e.membri && e.membri.length === 1 ? e.membri[0] : e);
 }
 function dettagli(e) { return `${mq(e.tot)} · ${euro(e.canone)}`; }
 function liEvento(e) {
@@ -274,7 +292,7 @@ function vistaCronologia() {
     if (iniziale) {
       corpo = `<details class="init" ${filtriAttivi() ? 'open' : ''}><summary>Inizio del registro: ${v.n_unita} unità presenti — mostra elenco</summary><ul class="ev">${ev.map(liEvento).join('')}</ul></details>`;
     } else {
-      corpo = `<ul class="ev">${ev.map(liEvento).join('') || '<li class="iniziale">Nessuna modifica alle unità (cambiata solo la formattazione/intestazione).</li>'}</ul>`;
+      corpo = `<ul class="ev">${raggruppa(ev).map(liEvento).join('') || '<li class="iniziale">Nessuna modifica alle unità (cambiata solo la formattazione/intestazione).</li>'}</ul>`;
     }
     out.push(`<div class="version">
       <div class="vhead">
@@ -386,7 +404,6 @@ function disegnaSnap(snap, v) {
     html += '</tr>';
   });
   document.getElementById('snap').innerHTML = html;
-  const tolte = iniziale ? [] : v.eventi.filter(e => e.tipo === 'rimossa');
   const fb = document.getElementById('snap-foto-btn'), fi = document.getElementById('snap-foto');
   fb.style.display = snap.foto ? '' : 'none';
   fi.style.display = 'none'; fi.removeAttribute('src');
@@ -397,8 +414,14 @@ function disegnaSnap(snap, v) {
     fb.textContent = on ? '📄 Nascondi foto' : '🖼️ Foto originale';
   };
   fb.textContent = '🖼️ Foto originale';
-  document.getElementById('snap-removed').innerHTML = tolte.length
-    ? '<b>Tolte in questa versione:</b><ul class="ev">' + tolte.map(liEvento).join('') + '</ul>' : '';
+  // elenco di tutti i cambiamenti rispetto alla versione precedente
+  const ordine = { modificata: 0, aggiunta: 1, rimossa: 2 };
+  const cambi = iniziale ? [] : raggruppa(v.eventi.slice().sort((a, b) => ordine[a.tipo] - ordine[b.tipo]));
+  document.getElementById('snap-removed').innerHTML = iniziale
+    ? '<b>Prima scheda del registro</b> — nessun confronto possibile.'
+    : cambi.length
+      ? '<b>Cambiamenti rispetto alla versione precedente:</b><ul class="ev">' + cambi.map(liEvento).join('') + '</ul>'
+      : '<b>Nessun cambiamento alle unità</b> rispetto alla versione precedente.';
 }
 
 function chiudiSnap() {
