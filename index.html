@@ -107,14 +107,16 @@ function changeSize(delta) {
   document.getElementById('size-label').textContent = fontSize + 'px';
 }
 
-// Pulsante Registro nascosto: compare con due clic/tocchi rapidi sullo spazio vuoto
+// Pulsante Registro nascosto: compare solo con TRE clic/tocchi rapidi sullo spazio vuoto
+// (ogni tocco entro 350 ms dal precedente; se si va piano il conteggio riparte da capo)
 (function () {
   const spot = document.getElementById('log-spot'), btn = document.getElementById('btn-log');
-  let ultimo = 0;
+  let ultimo = 0, conta = 0;
   spot.addEventListener('click', () => {
     const ora = Date.now();
-    if (ora - ultimo < 500) { btn.hidden = false; spot.style.display = 'none'; }
+    conta = ora - ultimo < 350 ? conta + 1 : 1;
     ultimo = ora;
+    if (conta >= 3) { btn.hidden = false; spot.style.display = 'none'; }
   });
 })();
 
