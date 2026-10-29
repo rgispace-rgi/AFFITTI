@@ -9426,6 +9426,35 @@
      "riga": 16
     }
    ]
+  },
+  {
+   "id": "20261029-090312",
+   "rilevato": "2026-10-29T09:03:12Z",
+   "excel": "2026-10-28T11:55",
+   "impronta": "a56e8d0c88c2f214",
+   "n_unita": 27,
+   "mq_tot": 1470,
+   "canone_tot": 26990,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "stazione49",
+     "nome": "stazione 49",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 49,
+     "sopp": 29,
+     "cort": 10,
+     "tot": 88,
+     "canone": 1300,
+     "riga": 16,
+     "campi": {
+      "canone": [
+       1200,
+       1300
+      ]
+     }
+    }
+   ]
   }
  ]
 }
