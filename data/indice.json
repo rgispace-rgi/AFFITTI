@@ -9455,6 +9455,29 @@
      }
     }
    ]
+  },
+  {
+   "id": "20261105-164925",
+   "rilevato": "2026-11-05T16:49:25Z",
+   "excel": "2026-11-05T10:46",
+   "impronta": "4d5bff4938013244",
+   "n_unita": 26,
+   "mq_tot": 1425,
+   "canone_tot": 26140,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "mergellina36",
+     "nome": "mergellina 36",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 20,
+     "sopp": 20,
+     "cort": 5,
+     "tot": 45,
+     "canone": 850,
+     "riga": 4
+    }
+   ]
   }
  ]
 }
