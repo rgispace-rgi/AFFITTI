@@ -9478,6 +9478,138 @@
      "riga": 4
     }
    ]
+  },
+  {
+   "id": "20261109-200651",
+   "rilevato": "2026-11-09T20:06:51Z",
+   "excel": "2026-11-09T12:10",
+   "impronta": "e822ad988174b39b",
+   "n_unita": 25,
+   "mq_tot": 1447,
+   "canone_tot": 25540,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "shedpt2e",
+     "nome": "shed pt 2e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 11,
+     "cort": 18,
+     "tot": 46,
+     "canone": 870,
+     "riga": 5,
+     "campi": {
+      "pt": [
+       null,
+       17
+      ],
+      "sopp": [
+       null,
+       11
+      ],
+      "cort": [
+       null,
+       18
+      ],
+      "tot": [
+       0,
+       46
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "shedp127e",
+     "nome": "shed p1 27e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 12,
+     "cort": 31,
+     "tot": 61,
+     "canone": null,
+     "riga": 8,
+     "campi": {
+      "pt": [
+       null,
+       18
+      ],
+      "sopp": [
+       null,
+       12
+      ],
+      "cort": [
+       null,
+       31
+      ],
+      "tot": [
+       null,
+       61
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "silos14",
+     "nome": "silos 14",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 32,
+     "sopp": 25,
+     "cort": 5,
+     "tot": 62,
+     "canone": 950,
+     "riga": 9
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "palazzina602",
+     "nome": "palazzina 602",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 39,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 39,
+     "canone": 1100,
+     "riga": 12
+    },
+    {
+     "tipo": "rimossa",
+     "key": "silos23",
+     "nome": "silos 23",
+     "sezione": "VIA TUCIDIDE",
+     "pt": null,
+     "sopp": null,
+     "cort": null,
+     "tot": null,
+     "canone": null,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "stazione33",
+     "nome": "stazione 33",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 103,
+     "sopp": 48,
+     "cort": 5,
+     "tot": 156,
+     "canone": 1800,
+     "riga": 17
+    },
+    {
+     "tipo": "rimossa",
+     "key": "torre10",
+     "nome": "torre 10",
+     "sezione": "VIA MALAGA",
+     "pt": 30,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 30,
+     "canone": 850,
+     "riga": 21,
+     "gruppo": "torre 9/10"
+    }
+   ]
   }
  ]
 }
