@@ -9610,6 +9610,59 @@
      "gruppo": "torre 9/10"
     }
    ]
+  },
+  {
+   "id": "20261111-173820",
+   "rilevato": "2026-11-11T17:38:20Z",
+   "excel": "2026-11-11T15:02",
+   "impronta": "d379da27a0b08f30",
+   "n_unita": 25,
+   "mq_tot": 1447,
+   "canone_tot": 26470,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "shedp127e",
+     "nome": "shed p1 27e",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 18,
+     "sopp": 12,
+     "cort": 31,
+     "tot": 61,
+     "canone": 930,
+     "riga": 7,
+     "campi": {
+      "canone": [
+       null,
+       930
+      ]
+     }
+    },
+    {
+     "tipo": "aggiunta",
+     "key": "decorazione10",
+     "nome": "decorazione 10",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 17,
+     "cort": 11,
+     "tot": 61,
+     "canone": 1000,
+     "riga": 11
+    },
+    {
+     "tipo": "rimossa",
+     "key": "decorazione9",
+     "nome": "decorazione 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 33,
+     "sopp": 17,
+     "cort": 11,
+     "tot": 61,
+     "canone": 1000,
+     "riga": 11
+    }
+   ]
   }
  ]
 }
