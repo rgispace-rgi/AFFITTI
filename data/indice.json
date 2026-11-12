@@ -9663,6 +9663,29 @@
      "riga": 11
     }
    ]
+  },
+  {
+   "id": "20261112-124344",
+   "rilevato": "2026-11-12T12:43:44Z",
+   "excel": "2026-11-12T12:05",
+   "impronta": "baa8ccbd23987e41",
+   "n_unita": 26,
+   "mq_tot": 1514,
+   "canone_tot": 27570,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "mergellina51",
+     "nome": "mergellina 51",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 22,
+     "sopp": 20,
+     "cort": 25,
+     "tot": 67,
+     "canone": 1100,
+     "riga": 12
+    }
+   ]
   }
  ]
 }
