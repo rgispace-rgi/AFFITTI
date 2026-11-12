@@ -9686,6 +9686,41 @@
      "riga": 12
     }
    ]
+  },
+  {
+   "id": "20261112-202744",
+   "rilevato": "2026-11-12T20:27:44Z",
+   "excel": "2026-11-12T15:19",
+   "impronta": "410a05e17b994704",
+   "n_unita": 26,
+   "mq_tot": 1609,
+   "canone_tot": 28670,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "superleone1",
+     "nome": "superleone 1",
+     "sezione": "VIA MALAGA",
+     "pt": 40,
+     "sopp": 70,
+     "cort": 20,
+     "tot": 130,
+     "canone": 2000,
+     "riga": 23
+    },
+    {
+     "tipo": "rimossa",
+     "key": "unità139",
+     "nome": "unità 139",
+     "sezione": "VIA MALAGA",
+     "pt": 20,
+     "sopp": 10,
+     "cort": 5,
+     "tot": 35,
+     "canone": 900,
+     "riga": 23
+    }
+   ]
   }
  ]
 }
