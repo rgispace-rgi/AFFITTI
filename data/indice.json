@@ -9863,6 +9863,53 @@
      "riga": 22
     }
    ]
+  },
+  {
+   "id": "20261119-152131",
+   "rilevato": "2026-11-19T15:21:31Z",
+   "excel": "2026-11-19T16:13",
+   "impronta": "c6d1908bdb751bc6",
+   "n_unita": 30,
+   "mq_tot": 2018,
+   "canone_tot": 35270,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "stazione32",
+     "nome": "stazione 32",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 77,
+     "sopp": 50,
+     "cort": 50,
+     "tot": 177,
+     "canone": 2500,
+     "riga": 21,
+     "campi": {
+      "canone": [
+       null,
+       2500
+      ]
+     }
+    },
+    {
+     "tipo": "modificata",
+     "key": "capannina72",
+     "nome": "capannina 72",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 65,
+     "sopp": 65,
+     "cort": 14,
+     "tot": 144,
+     "canone": 2300,
+     "riga": 22,
+     "campi": {
+      "canone": [
+       null,
+       2300
+      ]
+     }
+    }
+   ]
   }
  ]
 }
