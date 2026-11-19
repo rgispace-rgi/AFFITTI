@@ -9805,6 +9805,29 @@
      "riga": 11
     }
    ]
+  },
+  {
+   "id": "20261119-134113",
+   "rilevato": "2026-11-19T13:41:13Z",
+   "excel": "2026-11-19T14:40",
+   "impronta": "18d425b763cf4a51",
+   "n_unita": 28,
+   "mq_tot": 1697,
+   "canone_tot": 30470,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "shedp12c",
+     "nome": "shed p1 2c",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 17,
+     "sopp": 15,
+     "cort": 0,
+     "tot": 32,
+     "canone": 850,
+     "riga": 5
+    }
+   ]
   }
  ]
 }
