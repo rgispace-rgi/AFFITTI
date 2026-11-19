@@ -9920,6 +9920,35 @@
    "mq_tot": 2018,
    "canone_tot": 35270,
    "eventi": []
+  },
+  {
+   "id": "20261119-152812",
+   "rilevato": "2026-11-19T15:28:12Z",
+   "excel": "2026-11-19T16:27",
+   "impronta": "d4f63a55675529d3",
+   "n_unita": 30,
+   "mq_tot": 2018,
+   "canone_tot": 35220,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "montacarichi8",
+     "nome": "montacarichi 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 30,
+     "sopp": 25,
+     "cort": 0,
+     "tot": 55,
+     "canone": 900,
+     "riga": 8,
+     "campi": {
+      "canone": [
+       950,
+       900
+      ]
+     }
+    }
+   ]
   }
  ]
 }
