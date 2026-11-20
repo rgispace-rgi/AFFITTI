@@ -10011,6 +10011,29 @@
      "riga": 3
     }
    ]
+  },
+  {
+   "id": "20261120-125237",
+   "rilevato": "2026-11-20T12:52:37Z",
+   "excel": null,
+   "impronta": "e4afac1ddab5921b",
+   "n_unita": 27,
+   "mq_tot": 2022,
+   "canone_tot": 33430,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "montaggio8",
+     "nome": "montaggio 8",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 47,
+     "sopp": 34,
+     "cort": 15,
+     "tot": 96,
+     "canone": 1100,
+     "riga": 16
+    }
+   ]
   }
  ]
 }
