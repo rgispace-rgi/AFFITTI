@@ -9949,6 +9949,68 @@
      }
     }
    ]
+  },
+  {
+   "id": "20261120-095418",
+   "rilevato": "2026-11-20T09:54:18Z",
+   "excel": null,
+   "impronta": "47d108dce6cdb06c",
+   "n_unita": 26,
+   "mq_tot": 1926,
+   "canone_tot": 32330,
+   "eventi": [
+    {
+     "tipo": "rimossa",
+     "key": "palazzina206",
+     "nome": "palazzina 206",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 680,
+     "riga": 2,
+     "gruppo": "palazzina 205/208 🔥❄️"
+    },
+    {
+     "tipo": "rimossa",
+     "key": "palazzina207",
+     "nome": "palazzina 207",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 680,
+     "riga": 2,
+     "gruppo": "palazzina 205/208 🔥❄️"
+    },
+    {
+     "tipo": "rimossa",
+     "key": "palazzina208",
+     "nome": "palazzina 208",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 680,
+     "riga": 2,
+     "gruppo": "palazzina 205/208 🔥❄️"
+    },
+    {
+     "tipo": "rimossa",
+     "key": "supercondor9",
+     "nome": "super condor 9",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 35,
+     "sopp": 12,
+     "cort": 0,
+     "tot": 47,
+     "canone": 850,
+     "riga": 3
+    }
+   ]
   }
  ]
 }
