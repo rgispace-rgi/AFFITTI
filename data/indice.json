@@ -10044,6 +10044,35 @@
    "mq_tot": 2022,
    "canone_tot": 33430,
    "eventi": []
+  },
+  {
+   "id": "20261120-141511",
+   "rilevato": "2026-11-20T14:15:11Z",
+   "excel": "2026-11-20T15:14",
+   "impronta": "23407fe7232f5710",
+   "n_unita": 27,
+   "mq_tot": 2022,
+   "canone_tot": 33480,
+   "eventi": [
+    {
+     "tipo": "modificata",
+     "key": "palazzina205",
+     "nome": "palazzina 205 🔥❄️",
+     "sezione": "VIA TUCIDIDE",
+     "pt": 15,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 15,
+     "canone": 730,
+     "riga": 2,
+     "campi": {
+      "canone": [
+       680,
+       730
+      ]
+     }
+    }
+   ]
   }
  ]
 }
