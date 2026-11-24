@@ -10073,6 +10073,29 @@
      }
     }
    ]
+  },
+  {
+   "id": "20261124-181720",
+   "rilevato": "2026-11-24T18:17:20Z",
+   "excel": "2026-11-24T15:28",
+   "impronta": "bf5d7d6da39ba5c9",
+   "n_unita": 28,
+   "mq_tot": 2072,
+   "canone_tot": 34980,
+   "eventi": [
+    {
+     "tipo": "aggiunta",
+     "key": "vigevano3",
+     "nome": "vigevano 3",
+     "sezione": "VIA VIGEVANO",
+     "pt": 50,
+     "sopp": 0,
+     "cort": 0,
+     "tot": 50,
+     "canone": 1500,
+     "riga": 29
+    }
+   ]
   }
  ]
 }
